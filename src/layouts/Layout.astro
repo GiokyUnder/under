@@ -1,0 +1,129 @@
+---
+import Menu from "../components/Menu.astro";
+import Footer from "../components/Footer.astro";
+import "../normalize.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Aurora escort" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    /><meta name="generator" content={Astro.generator} /><title>
+      Aurora Escort
+    </title></head
+  >
+
+  <Menu />
+  <body>
+    <slot />
+  </body>
+  <Footer />
+
+  <style>
+    [class*=" w-icon-"],
+    [class^="w-icon-"] {
+      font-family: webflow-icons !important;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      min-height: 100%;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .w-block {
+      display: block;
+    }
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+    .w-button {
+      display: inline-block;
+      padding: 9px 15px;
+      background-color: #3898ec;
+      color: #fff;
+      border: 0;
+      line-height: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0;
+    }
+    html[data-w-dynpage] [data-w-cloak] {
+      color: transparent !important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 38px;
+      line-height: 44px;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 36px;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    h6 {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  </style>
+</html>

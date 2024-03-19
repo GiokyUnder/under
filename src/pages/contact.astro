@@ -1,0 +1,735 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="contact-hero-section">
+    <div class="contact-hero-bg-wrapper">
+      <div class="container contact">
+        <h1 class="heading">Contact Acme Outdoors</h1>
+        <div class="contact-block-wrapper">
+          <div class="contact-block">
+            <img
+              src="/images/5e84ba313e8232516a7da902_chat-alt.svg"
+              alt=""
+              class="contact-icon"
+            />
+            <h2>Contact Us</h2>
+            <p>
+              Just want to say hi?�&nbsp;We'd love to hear from you. We love our
+              customers and community!�&nbsp;
+            </p>
+            <a href="#contact" class="btn w-button">Send Us A Message</a>
+          </div>
+          <div class="contact-block">
+            <img
+              src="/images/5e850414db1f6ebfba8bc42d_chat-warning.svg"
+              alt="qwewqewq"
+              class="contact-icon"
+            />
+            <h2>Get Support</h2>
+            <p>
+              Have an issue with an order or with a product you purchased from
+              us?�&nbsp;Fill out our support form.
+            </p>
+            <a
+              href="https://university.webflow.com/support"
+              target="_blank"
+              class="btn w-button">Contact Support</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="contact-image-div"></div>
+    </div>
+  </div>
+  <div id="contact" class="content-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h2>Contact Us</h2>
+          <div class="w-richtext">
+            <p>
+              Acme Outdoors<br />123 Rainy Street<br />Oklahoma City, OK 73129
+            </p>
+            <p>
+              ‍<br /><strong>General Inquiries:</strong>�&nbsp;(405) 555-5555<br
+              /><strong>Customer Support:</strong>�&nbsp;(405) 555-5556
+            </p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <h2>Contact Form</h2>
+          <p>Send us a message and we'll get back to you as soon as we can!</p>
+          <div class="w-form">
+            <form
+              id="email-form"
+              name="email-form"
+              data-name="Email Form"
+              method="get"
+              data-wf-page-id="5e84fa102a9eae9dcc4627da"
+              data-wf-element-id="fe567e25-f54e-e832-b312-e1ed2dc1cad8"
+            >
+              <label for="name">Name</label><input
+                class="input w-input"
+                maxlength="256"
+                name="name"
+                data-name="Name"
+                placeholder="Enter your name"
+                type="text"
+                id="name"
+              /><label for="email">Email Address</label><input
+                class="input w-input"
+                maxlength="256"
+                name="email"
+                data-name="Email"
+                placeholder="Enter your email address"
+                type="email"
+                id="email"
+                required=""
+              /><label for="Message">Your Message</label><textarea
+                placeholder="Enter your message"
+                maxlength="5000"
+                id="Message"
+                name="Message"
+                data-name="Message"
+                class="input w-input"></textarea><input
+                type="submit"
+                data-wait="Please wait..."
+                class="btn w-button"
+                value="Submit"
+              />
+            </form>
+            <div class="success w-form-done">
+              <div>
+                Thank you! Your submission has been received! We'll be in touch
+                soon!
+              </div>
+            </div>
+            <div class="error w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  @font-face {
+    font-family: webflow-icons;
+    src: url("data:application/x-font-ttf;charset=utf-8;base64,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")
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  [class*=" w-icon-"],
+  [class^="w-icon-"] {
+    font-family: webflow-icons !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .w-block {
+    display: block;
+  }
+  .w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898ec;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+  }
+  input.w-button {
+    -webkit-appearance: button;
+  }
+  html[data-w-dynpage] [data-w-cloak] {
+    color: transparent !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  h6 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  button,
+  html input[type="button"],
+  input[type="reset"] {
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+  }
+  .w-form {
+    margin: 0 0 15px;
+  }
+  .w-form-done {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+  }
+  .w-form-fail {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffdede;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  .w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  .w-input:-moz-placeholder {
+    color: #999;
+  }
+  .w-input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+  }
+  .w-input:-ms-input-placeholder {
+    color: #999;
+  }
+  .w-input::-webkit-input-placeholder {
+    color: #999;
+  }
+  .w-input:focus {
+    border-color: #3898ec;
+    outline: 0;
+  }
+  .w-input[disabled],
+  .w-input[readonly] {
+    cursor: not-allowed;
+    background-color: #eee;
+  }
+  textarea.w-input {
+    height: auto;
+  }
+  .w-form-label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+  }
+  .w-container:after,
+  .w-container:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+  }
+  .w-container:after {
+    clear: both;
+  }
+  @media screen and (max-width: 991px) {
+    .w-container {
+      max-width: 728px;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .w-container {
+      max-width: none;
+    }
+  }
+  .w-richtext:after,
+  .w-richtext:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+  }
+  .w-richtext:after {
+    clear: both;
+  }
+  .w-richtext[contenteditable="true"]:after,
+  .w-richtext[contenteditable="true"]:before {
+    white-space: initial;
+  }
+  [data-nav-menu-open] {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #c8c8c8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    font-family: Sen, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  a {
+    color: #eb5757;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  .btn {
+    padding: 5px 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eb5757;
+    border-radius: 5px;
+    background-color: #eb5757;
+    -webkit-transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+    font-weight: 700;
+  }
+  .btn:hover {
+    border-color: #222;
+    background-color: #222;
+  }
+  .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .container.contact {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .input {
+    border: 1px solid #222;
+    border-radius: 5px;
+  }
+  .input:hover {
+    border-color: #eb5757;
+  }
+  .input:active {
+    border-color: #eb5757;
+  }
+  .input:focus {
+    border-color: #eb5757;
+  }
+  .input::-webkit-input-placeholder {
+    color: #525252;
+  }
+  .input:-ms-input-placeholder {
+    color: #525252;
+  }
+  .input::-ms-input-placeholder {
+    color: #525252;
+  }
+  .input::placeholder {
+    color: #525252;
+  }
+  .hero-section {
+    min-height: 550px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#222),
+        to(rgba(34, 34, 34, 0))
+      ),
+      url(/public/images/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
+      url(/public/images/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
+    background-position:
+      0 0,
+      50% 50%;
+    background-size: auto, cover;
+  }
+  .hero-section.contact-hero {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#222),
+        to(rgba(34, 34, 34, 0))
+      ),
+      url(/public/images/5e84f74f40a146d432ac3598_adam-solomon-WHUDOzd5IYU-unsplash%20%281%29%20%281%29.jpg);
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
+      url(/public/images/5e84f74f40a146d432ac3598_adam-solomon-WHUDOzd5IYU-unsplash%20%281%29%20%281%29.jpg);
+    background-position:
+      0 0,
+      50% 50%;
+    background-size: auto, cover;
+  }
+  .hero-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 550px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .hero-heading {
+    width: 35%;
+    color: #f9f9f9;
+    font-size: 62px;
+    line-height: 1.2;
+  }
+  .support-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .support-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .content-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .image {
+    display: block;
+  }
+  .contact-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contact-left {
+    width: 30%;
+  }
+  .contact-right {
+    width: 70%;
+    padding-left: 20px;
+  }
+  .contact-hero-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #222;
+    color: #f9f9f9;
+  }
+  .contact-hero-bg-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .contact-image-div {
+    width: 45%;
+    height: 550px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        color-stop(76%, rgba(34, 34, 34, 0.18))
+      ),
+      url(/public/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+    background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%),
+      url(/public/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+    background-position:
+      0 0,
+      50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+  }
+  .contact-block-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    min-height: 350px;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+  }
+  .contact-icon {
+    margin-bottom: 30px;
+  }
+  .heading {
+    margin-top: 55px;
+  }
+  .success {
+    min-height: 280px;
+    padding-top: 125px;
+    border-radius: 5px;
+    background-color: #20c788;
+    color: #f9f9f9;
+  }
+  .error {
+    border-radius: 5px;
+    background-color: #e53935;
+    color: #f9f9f9;
+  }
+  .text-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .block-content {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .container.contact {
+      position: static;
+      padding-bottom: 35px;
+    }
+    .hero-heading {
+      width: 60%;
+    }
+    .contact-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .contact-left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .contact-right {
+      width: 100%;
+      padding-left: 0;
+    }
+    .contact-hero-bg-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+    }
+    .contact-image-div {
+      width: 100%;
+      height: 350px;
+      background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          from(#222),
+          color-stop(76%, rgba(34, 34, 34, 0.18))
+        ),
+        url(/public/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+      background-image: linear-gradient(0deg, #222, rgba(34, 34, 34, 0.18) 76%),
+        url(/public/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+      background-position:
+        0 0,
+        50% 35%;
+      background-size: auto, cover;
+      background-repeat: repeat, no-repeat;
+    }
+    .contact-block-wrapper {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    .contact-block {
+      width: 48%;
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .support-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .contact-block-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .contact-block {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hero-section.contact-hero {
+      background-position:
+        0 0,
+        80% 50%;
+    }
+    .hero-wrapper {
+      padding-bottom: 45px;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+    .hero-heading {
+      font-size: 30px;
+    }
+    .contact-image-div {
+      background-position:
+        0 0,
+        50% 50%;
+    }
+  }
+</style>

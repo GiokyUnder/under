@@ -27,7 +27,7 @@ import "../normalize.css";
   </body>
   <Footer />
 
-  <style>
+  <style is:global>
     [class*=" w-icon-"],
     [class^="w-icon-"] {
       font-family: webflow-icons !important;
@@ -47,15 +47,7 @@ import "../normalize.css";
     html {
       height: 100%;
     }
-    body {
-      margin: 0;
-      min-height: 100%;
-      background-color: #fff;
-      font-family: Sen, sans-serif;
-      font-size: 14px;
-      line-height: 20px;
-      color: #333;
-    }
+
     img {
       max-width: 100%;
       vertical-align: middle;
@@ -63,10 +55,6 @@ import "../normalize.css";
     }
     .w-block {
       display: block;
-    }
-    .w-inline-block {
-      max-width: 100%;
-      display: inline-block;
     }
     .w-button {
       display: inline-block;
@@ -124,6 +112,99 @@ import "../normalize.css";
     p {
       margin-top: 0;
       margin-bottom: 10px;
+    }
+    button {
+      border: 0;
+      cursor: pointer;
+      -webkit-appearance: button;
+    }
+    [data-nav-menu-open] {
+      display: block !important;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #c8c8c8;
+      text-align: center;
+      overflow: visible;
+      min-width: 200px;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    body {
+      font-family: Sen, sans-serif;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #eb5757;
+      text-decoration: underline;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .btn {
+      padding: 5px 25px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #eb5757;
+      border-radius: 5px;
+      background-color: #eb5757;
+      -webkit-transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+      transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+      font-weight: 700;
+    }
+    .btn:hover {
+      border-color: #222;
+      background-color: #222;
+    }
+    .btn.light {
+      border-color: #f9f9f9;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .btn.light:hover {
+      border-color: #eb5757;
+      background-color: #eb5757;
+      color: #f9f9f9;
+    }
+    .btn.light.outline {
+      color: #f9f9f9;
+    }
+    .btn.light.outline:hover {
+      border-color: #f9f9f9;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .btn.light.hero {
+      margin-right: 10px;
+    }
+    .btn.outline {
+      background-color: transparent;
+      color: #eb5757;
+    }
+    .btn.outline:hover {
+      border-color: #eb5757;
+      background-color: #eb5757;
+      color: #f9f9f9;
+    }
+    .btn.outline:focus {
+      border-style: solid;
+      border-width: 1px;
+      border-color: #eb5757;
+      box-shadow: 0 0 2px 0 #eb5757;
     }
   </style>
 </html>

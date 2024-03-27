@@ -179,40 +179,6 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-  h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 700;
-  }
-  .w-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 940px;
-  }
-  .w-container:after,
-  .w-container:before {
-    content: " ";
-    display: table;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-  }
-  .w-container:after {
-    clear: both;
-  }
-  @media screen and (max-width: 991px) {
-    .w-container {
-      max-width: 728px;
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .w-container {
-      max-width: none;
-    }
-  }
   .w-richtext:after,
   .w-richtext:before {
     content: " ";
@@ -237,13 +203,7 @@ import Layout from "../layouts/Layout.astro";
     padding-right: 15px;
     padding-left: 15px;
   }
-  .container.contact {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
+ 
   .hero-section {
     min-height: 550px;
     background-image: -webkit-gradient(

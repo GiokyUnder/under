@@ -117,49 +117,6 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-  @font-face {
-    font-family: webflow-icons;
-    src: url("data:application/x-font-ttf;charset=utf-8;base64,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")
-      format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  [class*=" w-icon-"],
-  [class^="w-icon-"] {
-    font-family: webflow-icons !important;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    margin: 0;
-    min-height: 100%;
-    background-color: #fff;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
-  }
-  img {
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-  }
-  .w-block {
-    display: block;
-  }
   .w-button {
     display: inline-block;
     padding: 9px 15px;
@@ -174,59 +131,7 @@ import Layout from "../layouts/Layout.astro";
   input.w-button {
     -webkit-appearance: button;
   }
-  html[data-w-dynpage] [data-w-cloak] {
-    color: transparent !important;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  h1 {
-    font-size: 38px;
-    line-height: 44px;
-    margin-top: 20px;
-  }
-  h2 {
-    font-size: 32px;
-    line-height: 36px;
-    margin-top: 20px;
-  }
-  h3 {
-    font-size: 24px;
-    line-height: 30px;
-    margin-top: 20px;
-  }
-  h4 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 10px;
-  }
-  h5 {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 10px;
-  }
-  h6 {
-    font-size: 12px;
-    line-height: 18px;
-    margin-top: 10px;
-  }
-  p {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  button,
-  html input[type="button"],
-  input[type="reset"] {
-    border: 0;
-    cursor: pointer;
-    -webkit-appearance: button;
-  }
+
   .w-form {
     margin: 0 0 15px;
   }
@@ -291,33 +196,7 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 400;
     margin-bottom: 0;
   }
-  .w-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 940px;
-  }
-  .w-container:after,
-  .w-container:before {
-    content: " ";
-    display: table;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-  }
-  .w-container:after {
-    clear: both;
-  }
-  @media screen and (max-width: 991px) {
-    .w-container {
-      max-width: 728px;
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .w-container {
-      max-width: none;
-    }
-  }
+
   .w-richtext:after,
   .w-richtext:before {
     content: " ";
@@ -345,14 +224,7 @@ import Layout from "../layouts/Layout.astro";
     overflow: visible;
     min-width: 200px;
   }
-  @keyframes spin {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+
   body {
     font-family: Sen, sans-serif;
     color: #333;
@@ -469,46 +341,7 @@ import Layout from "../layouts/Layout.astro";
       50% 50%;
     background-size: auto, cover;
   }
-  .hero-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 550px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-  .hero-heading {
-    width: 35%;
-    color: #f9f9f9;
-    font-size: 62px;
-    line-height: 1.2;
-  }
-  .support-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  .support-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
+
   .content-section {
     padding-top: 65px;
     padding-bottom: 65px;
@@ -560,9 +393,9 @@ import Layout from "../layouts/Layout.astro";
         from(#222),
         color-stop(76%, rgba(34, 34, 34, 0.18))
       ),
-      url(/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+      url(/images/vinicius-amano.jpg);
     background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%),
-      url(/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+      url(/images/vinicius-amano.jpg);
     background-position:
       0 0,
       50% 50%;
@@ -617,18 +450,7 @@ import Layout from "../layouts/Layout.astro";
     background-color: #e53935;
     color: #f9f9f9;
   }
-  .text-block {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    color: #f9f9f9;
-    font-size: 24px;
-    font-weight: 800;
-  }
-  .block-content {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+
   @media screen and (max-width: 991px) {
     .container {
       padding-right: 15px;
@@ -673,9 +495,9 @@ import Layout from "../layouts/Layout.astro";
           from(#222),
           color-stop(76%, rgba(34, 34, 34, 0.18))
         ),
-        url(/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+        url(/images/vinicius-amano.jpg);
       background-image: linear-gradient(0deg, #222, rgba(34, 34, 34, 0.18) 76%),
-        url(/images/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20%281%29%20%281%29.jpg);
+        url(/images/vinicius-amano.jpg);
       background-position:
         0 0,
         50% 35%;
@@ -694,11 +516,6 @@ import Layout from "../layouts/Layout.astro";
     }
   }
   @media screen and (max-width: 767px) {
-    .support-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
     .contact-block-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -716,16 +533,7 @@ import Layout from "../layouts/Layout.astro";
         0 0,
         80% 50%;
     }
-    .hero-wrapper {
-      padding-bottom: 45px;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-    }
-    .hero-heading {
-      font-size: 30px;
-    }
+
     .contact-image-div {
       background-position:
         0 0,

@@ -1,8 +1,3 @@
----
-import { Image } from "astro:assets";
-import mainImage from "../assets/main-page.jpg";
----
-
 <head>
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link
@@ -22,7 +17,6 @@ import mainImage from "../assets/main-page.jpg";
 </head>
 <body>
   <div class="hero-section">
-    <Image src={mainImage} alt={""} />
     <div class="container">
       <div class="hero-wrapper">
         <h1 class="hero-heading">
@@ -412,7 +406,7 @@ import mainImage from "../assets/main-page.jpg";
       50% 50%;
     background-size: auto, cover;
   }
- /*  .hero-section.about-hero {
+  .hero-section.about-hero {
     background-image: -webkit-gradient(
         linear,
         left bottom,
@@ -427,7 +421,7 @@ import mainImage from "../assets/main-page.jpg";
       0 0,
       50% 60%;
     background-size: auto, cover;
-  } */
+  }
   .hero-wrapper {
     display: -webkit-box;
     display: -webkit-flex;

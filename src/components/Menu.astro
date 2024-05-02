@@ -6,8 +6,8 @@
           ><img src="/images/new-svg.svg" alt="Aurora Escort Logo" /></a
         >
 
-        <div class="cart-nav-wrapper">
-          <nav role="navigation" class="nav-menu w-nav-menu">
+        <nav role="navigation" class="nav-menu w-nav-menu menu-container">
+          <div class="menu-items">
             <a
               href="/"
               aria-current="page"
@@ -23,11 +23,11 @@
             >
             <a href="/donate" class="nav-link w-nav-link">Вопросы и ответы</a>
             <a href="/donate" class="nav-link w-nav-link">Сотрудничество</a>
-          </nav>
-          <div>
-            <div class="nav-button w-nav-button">
-              <div class="w-icon-nav-menu"></div>
-            </div>
+          </div>
+        </nav>
+        <div>
+          <div class="nav-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
           </div>
         </div>
       </div>
@@ -45,6 +45,11 @@
 
     .w-icon-nav-menu:before {
       content: "\e602";
+    }
+
+    .menu-items {
+      display: flex;
+      flex-direction: column;
     }
 
     @media screen and (max-width: 767px) {
@@ -89,6 +94,7 @@
     .w-nav-link.w--current {
       color: #0082f3;
     }
+
     .w-nav-menu {
       position: relative;
       float: right;
@@ -242,6 +248,7 @@
       }
       .nav-menu {
         width: 100vw;
+        height: 100vh;
         padding-top: 140px;
         padding-bottom: 30px;
         background-color: #ce4c4c;
@@ -259,7 +266,7 @@
         menu?.removeAttribute("data-nav-menu-open");
       } else {
         menu?.setAttribute("data-nav-menu-open", "");
-        navButton.classList.add("w--open", "wwwwwww");
+        navButton.classList.add("w--open");
       }
     });
   </script>

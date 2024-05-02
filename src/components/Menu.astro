@@ -13,14 +13,10 @@
               aria-current="page"
               class="nav-link w-nav-link w--current">Главная</a
             >
-            <a href="/about" class="nav-link w-nav-link">О нас</a><a
-              href="/products"
-              class="nav-link w-nav-link">Модели</a
-            >
-            <a href="/donate" class="nav-link w-nav-link">Блог</a><a
-              href="/contact"
-              class="nav-link w-nav-link">Контакты</a
-            >
+            <a href="/products" class="nav-link w-nav-link">Модели</a>
+            <a href="/contact" class="nav-link w-nav-link">Контакты</a>
+            <a href="/about" class="nav-link w-nav-link">О нас</a>
+            <a href="/donate" class="nav-link w-nav-link">Блог</a>
             <a href="/donate" class="nav-link w-nav-link">Вопросы и ответы</a>
             <a href="/donate" class="nav-link w-nav-link">Сотрудничество</a>
           </div>
@@ -259,14 +255,19 @@
   <script>
     const navButton = document.querySelector(".w-nav-button");
     const menu = document.querySelector(".nav-menu");
+    const body = document.querySelector("body");
 
     navButton?.addEventListener("click", () => {
       if (navButton.classList.contains("w--open")) {
         navButton.classList.remove("w--open");
         menu?.removeAttribute("data-nav-menu-open");
+        //@ts-ignore
+        body.style.overflow = "";
       } else {
         menu?.setAttribute("data-nav-menu-open", "");
         navButton.classList.add("w--open");
+        //@ts-ignore
+        body.style.overflow = "hidden";
       }
     });
   </script>

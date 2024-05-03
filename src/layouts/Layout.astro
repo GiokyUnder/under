@@ -25,6 +25,9 @@ import "../normalize.css";
   <Menu />
   <body>
     <slot />
+    <div class="chat-us">
+      <img src="/images/chat-us.svg" alt="Открыть страницу с контактами" />
+    </div>
   </body>
   <Footer />
 
@@ -196,6 +199,12 @@ import "../normalize.css";
       border-width: 1px;
       border-color: #eb5757;
       box-shadow: 0 0 2px 0 #eb5757;
+    }
+
+    .chat-us {
+      position: fixed;
+      bottom: 0;
+      right: 0;
     }
   </style>
 </html>

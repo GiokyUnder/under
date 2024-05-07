@@ -1,0 +1,113 @@
+<div>
+  <button class="open-button">
+    <slot />
+  </button>
+
+  <div class="overlay">
+    <button class="button-close">
+      <img
+        class="image"
+        src="/images/close.svg"
+        alt="закрыт меню с контактами"
+      />
+    </button>
+
+    <div class="messangers">
+      <button class="button-text">
+        <img
+          class="image"
+          src="/images/telegram.svg"
+          alt="Написать в телеграмм"
+        />
+        Написать в telegram
+      </button>
+      <button class="button-text">
+        <img
+          class="image"
+          src="/images/whatsapp.svg"
+          alt="Написать в whatsapp"
+        />
+        Написать в whatsapp
+      </button>
+      <button class="button-text">
+        <img class="image" src="/images/viber.svg" alt="Написать в viber" />
+        Написать в viber
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nav-menu {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 30px;
+    background-color: #ce4c4c;
+  }
+
+  [data-nav-menu-open] {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #c8c8c8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px;
+  }
+
+  .overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ce4c4c;
+    z-index: 9999;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .button-close {
+    position: absolute;
+    padding: 18px;
+    right: 0;
+  }
+  .image {
+    width: 55px;
+  }
+
+  .button-text {
+    color: whitesmoke;
+    font-size: 25px;
+  }
+
+  .messangers {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    margin-top: 30vh;
+  }
+</style>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const openButton = document.querySelector(".open-button");
+    const closeButton = document.querySelector(".button-close");
+    const overlay = document.querySelector(".overlay");
+
+    openButton?.addEventListener("click", () => {
+      overlay?.classList.add("active");
+    });
+
+    closeButton?.addEventListener("click", () => {
+      overlay?.classList.remove("active");
+    });
+  });
+</script>

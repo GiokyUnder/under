@@ -1,3 +1,7 @@
+---
+import ChatUs from "../components/ChatUs.astro";
+---
+
 <div class="menu-wrapper">
   <div data-collapse="medium" data-animation="over-right" class="navbar w-nav">
     <div class="container">
@@ -9,9 +13,9 @@
           />
         </a>
         <div class="messengers">
-          <a href="/">
-            <img src="/images/call-us.svg" alt="Aurora Escort Logo" />
-          </a>
+          <ChatUs>
+            <img src="/images/call-us.svg" alt="Открыть меню с контактами" />
+          </ChatUs>
         </div>
 
         <nav role="navigation" class="nav-menu w-nav-menu menu-container">
@@ -32,6 +36,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="chat-us">
+      <ChatUs>
+        <img src="/images/chat-us.svg" alt="Открыть страницу с контактами" />
+      </ChatUs>
     </div>
   </div>
 
@@ -273,6 +282,15 @@
         padding-bottom: 30px;
         background-color: #ce4c4c;
       }
+    }
+
+    .chat-us {
+      position: fixed;
+      bottom: 0;
+      right: -25px;
+    }
+    .chat-us img {
+      max-width: 75%;
     }
   </style>
 

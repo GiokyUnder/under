@@ -277,22 +277,24 @@
   </style>
 
   <script>
-    const navButton = document.querySelector(".w-nav-button");
-    const menu = document.querySelector(".nav-menu");
-    const body = document.querySelector("body");
+    document.addEventListener("astro:page-load", () => {
+      const navButton = document.querySelector(".w-nav-button");
+      const menu = document.querySelector(".nav-menu");
+      const body = document.querySelector("body");
 
-    navButton?.addEventListener("click", () => {
-      if (navButton.classList.contains("w--open")) {
-        navButton.classList.remove("w--open");
-        menu?.removeAttribute("data-nav-menu-open");
-        //@ts-ignore
-        body.style.overflow = "";
-      } else {
-        menu?.setAttribute("data-nav-menu-open", "");
-        navButton.classList.add("w--open");
-        //@ts-ignore
-        body.style.overflow = "hidden";
-      }
+      navButton?.addEventListener("click", () => {
+        if (navButton.classList.contains("w--open")) {
+          navButton.classList.remove("w--open");
+          menu?.removeAttribute("data-nav-menu-open");
+          //@ts-ignore
+          body.style.overflow = "";
+        } else {
+          menu?.setAttribute("data-nav-menu-open", "");
+          navButton.classList.add("w--open");
+          //@ts-ignore
+          body.style.overflow = "hidden";
+        }
+      });
     });
   </script>
 </div>

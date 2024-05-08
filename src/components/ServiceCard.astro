@@ -1,0 +1,75 @@
+---
+import Image from "astro/components/Image.astro";
+import ArrowImg from "../assets/img/arrow.png";
+
+const { text, order, path } = Astro.props;
+---
+
+<div class="support-column">
+  <div class="support-square">
+    <div class="support-square-number">{order}</div>
+    <div class="container">
+      <div class="support-square-text">{text}</div>
+      <Image
+        src={ArrowImg}
+        alt="нажмите чтобы перейти в раздел конкретной услуги"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .support-column {
+    min-height: 200px;
+  }
+  .support-square {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-height: 350px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    /*     background-color: #e9afaf;
+    background-image: var(--image);
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
+  .support-square-number {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: auto;
+    bottom: auto;
+    color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .support-square-text {
+    color: #f9f9f9;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .support-square-image {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -25%;
+    bottom: -25%;
+  }
+  .support-square-image.triangle {
+    right: -11%;
+    bottom: -17%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    margin-top: 115px;
+  }
+</style>

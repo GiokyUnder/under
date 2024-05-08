@@ -1,210 +1,84 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import romanticImage from "../assets/img/romantic-meet.jpg";
+
+const servicesData = [
+  {
+    text: "Элитные эскортницы",
+    path: "",
+  },
+  {
+    text: "Эскорт встречи в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки для корпоратива в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки для мероприятий в Москве",
+    path: "",
+  },
+  {
+    text: "Эскорт сопровождение в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки на выставку в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки для вечеринки в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки-хостес на мероприятие в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки модели для съемок в Москве",
+    path: "",
+  },
+  {
+    text: "Эскорт трансфер в Москве",
+    path: "",
+  },
+  {
+    text: "Ужин с эскортницей в Москве",
+    path: "",
+  },
+  {
+    text: "Девушки для мальчишника в Москве",
+    path: "",
+  },
+  {
+    text: "Эскорт без интима в Москве",
+    path: "",
+  },
+  {
+    text: "Эскорт поездки в Москве",
+    path: "",
+  },
+  {
+    text: "Эскорт для пар в Москве",
+    path: "",
+  },
+];
 ---
 
 <Layout>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-number">1</div>
-      <div class="support-square-text">Девушки для корпоратива в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-number">2</div>
-      <div class="support-square-text">Эскорт встречи в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-number">3</div>
-      <div class="support-square-text">Девушки для мероприятий в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-number">4</div>
-      <div class="support-square-text">Эскорт сопровождение в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-number">5</div>
-      <div class="support-square-text">Девушки на выставку в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Девушки для вечеринки в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">
-        Девушки-хостес на мероприятие в Москве
-      </div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Девушки модели для съемок в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Эскорт трансфер в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Ужин с эскортницей в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Девушки для мальчишника в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Эскорт без интима в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Эскорт поездки в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Эскорт для пар в Москве</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
-  <div class="support-column">
-    <div class="support-square">
-      <div class="support-square-text">Элитные эскортницы</div>
-      <img
-        src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-        alt="Triangle Decoration in Donate Block"
-        class="support-square-image triangle"
-      />
-    </div>
-  </div>
+  <h1 class="title">Услуги</h1>
+  {
+    servicesData.map((service, index) => (
+      <ServiceCard text={service.text} path={service.path} order={index + 1} />
+    ))
+  }
 </Layout>
 
 <style>
-  .support-column {
-    min-height: 200px;
-  }
-  .support-square {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    min-height: 350px;
-    margin-bottom: 45px;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
-  }
-  .support-square-number {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    right: auto;
-    bottom: auto;
-    color: #f9f9f9;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  .support-square-text {
-    color: #f9f9f9;
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .support-square-image {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: -25%;
-    bottom: -25%;
-  }
-  .support-square-image.triangle {
-    right: -11%;
-    bottom: -17%;
+  .title {
+    margin-left: 10px;
+    margin-bottom: 17px;
   }
 </style>

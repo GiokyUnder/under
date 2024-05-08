@@ -1,6 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
-import ArrowImg from "../assets/img/arrow.png";
+import ArrowImg from "../assets/img/arrow.svg";
 
 const { text, order, path } = Astro.props;
 ---
@@ -11,6 +11,7 @@ const { text, order, path } = Astro.props;
     <div class="container">
       <div class="support-square-text">{text}</div>
       <Image
+        width={60}
         src={ArrowImg}
         alt="нажмите чтобы перейти в раздел конкретной услуги"
       />

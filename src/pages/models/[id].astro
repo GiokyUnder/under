@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { models } from "./data";
+
+export async function getStaticPaths() {
+  return models;
+}
+
+const { name, price, height, about, age, img } = Astro.props;
+---
+
+<Layout>
+  <h1>Current Page Model</h1>
+</Layout>

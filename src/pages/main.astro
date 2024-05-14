@@ -1,10 +1,16 @@
+---
+import ModelCard from "../components/ModelCard.astro";
+---
+
 <div class="hero-section">
   <div class="container">
     <div class="hero-wrapper">
       <h1 class="hero-heading">VIP эскорт агентство Aurora Escort в Москве</h1>
 
       <div class="hero-button-wrapper">
-        <a href="/models" class="btn light outline w-button">Каталог моделей</a>
+        <a href="/models/pages/1" class="btn light outline w-button"
+          >Каталог моделей</a
+        >
       </div>
     </div>
   </div>
@@ -105,110 +111,15 @@
     </div>
     <div class="products-list-wrapper w-dyn-list">
       <div role="list" class="products-list w-dyn-items">
-        <div role="listitem" class="w-dyn-item">
-          <div class="shop-item-wrapper">
-            <a
-              href="/product/white-tent"
-              class="shop-item-link-wrapper w-inline-block"
-            >
-              <div
-                style="background-image:url("
-                assets-global.website-files.com=""
-                class="shop-image tumbler-1"
-              >
-                <div class="pill-2 badge primary sale w-condition-invisible">
-                  Sale
-                </div>
-              </div>
-              <div class="shop-details-wrapper">
-                <div class="shop-details-left">
-                  <div class="shop-item-name">Аннет</div>
-                  <div class="price-wrapper">
-                    <div class="shop-item-price">$&nbsp;200.00&nbsp;USD</div>
-                    <div
-                      class="shop-item-price compare w-condition-invisible w-dyn-bind-empty"
-                    >
-                    </div>
-                  </div>
-                </div>
-              </div></a
-            >
-            <div class="shop-button-wrapper">
-              <a href="/product/white-tent" class="btn w-button">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div role="listitem" class="w-dyn-item">
-          <div class="shop-item-wrapper">
-            <a
-              href="/product/tin-coffee-tumbler"
-              class="shop-item-link-wrapper w-inline-block"
-            >
-              <div
-                style="background-image:url("
-                assets-global.website-files.com=""
-                class="shop-image tumbler-1"
-              >
-                <div class="pill-2 badge primary sale w-condition-invisible">
-                  Sale
-                </div>
-              </div>
-              <div class="shop-details-wrapper">
-                <div class="shop-details-left">
-                  <div class="shop-item-name">Николь</div>
-                  <div class="price-wrapper">
-                    <div class="shop-item-price">$�&nbsp;35.00�&nbsp;USD</div>
-                    <div
-                      class="shop-item-price compare w-condition-invisible w-dyn-bind-empty"
-                    >
-                    </div>
-                  </div>
-                </div>
-              </div></a
-            >
-            <div class="shop-button-wrapper">
-              <a href="/product/tin-coffee-tumbler" class="btn w-button"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </div>
-        <div role="listitem" class="w-dyn-item">
-          <div class="shop-item-wrapper">
-            <a
-              href="/product/blue-canvas-pack"
-              class="shop-item-link-wrapper w-inline-block"
-            >
-              <div
-                style="background-image:url("
-                assets-lobal.website-files.com=""
-                class="shop-image tumbler-1"
-              >
-                <div class="pill-2 badge primary sale">Sale</div>
-              </div>
-              <div class="shop-details-wrapper">
-                <div class="shop-details-left">
-                  <div class="shop-item-name">Мария</div>
-                  <div class="price-wrapper">
-                    <div class="shop-item-price">$�&nbsp;95.00�&nbsp;USD</div>
-                    <div class="shop-item-price compare">
-                      $�&nbsp;145.00�&nbsp;USD
-                    </div>
-                  </div>
-                </div>
-              </div></a
-            >
-            <div class="shop-button-wrapper">
-              <a href="/product/blue-canvas-pack" class="btn w-button"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </div>
+        <ModelCard name="Аннет" age="22" price="50000" />
+        <ModelCard name="Аннет" age="22" price="50000" />
+        <ModelCard name="Аннет" age="22" price="50000" />
       </div>
     </div>
     <div class="shop-more">
-      <a href="/shop" class="btn dark w-button">Показать всех моделей</a>
+      <a href="/models/pages/1" class="btn dark w-button"
+        >Показать всех моделей</a
+      >
     </div>
   </div>
 </div>
@@ -473,6 +384,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;

@@ -1,3 +1,10 @@
+---
+import Image from "astro/components/Image.astro";
+import telegramImg from "../assets/img/telegram.svg";
+import whatsAppImg from "../assets/img/whatsapp.svg";
+import viberImg from "../assets/img/viber.svg";
+---
+
 <div>
   <button class="open-button">
     <slot />
@@ -13,25 +20,18 @@
     </button>
 
     <div class="messangers">
+      <h2>Написать нам</h2>
       <button class="button-text">
-        <img
-          class="image"
-          src="/images/telegram.svg"
-          alt="Написать в телеграмм"
-        />
-        Написать в telegram
+        <Image src={telegramImg} alt="Написать в telegram" />
+        Telegram
       </button>
       <button class="button-text">
-        <img
-          class="image"
-          src="/images/whatsapp.svg"
-          alt="Написать в whatsapp"
-        />
-        Написать в whatsapp
+        <Image src={whatsAppImg} alt="Написать в whatsapp" />
+        Whatsapp
       </button>
       <button class="button-text">
-        <img class="image" src="/images/viber.svg" alt="Написать в viber" />
-        Написать в viber
+        <Image src={viberImg} alt="Написать в viber" />
+        Viber
       </button>
     </div>
   </div>
@@ -93,6 +93,10 @@
     gap: 23px;
     align-items: center;
     margin-top: 30vh;
+  }
+
+  h2 {
+    color: whitesmoke;
   }
 </style>
 

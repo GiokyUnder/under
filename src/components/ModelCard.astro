@@ -1,0 +1,218 @@
+---
+const { name, price, age, height, id } = Astro.props;
+
+import Image from "astro/components/Image.astro";
+import AboutImg from "../assets/img/about-red.jpg";
+console.log("id", id);
+---
+
+<div role="listitem" class="w-dyn-item">
+  <div class="shop-item-wrapper">
+    <a href=`/models/${id}` class="shop-item-link-wrapper w-inline-block">
+      <Image src={AboutImg} alt={""} class="image" />
+    </a>
+    <div class="shop-details-wrapper">
+      <div class="shop-details-left">
+        <div class="shop-item-name">
+          {name}
+        </div>
+        <div class="price-wrapper">
+          <div class="shop-item-price">{`Возраст: ${age}`}</div>
+          <div class="shop-item-price">{`Бюджет: ${price} RUB`}</div>
+          <div
+            class="shop-item-price compare w-condition-invisible w-dyn-bind-empty"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-button-wrapper">
+      <a href=`/models/${id}` class="btn w-button">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .shop-top-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .shop-item-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .image {
+    border-radius: 5px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .shop-details-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .shop-details-left {
+    width: 100%;
+  }
+  .shop-item-name {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .shop-item-price {
+    margin-right: 10px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .shop-item-price.compare {
+    color: #eb5757;
+    text-decoration: line-through;
+  }
+  .shop-local-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .shop-local-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 500px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .shop-local-left {
+    /*     position: absolute;
+    left: 0;
+    top: 6%;
+    right: auto;
+    bottom: 0;
+    width: 30%;
+    height: 0;
+    min-height: 440px;
+    border-radius: 5px;
+    background-image: url(/images/feeling-girl.jpg);
+    background-size: cover; */
+  }
+  .shop-local-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    padding: 45px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    border-radius: 5px;
+    background-color: #222;
+    color: #f9f9f9;
+  }
+  .shop-local-content-wrapper {
+    width: 80%;
+    padding-right: 145px;
+    padding-left: 145px;
+  }
+  .shop-local-heading {
+    margin-top: 0;
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  .price-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px none rgba(34, 34, 34, 0.08);
+  }
+
+  .shop-button-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .shop-item-link-wrapper {
+    width: 100%;
+    text-decoration: none;
+  }
+  .shop-list {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 991px) {
+    .image {
+      height: 350px;
+    }
+    .shop-details-wrapper {
+      font-size: 14px;
+    }
+    .shop-details-left {
+      margin-right: 25px;
+    }
+    .shop-local-left {
+      top: 8%;
+    }
+    .shop-local-content-wrapper {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .shop-item-wrapper {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .shop-details-left {
+      margin-right: 0;
+    }
+    .shop-item-name {
+      text-align: center;
+    }
+    .shop-item-price {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+</style>

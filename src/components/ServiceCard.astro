@@ -2,21 +2,42 @@
 import Image from "astro/components/Image.astro";
 import ArrowImg from "../assets/img/arrow.svg";
 
-const { text, order, path } = Astro.props;
+const { text, order, id } = Astro.props;
 ---
 
 <div class="support-column">
-  <div class="support-square">
-    <div class="support-square-number">{order}</div>
-    <div class="container">
-      <div class="support-square-text">{text}</div>
-      <Image
-        width={60}
-        src={ArrowImg}
-        alt="нажмите чтобы перейти в раздел конкретной услуги"
-      />
+  <a href=`/services/${id}`>
+    <div class="support-square">
+      <div class="support-square-number">{order}</div>
+      <div class="container">
+        <div class="support-square-text">{text}</div>
+        <Image
+          width={60}
+          src={ArrowImg}
+          alt="нажмите чтобы перейти в раздел конкретной услуги"
+        />
+      </div>
+      {
+        order % 2 === 0 ? (
+          <img
+            src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
+            alt="Triangle Decoration in Donate Block"
+            class="support-square-image triangle"
+          />
+        ) : (
+          <img
+            src="/images/5e7ff57a5836db2a07bab0e3_Circle.svg"
+            alt="Circle Decoration in Shop Products Block"
+            class="support-square-image"
+          />
+        )
+      }
     </div>
-  </div>
+  </a>
+  <p>
+    Our full product line is still available online here on our site! Getting
+    outside and hiking is still something you can do. Get your gear now!
+  </p>
 </div>
 
 <style>
@@ -25,16 +46,23 @@ const { text, order, path } = Astro.props;
   }
   .support-square {
     position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     min-height: 350px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    background-color: #e9afaf;
-    /*background-image: var(--image);
-    background-size: cover;
-    background-repeat: no-repeat; */
+    border-radius: 5px;
+    background-color: #222;
   }
   .support-square-number {
     position: absolute;
@@ -65,12 +93,19 @@ const { text, order, path } = Astro.props;
     right: -11%;
     bottom: -17%;
   }
-
+  .support-square-image.rectangle {
+    right: -14%;
+    bottom: -31%;
+  }
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 34px;
     margin-top: 115px;
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>

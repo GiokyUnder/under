@@ -1,6 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { models } from "./data";
+import EmblaCarousel from "embla-carousel";
+import Slider from "../../components/Slider/index.astro";
 
 export async function getStaticPaths() {
   return models;
@@ -11,4 +13,6 @@ const { name, price, height, about, age, img } = Astro.props;
 
 <Layout>
   <h1>Current Page Model</h1>
+
+  <Slider />
 </Layout>

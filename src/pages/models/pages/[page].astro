@@ -3,6 +3,7 @@ import { models } from "../data";
 import Layout from "../../../layouts/Layout.astro";
 import ModelCard from "../../../components/ModelCard.astro";
 import PaginationButtons from "../../../components/PaginationButtons.astro";
+import PageTitle from "../../../components/PageTitle.astro";
 
 export async function getStaticPaths({ paginate }) {
   return paginate(models, { pageSize: 6 });
@@ -20,11 +21,8 @@ const { page } = Astro.props;
   <title slot="title">
     Элитные эскортницы Москвы | Эскорт девушки VIP модели
   </title>
-  <div class="page-title-section">
-    <div class="container">
-      <h1 class="page-title">Элитные эскортницы</h1>
-    </div>
-  </div>
+
+  <PageTitle>Элитные эскортницы</PageTitle>
 
   <div class="content-section">
     <div class="container">
@@ -190,21 +188,12 @@ const { page } = Astro.props;
     box-shadow: 0 0 2px 0 #eb5757;
   }
 
-  .page-title-section {
-    padding-top: 8px;
-    padding-bottom: 18px;
-    background-color: #222;
-    color: #f9f9f9;
-  }
   .container {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-  }
-  .page-title {
-    margin-top: 10px;
   }
 
   .shop-item-wrapper {

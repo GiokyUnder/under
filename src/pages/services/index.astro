@@ -1,91 +1,16 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import ServiceCard from "../../components/ServiceCard.astro";
-
-const servicesData = [
-  {
-    id: 1,
-    text: "Девушки на корпоратив",
-    path: "",
-  },
-  {
-    id: 2,
-    text: "Романтические встречи",
-    path: "",
-  },
-  {
-    id: 3,
-    text: "Модели для частных мероприятий",
-    path: "",
-  },
-  {
-    id: 4,
-    text: "Эскорт сопровождение в поездках заграницу",
-    path: "",
-  },
-  {
-    id: 5,
-    text: "Эскорт сопровождение (в рестораны, музеи, театры и т.д.)",
-    path: "",
-  },
-  {
-    id: 6,
-    text: "Промо девушки на выставку",
-    path: "",
-  },
-
-  {
-    id: 7,
-    text: "Модели для вечеринок",
-    path: "",
-  },
-  {
-    id: 8,
-    text: "Девушки-хостес на мероприятие",
-    path: "",
-  },
-  {
-    id: 9,
-    text: "Девушки для съемок",
-    path: "",
-  },
-  {
-    id: 10,
-    text: "Трансферы (Трансфер с личным водителем и девушками моделями)",
-    path: "",
-  },
-  {
-    id: 11,
-    text: "Ужин с элитной моделью",
-    path: "",
-  },
-  {
-    id: 12,
-    text: "Девушки для мальчишника",
-    path: "",
-  },
-  { id: 13, text: "Эскорт без интима", path: "" },
-  { id: 14, text: "Бизнес поездка", path: "" },
-  {
-    id: 15,
-    text: "Эскорт для пар	",
-    path: "",
-  },
-];
+import { services } from "./data";
 ---
 
 <Layout>
   <h1 class="title">Услуги</h1>
 
   {
-    servicesData.map((service, index) => (
+    services.map(({ params: { id }, props: { h1 } }, index) => (
       <div class="service-card">
-        <ServiceCard
-          text={service.text}
-          path={service.path}
-          order={service.id}
-          id={service.id}
-        />
+        <ServiceCard text={h1} id={id} order={index + 1} />
       </div>
     ))
   }

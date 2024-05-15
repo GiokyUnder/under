@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { services } from "./data";
+import PageTitle from "../../components/PageTitle.astro";
 
 export async function getStaticPaths() {
   return services;
@@ -13,5 +14,5 @@ const { h1, title, content } = Astro.props;
   <meta slot="description" name="description" content={content} />
   <title slot="title">{title}</title>
 
-  <h1>{h1}</h1>
+  <PageTitle>{h1}</PageTitle>
 </Layout>

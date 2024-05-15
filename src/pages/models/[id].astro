@@ -1,18 +1,31 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { models } from "./data";
-import EmblaCarousel from "embla-carousel";
 import Slider from "../../components/Slider/index.astro";
+import PageTitle from "../../components/PageTitle.astro";
+
+import { models } from "./data";
 
 export async function getStaticPaths() {
   return models;
 }
 
 const { name, price, height, about, age, img } = Astro.props;
+
+const pluralRules = new Intl.PluralRules("ru-RU");
+const forms = {
+  one: "год",
+  few: "года",
+  many: "лет",
+  other: "лет",
+};
+
+const pluralForm = pluralRules.select(Number(age));
+
+const modelAge = `${age} ${forms[pluralForm]}`;
 ---
 
 <Layout>
-  <h1>Current Page Model</h1>
+  <PageTitle>{`${name}, ${modelAge}`}</PageTitle>
 
   <Slider />
 </Layout>

@@ -105,13 +105,16 @@ import viberImg from "../assets/img/viber.svg";
     const openButton = document.querySelector(".open-button");
     const closeButton = document.querySelector(".button-close");
     const overlay = document.querySelector(".overlay");
+    const body = document.querySelector("body");
 
     openButton?.addEventListener("click", () => {
       overlay?.classList.add("active");
+      body.style.overflow = "hidden";
     });
 
     closeButton?.addEventListener("click", () => {
       overlay?.classList.remove("active");
+      body.style.overflow = "";
     });
   });
 </script>

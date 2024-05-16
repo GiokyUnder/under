@@ -20,8 +20,8 @@ import viberImg from "../assets/img/viber.svg";
     </button>
 
     <div class="messangers">
-      <h2>Написать нам</h2>
-      <button class="button-text">
+      <h2>Напишите нам</h2>
+      <button class="button-text telegram">
         <Image src={telegramImg} alt="Написать в telegram" />
         Telegram
       </button>
@@ -29,8 +29,8 @@ import viberImg from "../assets/img/viber.svg";
         <Image src={whatsAppImg} alt="Написать в whatsapp" />
         Whatsapp
       </button>
-      <button class="button-text">
-        <Image src={viberImg} alt="Написать в viber" />
+      <button class="button-text viber">
+        <Image src={viberImg} alt="Написать в viber" class="viber-icon" />
         Viber
       </button>
     </div>
@@ -97,6 +97,17 @@ import viberImg from "../assets/img/viber.svg";
 
   h2 {
     color: whitesmoke;
+  }
+
+  .telegram {
+    margin-right: 10px;
+  }
+
+  .viber {
+    margin-right: 55px;
+  }
+  .viber-icon {
+    width: 40px;
   }
 </style>
 

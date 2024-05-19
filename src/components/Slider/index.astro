@@ -2,6 +2,8 @@
 import "./css/base.css";
 import "./css/embla.css";
 import SlideItem from "./SlideItem.astro";
+
+const { price, height, about, weight } = Astro.props;
 ---
 
 <div lang="en" class="theme-light">
@@ -15,7 +17,11 @@ import SlideItem from "./SlideItem.astro";
         <SlideItem />
       </div>
     </div>
-
+    <div class="info">
+      <div>Бюджет: от {price} RUB</div>
+      <div>Рост: {height}</div>
+      <div>Вес: {weight}</div>
+    </div>
     <div class="embla__controls">
       <div class="embla__buttons">
         <button class="embla__button embla__button--prev" type="button">
@@ -72,3 +78,12 @@ import SlideItem from "./SlideItem.astro";
     emblaApi.on("destroy", removeDotBtnsAndClickHandlers);
   });
 </script>
+
+<style>
+  .info {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-top: 21px;
+  }
+</style>

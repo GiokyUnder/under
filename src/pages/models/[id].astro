@@ -30,7 +30,10 @@ const modelAge = `${age} ${forms[pluralForm]}`;
   <Slider price={price} height={height} weight={weight} />
 
   <div class="container">
-    <button class="btn w-button meet-btn">Организовать встречу</button>
+    <button class="btn w-button model-btn">Организовать встречу</button>
+    <a href="models/1" class="btn w-button model-btn models-catalog"
+      >Перейти в каталог моделей</a
+    >
   </div>
 </Layout>
 
@@ -38,9 +41,18 @@ const modelAge = `${age} ${forms[pluralForm]}`;
   .container {
     margin-top: 20px;
   }
-  .meet-btn {
+
+  .model-btn {
     width: 100%;
     text-align: center;
     padding: 15px;
+    border-radius: 0px;
+  }
+
+  .models-catalog {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: #ce4c4c;
   }
 </style>

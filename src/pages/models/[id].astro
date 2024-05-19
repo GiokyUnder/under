@@ -28,4 +28,19 @@ const modelAge = `${age} ${forms[pluralForm]}`;
   <PageTitle>{`${name}, ${modelAge}`}</PageTitle>
 
   <Slider price={price} height={height} weight={weight} />
+
+  <div class="container">
+    <button class="btn w-button meet-btn">Организовать встречу</button>
+  </div>
 </Layout>
+
+<style>
+  .container {
+    margin-top: 20px;
+  }
+  .meet-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+</style>

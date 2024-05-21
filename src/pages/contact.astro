@@ -1,5 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+
+import IconTelegram from "../assets/img/telegram.svg";
+import IconViber from "../assets/img/viber.svg";
+import IconWhatsapp from "../assets/img/whatsapp.svg";
+import ChatIcon from "../assets/img/chat-alt.svg";
 ---
 
 <Layout>
@@ -15,34 +21,34 @@ import Layout from "../layouts/Layout.astro";
         <h1 class="heading">Контакты</h1>
         <div class="contact-block-wrapper">
           <div class="contact-block">
-            <img
-              src="/images/5e84ba313e8232516a7da902_chat-alt.svg"
-              alt=""
-              class="contact-icon"
-            />
-            <h2>Contact Us</h2>
-            <p>
-              Just want to say hi?�&nbsp;We'd love to hear from you. We love our
-              customers and community!�&nbsp;
-            </p>
-            <a href="#contact" class="btn w-button">Send Us A Message</a>
-          </div>
-          <div class="contact-block">
-            <img
-              src="/images/5e850414db1f6ebfba8bc42d_chat-warning.svg"
-              alt="qwewqewq"
-              class="contact-icon"
-            />
-            <h2>Get Support</h2>
-            <p>
-              Have an issue with an order or with a product you purchased from
-              us?�&nbsp;Fill out our support form.
-            </p>
-            <a
-              href="https://university.webflow.com/support"
-              target="_blank"
-              class="btn w-button">Contact Support</a
-            >
+            <Image src={ChatIcon} alt="напишите нам" class="contact-icon" />
+
+            <h2>Связаться с нами</h2>
+            <p>Мы будем рады услышать вас. Мы вас любим!</p>
+
+            <div class="icon-container">
+              <a
+                href="https://api.whatsapp.com/send?phone=79202565656"
+                class="btn w-button"
+              >
+                <Image src={IconWhatsapp} alt="написать в whatsapp" />
+                Whatsapp
+              </a>
+
+              <a href="tg://resolve?domain=@qwe" class="btn w-button">
+                <Image src={IconTelegram} alt="написать в telegram" />
+                Telegram
+              </a>
+
+              <a href="https://viber.click/79202565656" class="btn w-button">
+                <Image
+                  class="viber-icon"
+                  src={IconViber}
+                  alt="написать в viber"
+                />
+                Viber</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -52,7 +58,7 @@ import Layout from "../layouts/Layout.astro";
   <div id="contact" class="content-section">
     <div class="container">
       <div class="contact-wrapper">
-        <div class="contact-left">
+        <!--    <div class="contact-left">
           <h2>Contact Us</h2>
           <div class="w-richtext">
             <p>
@@ -63,10 +69,10 @@ import Layout from "../layouts/Layout.astro";
               /><strong>Customer Support:</strong>�&nbsp;(405) 555-5556
             </p>
           </div>
-        </div>
+        </div> -->
         <div class="contact-right">
-          <h2>Contact Form</h2>
-          <p>Send us a message and we'll get back to you as soon as we can!</p>
+          <h2>Обратная связь</h2>
+          <p>Отправьте нам сообщение, если у вас остались вопросы!</p>
           <div class="w-form">
             <form
               id="email-form"
@@ -76,45 +82,37 @@ import Layout from "../layouts/Layout.astro";
               data-wf-page-id="5e84fa102a9eae9dcc4627da"
               data-wf-element-id="fe567e25-f54e-e832-b312-e1ed2dc1cad8"
             >
-              <label for="name">Name</label><input
+              <label for="name">Имя</label><input
                 class="input w-input"
                 maxlength="256"
                 name="name"
                 data-name="Name"
-                placeholder="Enter your name"
+                placeholder="Введите имя"
                 type="text"
                 id="name"
-              /><label for="email">Email Address</label><input
+              /><label for="email">Почта</label><input
                 class="input w-input"
                 maxlength="256"
                 name="email"
                 data-name="Email"
-                placeholder="Enter your email address"
+                placeholder="Введите адрес электронной почты"
                 type="email"
                 id="email"
                 required=""
-              /><label for="Message">Your Message</label><textarea
-                placeholder="Enter your message"
+              /><label for="Message">Ваше сообщение</label><textarea
+                placeholder="Введите сообщение"
                 maxlength="5000"
                 id="Message"
                 name="Message"
                 data-name="Message"
-                class="input w-input"></textarea><input
+                class="input w-input"></textarea>
+              <input
                 type="submit"
                 data-wait="Please wait..."
                 class="btn w-button"
-                value="Submit"
+                value="Отправить"
               />
             </form>
-            <div class="success w-form-done">
-              <div>
-                Thank you! Your submission has been received! We'll be in touch
-                soon!
-              </div>
-            </div>
-            <div class="error w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div>
           </div>
         </div>
       </div>
@@ -305,36 +303,6 @@ import Layout from "../layouts/Layout.astro";
   }
   .hero-section {
     min-height: 550px;
-    /* background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        from(#222),
-        to(rgba(34, 34, 34, 0))
-      ),
-      url(/images/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-      url(/images/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
-    background-position:
-      0 0,
-      50% 50%;
-    background-size: auto, cover; */
-  }
-  .hero-section.contact-hero {
-    /*  background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        from(#222),
-        to(rgba(34, 34, 34, 0))
-      ),
-      url(/images/5e84f74f40a146d432ac3598_adam-solomon-WHUDOzd5IYU-unsplash%20%281%29%20%281%29.jpg);
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-      url(/images/5e84f74f40a146d432ac3598_adam-solomon-WHUDOzd5IYU-unsplash%20%281%29%20%281%29.jpg);
-    background-position:
-      0 0,
-      50% 50%;
-    background-size: auto, cover; */
   }
 
   .content-section {
@@ -361,6 +329,13 @@ import Layout from "../layouts/Layout.astro";
     width: 70%;
     padding-left: 20px;
   }
+
+  @media screen and (min-width: 992px) {
+    .contact-right {
+      margin-top: 140px;
+    }
+  }
+
   .contact-hero-section {
     padding-top: 0;
     padding-bottom: 0;
@@ -388,9 +363,9 @@ import Layout from "../layouts/Layout.astro";
         from(#222),
         color-stop(76%, rgba(34, 34, 34, 0.18))
       ),
-      url(/images/contacts.jpg);
+      url(/src/assets/img/contacts.jpg);
     background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%),
-      url(/images/contacts.jpg);
+      url(/src/assets/img/contacts.jpg);
     background-position:
       0 0,
       50% 50%;
@@ -490,9 +465,9 @@ import Layout from "../layouts/Layout.astro";
           from(#222),
           color-stop(76%, rgba(34, 34, 34, 0.18))
         ),
-        url(/images/contacts.jpg);
+        url(/src/assets/img/contacts.jpg);
       background-image: linear-gradient(0deg, #222, rgba(34, 34, 34, 0.18) 76%),
-        url(/images/contacts.jpg);
+        url(/src/assets/img/contacts.jpg);
       background-position:
         0 0,
         50% 35%;
@@ -508,6 +483,7 @@ import Layout from "../layouts/Layout.astro";
     .contact-block {
       width: 48%;
       margin-right: 0;
+      background-color: #f5f2f2;
     }
   }
   @media screen and (max-width: 767px) {
@@ -534,5 +510,15 @@ import Layout from "../layouts/Layout.astro";
         0 0,
         50% 50%;
     }
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .viber-icon {
+    max-width: 30%;
   }
 </style>

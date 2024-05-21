@@ -12,7 +12,7 @@
       </div>
       <nav class="nav-footer">
         <a href="/" class="nav-link w-nav-link w--current">Главная</a>
-        <!-- <a href="/products" class="nav-link w-nav-link">Модели</a>
+        <a href="/products" class="nav-link w-nav-link">Модели</a>
         <a href="/contact" class="nav-link w-nav-link">Контакты</a>
         <a href="/services" class="nav-link w-nav-link">Услуги</a>
         <a href="/about" class="nav-link w-nav-link">О нас</a>
@@ -21,157 +21,156 @@
         <a href="/history" class="nav-link w-nav-link">Истории</a>
         <a href="/terms" class="nav-link w-nav-link">Условия</a>
         <a href="/questions" class="nav-link w-nav-link">Вопросы и ответы</a>
-      </nav> -->
       </nav>
-      <!-- <div>
-        <a
-          href="https://twitter.com/webflow"
-          target="_blank"
-          class="social-footer-link w-inline-block"
-          ><img
-            src="/images/5e8407a25b6234aeec960fb9_Twitter_Social_Icon_Rounded_Square_White.svg"
-            width="30"
-            alt="Twitter Logo"
-          /></a
-        ><a
-          href="https://www.facebook.com/webflow"
-          class="social-footer-link w-inline-block"
-          ><img
-            src="/images/5e8407aa3fb6cf5576f1658b_Facebook%20Logo.svg"
-            width="30"
-            alt="Facebook Logo"
-          /></a
-        ><a
-          href="https://www.instagram.com/webflow/"
-          target="_blank"
-          class="social-footer-link w-inline-block"
-          ><img
-            src="/images/5e840774014326b74bbeeeb6_Insta.svg"
-            width="30"
-            alt="Instagram Logo"
-          /></a
-        >
-      </div> -->
     </div>
-    <div class="footer-bottom-wrapper">
-      <a href="/privacy-policy" class="politic">Политика конфидициальности</a>
-      <div class="small footer-small">
-        Сделано с <a
-          href="https://ru.wikipedia.org/wiki/%D0%9B%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C"
-          target="_blank">Любовью</a
-        >. © 2024.
-      </div>
+    <div>
+      <a
+        href="https://twitter.com/webflow"
+        target="_blank"
+        class="social-footer-link w-inline-block"
+        ><img
+          src="/images/5e8407a25b6234aeec960fb9_Twitter_Social_Icon_Rounded_Square_White.svg"
+          width="30"
+          alt="Twitter Logo"
+        /></a
+      ><a
+        href="https://www.facebook.com/webflow"
+        class="social-footer-link w-inline-block"
+        ><img
+          src="/images/5e8407aa3fb6cf5576f1658b_Facebook%20Logo.svg"
+          width="30"
+          alt="Facebook Logo"
+        /></a
+      ><a
+        href="https://www.instagram.com/webflow/"
+        target="_blank"
+        class="social-footer-link w-inline-block"
+        ><img
+          src="/images/5e840774014326b74bbeeeb6_Insta.svg"
+          width="30"
+          alt="Instagram Logo"
+        /></a
+      >
     </div>
   </div>
+  <div class="footer-bottom-wrapper">
+    <a href="/privacy-policy" class="politic">Политика конфидициальности</a>
+    <div class="small footer-small">
+      Сделано с <a
+        href="https://ru.wikipedia.org/wiki/%D0%9B%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C"
+        target="_blank">Любовью</a
+      >. © 2024.
+    </div>
+  </div>
+</footer>
 
-  <style>
-    [class*=" w-icon-"],
-    [class^="w-icon-"] {
-      font-family: webflow-icons !important;
-      font-style: normal;
-      font-weight: 400;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+<style>
+  [class*=" w-icon-"],
+  [class^="w-icon-"] {
+    font-family: webflow-icons !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-    .small {
-      margin-bottom: 10px;
-      font-size: 10px;
-    }
-    .small.footer-small {
-      font-size: 12px;
-    }
+  .small {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .small.footer-small {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .footer {
+    padding-top: 65px;
+    padding-bottom: 10px;
+    background-color: #222;
+  }
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .social-footer-link {
+    margin-left: 20px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .social-footer-link:hover {
+    opacity: 0.7;
+  }
+  .footer-bottom-wrapper {
+    margin-top: 55px;
+    color: #f9f9f9;
+    text-align: center;
+  }
+  @media screen and (max-width: 991px) {
     .container {
-      max-width: 1200px;
-      margin-right: auto;
-      margin-left: auto;
       padding-right: 15px;
       padding-left: 15px;
     }
-    .footer {
-      padding-top: 65px;
-      padding-bottom: 10px;
-      background-color: #222;
-    }
+  }
+  @media screen and (max-width: 479px) {
     .footer-wrapper {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-    .social-footer-link {
-      margin-left: 20px;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-    .social-footer-link:hover {
-      opacity: 0.7;
-    }
-    .footer-bottom-wrapper {
-      margin-top: 55px;
-      color: #f9f9f9;
-      text-align: center;
-    }
-    @media screen and (max-width: 991px) {
-      .container {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-    }
-    @media screen and (max-width: 479px) {
-      .footer-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-      }
-
-      .social-footer-link {
-        margin-right: 25px;
-        margin-left: 25px;
-      }
-    }
-    .logo-link {
-      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
-      align-items: center;
-      text-decoration: none;
     }
 
-    .footer-logo-column a {
-      color: #f9f9f9;
+    .social-footer-link {
+      margin-right: 25px;
+      margin-left: 25px;
     }
+  }
+  .logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
 
-    .nav-footer {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin-top: 20px;
-    }
+  .footer-logo-column a {
+    color: #f9f9f9;
+  }
 
-    .nav-footer a {
-      text-decoration: none;
-      display: block;
-    }
+  .nav-footer {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
 
-    .politic {
-      display: block;
-      text-decoration: none;
-      color: #f9f9f9;
-      margin-bottom: 10px;
-    }
-  </style>
-</footer>
+  .nav-footer a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .politic {
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+import { models } from "../../data";
+import ModelsPage from "../../../../components/ModelsPage.astro";
+
+export async function getStaticPaths({ paginate }) {
+  return paginate(models, { pageSize: 6 });
+}
+
+const { page } = Astro.props;
+---
+
+<ModelsPage
+  page={page}
+  pageTitle="Азиатки в Москве"
+  titleMetaTag="Азиатки эскортницы в Москве | Aurora Escort"
+  descriptionMetaTag="Заказывайте азиаток эскортниц от агентства Aurora Escort в Москве. Полная анонимность! Эскортницы VIP класса, привлекательные девушки."
+/>

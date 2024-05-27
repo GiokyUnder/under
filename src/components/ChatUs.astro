@@ -6,7 +6,7 @@ import viberImg from "../assets/img/viber.svg";
 ---
 
 <div>
-  <button class="open-button">
+  <button class="open-chat-us-button">
     <slot />
   </button>
 
@@ -113,14 +113,16 @@ import viberImg from "../assets/img/viber.svg";
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const openButton = document.querySelector(".open-button");
+    const openButtons = document.querySelectorAll(".open-chat-us-button");
     const closeButton = document.querySelector(".button-close");
     const overlay = document.querySelector(".overlay");
     const body = document.querySelector("body");
 
-    openButton?.addEventListener("click", () => {
-      overlay?.classList.add("active");
-      body.style.overflow = "hidden";
+    openButtons.forEach((btn) => {
+      btn?.addEventListener("click", () => {
+        overlay?.classList.add("active");
+        body.style.overflow = "hidden";
+      });
     });
 
     closeButton?.addEventListener("click", () => {

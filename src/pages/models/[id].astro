@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Slider from "../../components/Slider/index.astro";
 import PageTitle from "../../components/PageTitle.astro";
+import ChatUs from "../../components/ChatUs.astro";
 
 import { models } from "./data";
 
@@ -30,7 +31,9 @@ const modelAge = `${age} ${forms[pluralForm]}`;
   <Slider price={price} height={height} weight={weight} />
 
   <div class="container">
-    <button class="btn w-button model-btn">Организовать встречу</button>
+    <ChatUs>
+      <div class="chat-button-content">Организовать встречу</div>
+    </ChatUs>
     <a href="pages/1" class="btn w-button model-btn models-catalog"
       >Перейти в каталог моделей</a
     >
@@ -54,5 +57,14 @@ const modelAge = `${age} ${forms[pluralForm]}`;
     margin-bottom: 15px;
     background-color: white;
     color: #ce4c4c;
+  }
+
+  .chat-button-content {
+    width: 100vw;
+    text-align: center;
+    padding: 15px;
+    background-color: #eb5757;
+    color: white;
+    font-weight: bold;
   }
 </style>

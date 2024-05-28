@@ -2,17 +2,59 @@
 import Layout from "../../layouts/Layout.astro";
 import { services } from "./data";
 import PageTitle from "../../components/PageTitle.astro";
+import GirlsCorporateParty from "./contents/girlsCorporateParty.astro";
+import DinnerGirls from "./contents/dinnerGirls.astro";
+import Hangovers from "./contents/hangovers.astro";
+import WithoutIntimacy from "./contents/withoutIntimacy.astro";
+import Trips from "./contents/trips.astro";
+import AbroadTrips from "./contents/adroadTrips.astro";
+import Exhibition from "./contents/exhibition.astro";
+import Promo from "./contents/promo.astro";
+import Party from "./contents/party.astro";
+import Hostes from "./contents/hostes.astro";
+import Filming from "./contents/filming.astro";
+import Transfer from "./contents/transfer.astro";
+import Pair from "./contents/pair.astro";
 
 export async function getStaticPaths() {
   return services;
 }
 
 const { h1, title, content } = Astro.props;
+const { id } = Astro.params;
+
+const contentMap = {
+  1: GirlsCorporateParty,
+  3: Exhibition,
+  4: AbroadTrips,
+  6: Promo,
+  7: Party,
+  8: Hostes,
+  9: Filming,
+  10: Transfer,
+  11: DinnerGirls,
+  12: Hangovers,
+  13: WithoutIntimacy,
+  14: Trips,
+  15: Pair,
+};
+
+const CurentContent = contentMap[id];
 ---
 
 <Layout>
   <meta slot="description" name="description" content={content} />
   <title slot="title">{title}</title>
 
-  <PageTitle>{h1}</PageTitle>
+  <PageTitle>{h1} </PageTitle>
+  <div class="container-content">
+    <CurentContent />
+  </div>
 </Layout>
+
+<style>
+  .container-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+</style>

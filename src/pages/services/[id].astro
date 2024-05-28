@@ -25,8 +25,10 @@ const { id } = Astro.params;
 
 const contentMap = {
   1: GirlsCorporateParty,
+  2: Exhibition,
   3: Exhibition,
   4: AbroadTrips,
+  5: Exhibition,
   6: Promo,
   7: Party,
   8: Hostes,
@@ -39,7 +41,7 @@ const contentMap = {
   15: Pair,
 };
 
-const CurentContent = contentMap[id];
+const CurentContent = contentMap[id] || null;
 ---
 
 <Layout>

@@ -131,7 +131,7 @@ import ChatUs from "../components/ChatUs.astro";
       </p>
       <hr class="line" />
       <div class="support-top-left">
-        <h2 class="support-top-heading">Услуги нашего агенства.</h2>
+        <h2 class="support-top-heading agency">Услуги нашего агенства.</h2>
       </div>
       <div class="support-top-details-text">
         Наше агентство не предоставляет интимные услуги.
@@ -278,6 +278,7 @@ import ChatUs from "../components/ChatUs.astro";
             <div class="btn dark w-button">Связаться с менеджером</div>
           </div>
         </ChatUs>
+      
       </div>
       <div class="support-column">
         <div class="support-square">
@@ -296,9 +297,12 @@ import ChatUs from "../components/ChatUs.astro";
           женщину-хостес или для ужина. В столице снять девушку конечно намного
           дороже, чем в других городах.
           <div class="shop-more link-section">
-            <a href="/models/pages/1" class="btn dark w-button">Перейти в каталог моделей</a>
+            <a href="/models/pages/1" class="btn dark w-button"
+              >Перейти в каталог моделей</a
+            >
           </div>
         </p>
+        <hr />
       </div>
     </div>
     <h2 class="support-top-heading models-header">
@@ -500,22 +504,7 @@ import ChatUs from "../components/ChatUs.astro";
       50% 50%;
     background-size: auto, cover;
   }
-  /*   .hero-section.about-hero {
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        from(#222),
-        to(rgba(34, 34, 34, 0))
-      ),
-      url(/images/5e840df8e2c9cc7677e4f00e_felix-rostig-UmV2wr-Vbq8-unsplash.jpg);
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-      url(/images/5e840df8e2c9cc7677e4f00e_felix-rostig-UmV2wr-Vbq8-unsplash.jpg);
-    background-position:
-      0 0,
-      50% 60%;
-    background-size: auto, cover;
-  } */
+
   .hero-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -808,7 +797,6 @@ import ChatUs from "../components/ChatUs.astro";
     width: 80%;
     padding-right: 145px;
     padding-left: 145px;
-    
   }
   .shop-local-heading {
     margin-top: 0;
@@ -1258,5 +1246,8 @@ import ChatUs from "../components/ChatUs.astro";
     background-color: #000;
     border-radius: 50%;
     margin-right: 10px;
+  }
+  .agency {
+    margin-top: 30px;
   }
 </style>

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ChatUs from "../components/ChatUs.astro";
 ---
 
 <Layout>
@@ -15,13 +16,15 @@ import Layout from "../layouts/Layout.astro";
         <div>
           <h1 class="hero-heading anout-hero-heading">О нас</h1>
           <p class="hero-paragraph">
-            Acme Outdoors has everything you need to help you get started today.
-            Check out our wonderful collection of gear that will make your next
-            adventure complete.
+            Aurora — это высококлассное эскорт-агентство, базирующееся в Москве,
+            которое предлагает эксклюзивные и персонализированные эскорт-услуги
+            высокого класса.
           </p>
-          <div class="hero-button-wrapper">
-            <a href="/shop" class="btn light outline w-button">Shop Merch</a>
-          </div>
+          <ChatUs>
+            <div class="hero-button-wrapper">
+              <div class="btn light outline w-button">Организовать эскорт</div>
+            </div>
+          </ChatUs>
         </div>
       </div>
     </div>
@@ -31,11 +34,14 @@ import Layout from "../layouts/Layout.astro";
     <div class="container">
       <div class="about-top-block">
         <div class="why-acme-block">
-          <div class="why-acme-small-text">Why Acme Outdoors?</div>
-          <h2 class="why-acme-heading">We’re the best in the business.</h2>
+          <div class="why-acme-small-text">Почему Aurora Escort?</div>
+          <h2 class="why-acme-heading">
+            Мы для тех, кто требует только самого лучшего
+          </h2>
           <p class="why-acme-paragraph">
-            From more than 30 years, we’ve been leading the way across Oklahoma
-            — creating the best possible customer experience since 1989.
+            Наши эксклюзивные топ-модели – самые эффектные, сексуальные и
+            чувственные девушки, и все они знают, чего на самом деле хочет
+            мужчина.
           </p>
         </div>
       </div>
@@ -50,84 +56,50 @@ import Layout from "../layouts/Layout.astro";
             alt="Warranty Icon"
             class="image"
           />
-          <h3>Lifetime Warranty</h3>
-          <p>
-            All our products — whether we make them or not — are backed by our
-            lifetime warranty.
-          </p>
+          <h3>Высокий уровень сервиса</h3>
+          <p>Индивидуальный подход, удовлетворение всех пожеланий клиента.</p>
         </div>
         <div class="about-column">
           <img
-            src="/images/5e84ba18359d4c7fc8ba04d2_cart.svg"
-            alt="Shopping Cart Icon"
-            class="image"
-          /> 
-          <h3>Shopping Experience</h3>
-          <p>
-            All our products — whether we make them or not — are backed by our
-            lifetime warranty.
-          </p>
-        </div>
-        <div class="about-column">
-          <img
-            src="/images/5e84ba26d07102b2bcc7e4fb_transport.svg"
-            alt="Delivery Icon"
+            src="/images/5e84b9ccd071025d67c7e431_verified.svg"
+            alt="Warranty Icon"
             class="image"
           />
-          <h3>On-time Delivery</h3>
+          <h3>Эстетическое наслаждение</h3>
           <p>
-            All our products — whether we make them or not — are backed by our
-            lifetime warranty.
+            Привлекательные и сексуальные девушки создают атмосферу роскоши и
+            эксклюзивности
           </p>
         </div>
         <div class="about-column">
           <img
-            src="/images/5e84ba313e8232516a7da902_chat-alt.svg"
-            alt="Service Icon"
+            src="/images/5e84b9ccd071025d67c7e431_verified.svg"
+            alt="Warranty Icon"
             class="image"
           />
-          <h3>Best in Class Service</h3>
+          <h3>Интеллект и обаяние</h3>
           <p>
-            All our products — whether we make them or not — are backed by our
-            lifetime warranty.
+            Девушки умеют поддержать беседу на разные темы, делая
+            времяпрепровождение приятным.
+          </p>
+        </div>
+        <div class="about-column">
+          <img
+            src="/images/5e84b9ccd071025d67c7e431_verified.svg"
+            alt="Warranty Icon"
+            class="image"
+          />
+          <h3>Конфиденциальность и надежность</h3>
+          <p>
+            Гарантия полной конфиденциальности и профессиональное поведение,
+            обеспечивающее спокойствие клиента.
           </p>
         </div>
       </div>
     </div>
+    <hr />
   </div>
-  <div class="content-section">
-    <div class="container shop-local-container">
-      <div class="content-wrapper">
-        <div class="meet-the-owners-wrapper">
-          <div class="meet-the-owners-left"></div>
-          <div class="meet-the-owners-right">
-            <div class="owners-rich-text w-richtext">
-              <h2>Meet the Owners</h2>
-              <p>
-                John and Jane met on a backpacking adventure in Nepal. John, a
-                former sheep shearer, went on the trip to get some clarity about
-                his next adventures in life. Jane — a Peloton instructor — went
-                on the trip to explore the landscape in Nepal.<br /><br />While
-                on the trip, John and Jane realized that they had one common
-                love — the love for hiking and the love for being outdoors.<br
-                /><br />Returning back to their home state of Oklahoma, John and
-                Jane hatched a plan to launch a retail store centered around
-                their passions.
-                <br /><br />While John handled the sourcing of goods and
-                customer service, Jane focused on the web + e-commerce side of
-                the business, building this website in the best design platform
-                on the web — Webflow!<br /><br />In 1989, John and Jane Doe
-                officially launched Acme Outdoors, the premiere store for
-                outdoor enthusiasts around the state.<br /><br />To this day,
-                John and Jane return to Nepal yearly to ensure that they never
-                forget their roots and where they came from.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="content-section">
     <h3 class="review">Что думают о нас?</h3>
     <div class="container">
@@ -138,11 +110,10 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <h3>Он</h3>
           <p class="owner-bio-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-            imperdiet. Nunc ut sem vitae risus tristique posuere.
+            Я обратился в это агентство, и мой опыт превзошел все ожидания.
+            Девушки невероятно красивые и сексуальные, каждая встреча ощущалась
+            как настоящий праздник. Профессионализм и конфиденциальность на
+            высшем уровне — чувствовал себя комфортно и уверенно.
           </p>
         </div>
         <div class="owner-bio">
@@ -151,11 +122,11 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <h3>Она</h3>
           <p class="owner-bio-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-            imperdiet. Nunc ut sem vitae risus tristique posuere.
+            Работа в этом агентстве — настоящее удовольствие. Здесь ценят
+            красоту, профессионализм, создавая отличные условия для работы. Я
+            всегда чувствую себя в безопасности и могу быть уверена в
+            конфиденциальности. Клиенты у нас уважительные и интересные, а
+            агентство обеспечивает поддержку на каждом этапе.
           </p>
         </div>
       </div>
@@ -164,16 +135,10 @@ import Layout from "../layouts/Layout.astro";
   <div class="hero-section contact-hero">
     <div class="container">
       <div class="hero-wrapper">
-        <h1 class="hero-heading anout-hero-heading">Need Help?</h1>
-        <p class="hero-paragraph">
-          Need help or assistance?�&nbsp;Our team is standing by to make sure
-          you get the help you need. Whether you need to adjust an order or
-          delivery details, we're ready to help!
-        </p>
+        <h1 class="hero-heading anout-hero-heading">Нужна помощь?</h1>
+        <p class="hero-paragraph">Наши команда всегда готова вам помочь!</p>
         <div class="hero-button-wrapper">
-          <a href="/contact" class="btn light outline w-button"
-            >Contact Support</a
-          >
+          <a href="/contact" class="btn light outline w-button">Контакты</a>
         </div>
       </div>
     </div>

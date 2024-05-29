@@ -10,7 +10,7 @@ import { services } from "./data";
   {
     services.map(({ params: { id }, props: { h1 } }, index) => (
       <div class="service-card">
-        <ServiceCard text={h1} id={id} order={index + 1} />
+        <ServiceCard text={h1} id={id} />
       </div>
     ))
   }

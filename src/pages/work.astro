@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PageTitle from "../components/PageTitle.astro";
+import Image from "astro/components/Image.astro";
+
+import GirlImage from "../assets/img/career.webp";
 ---
 
 <Layout>
@@ -12,4 +15,85 @@ import PageTitle from "../components/PageTitle.astro";
   <title slot="title">Отзывы - Aurora Escort</title>
 
   <PageTitle>Вакансии в эскорте</PageTitle>
+  <div class="image-block">
+    <Image src={GirlImage} alt="страница с вакансиями" class="image" />
+  </div>
+
+  <div class="content">
+    <h2>Хотите работать премиум эскортницей?</h2>
+    <p>
+      Вам нравится одеваться элегантно и привлекательно, вы любите жизнь и
+      прикосновение к роскоши, наслаждаетесь путешествиями и интересуетесь
+      культурой?
+    </p>
+
+    <p>
+      Вы говорите по-английски, голландски, французски или на других языках?
+      Чувствуете себя комфортно и умеете адаптироваться в различных социальных
+      ситуациях? Вы образованы, очаровательны и утонченны? Любите приключения и
+      путешествия? У вас превосходная и эффектная внешность?
+    </p>
+
+    <p>
+      Вы цените интеллигентных, уверенных в себе мужчин, стремящихся к успеху –
+      любите флирт и ухаживания? Также вам нравится посещать VIP-мероприятия с
+      состоятельными бизнесменами?
+    </p>
+
+    <h2>Кого и что мы ищем:</h2>
+    <ul>
+      <li>Возраст от 21</li>
+      <li>Отличные навыки общения, свободное владение английским языком</li>
+      <li>Красивая, стильная и также склонная к эротике</li>
+      <li>Абсолютная надежность, пунктуальность и преданность</li>
+    </ul>
+    <h2>Что МЫ можем вам предложить:</h2>
+    <ul>
+      <li>Большая группа постоянных международных клиентов</li>
+      <li>Дополнительные возможности заработка</li>
+      <li>Cостоятельные мужчины, ухоженные и привлекательные</li>
+      <li>Абсолютная конфиденциальность ваших данных и фотографий</li>
+      <li>Идеальное планирование и организация свиданий</li>
+      <li>Полное сопровождение по организации поездок и регистрации</li>
+    </ul>
+  </div>
 </Layout>
+
+<style>
+  .contact-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 350px;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+    margin-right: 0;
+    background-color: #f5f2f2;
+    width: 100%;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .content {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+</style>

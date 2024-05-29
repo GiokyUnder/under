@@ -257,7 +257,7 @@ import ChatUs from "../components/ChatUs.astro";
           проверена их личная информация и профессионализм.
         </p>
         <div class="shop-more link-section">
-          <a href="/about" class="btn dark w-button">Узнать больше</a>
+          <a href="/about" class="btn dark w-button">Узнать больше о нас</a>
         </div>
       </div>
 
@@ -273,10 +273,11 @@ import ChatUs from "../components/ChatUs.astro";
           Заказать услуги эскорта в Москве можно, связавшись с нашими
           менеджерами.
         </p>
-        <div class="shop-more link-section">
-          <a href="/history" class="btn dark w-button">Связаться с менеджером</a
-          >
-        </div>
+        <ChatUs>
+          <div class="shop-more link-section">
+            <div class="btn dark w-button">Связаться с менеджером</div>
+          </div>
+        </ChatUs>
       </div>
       <div class="support-column">
         <div class="support-square">
@@ -295,7 +296,7 @@ import ChatUs from "../components/ChatUs.astro";
           женщину-хостес или для ужина. В столице снять девушку конечно намного
           дороже, чем в других городах.
           <div class="shop-more link-section">
-            <a href="/blog" class="btn dark w-button">Перейти</a>
+            <a href="/models/pages/1" class="btn dark w-button">Перейти в каталог моделей</a>
           </div>
         </p>
       </div>
@@ -551,19 +552,7 @@ import ChatUs from "../components/ChatUs.astro";
     padding-top: 65px;
   }
   .support-top-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     margin-bottom: 40px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
   .support-top-left {
     display: -webkit-box;
@@ -819,6 +808,7 @@ import ChatUs from "../components/ChatUs.astro";
     width: 80%;
     padding-right: 145px;
     padding-left: 145px;
+    
   }
   .shop-local-heading {
     margin-top: 0;

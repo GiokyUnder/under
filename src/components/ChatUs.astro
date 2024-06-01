@@ -21,23 +21,34 @@ import viberImg from "../assets/img/viber.svg";
 
     <div class="messangers">
       <h2>Напишите нам</h2>
-      <button class="button-text telegram">
+      <a
+        href="tg://resolve?domain=@aurora_escort"
+        target="_blank"
+        class="button-text telegram"
+      >
         <Image src={telegramImg} alt="Написать в telegram" />
         Telegram
-      </button>
-      <button class="button-text">
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=447480686013"
+        target="_blank"
+        class="button-text"
+      >
         <Image src={whatsAppImg} alt="Написать в whatsapp" />
         Whatsapp
-      </button>
-      <button class="button-text viber">
+      </a>
+      <!--  <a  class="button-text viber">
         <Image src={viberImg} alt="Написать в viber" class="viber-icon" />
         Viber
-      </button>
+      </a> -->
     </div>
   </div>
 </div>
 
 <style>
+  a {
+    text-decoration: none;
+  }
   .nav-menu {
     width: 100vw;
     height: 100vh;

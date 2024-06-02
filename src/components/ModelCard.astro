@@ -1,14 +1,13 @@
 ---
-const { name, price, age, height, id } = Astro.props;
-
 import Image from "astro/components/Image.astro";
-import AboutImg from "../assets/img/about-red.jpg";
+
+const { name, price, age, height, id, images } = Astro.props;
 ---
 
 <div role="listitem" class="w-dyn-item">
   <div class="shop-item-wrapper">
     <a href=`/models/${id}` class="shop-item-link-wrapper w-inline-block">
-      <Image src={AboutImg} alt={""} class="image" />
+      <Image src={images[0]} alt={""} class="image" />
     </a>
     <div class="shop-details-wrapper">
       <div class="shop-details-left">
@@ -180,7 +179,7 @@ import AboutImg from "../assets/img/about-red.jpg";
 
   @media screen and (max-width: 991px) {
     .image {
-      height: 350px;
+      height: 500px;
     }
     .shop-details-wrapper {
       font-size: 14px;

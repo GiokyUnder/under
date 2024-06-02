@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   return models;
 }
 
-const { name, price, height, about, age, img, weight } = Astro.props;
+const { name, price, height, about, age, images, weight } = Astro.props;
 
 const pluralRules = new Intl.PluralRules("ru-RU");
 const forms = {
@@ -28,7 +28,7 @@ const modelAge = `${age} ${forms[pluralForm]}`;
 <Layout>
   <PageTitle>{`${name}, ${modelAge}`}</PageTitle>
 
-  <Slider price={price} height={height} weight={weight} />
+  <Slider price={price} height={height} weight={weight} images={images} />
 
   <div class="container">
     <ChatUs>

@@ -1,15 +1,34 @@
 import aboutImg from "../../assets/img/about-red.jpg";
+import blondeImage1 from "../../assets/img/blondes/blonde1-1.webp";
+import blondeImage2 from "../../assets/img/blondes/blonde1-2.webp";
+import blondeImage3 from "../../assets/img/blondes/blonde1-3.webp";
+import blondeImage4 from "../../assets/img/blondes/blond2-1.webp";
+import blondeImage5 from "../../assets/img/blondes/blond2-2.webp";
+import blondeImage6 from "../../assets/img/blondes/blond2-3.webp";
+import blondeImage7 from "../../assets/img/blondes/blond3-1.webp";
+import blondeImage8 from "../../assets/img/blondes/blond3-2.webp";
+import blondeImage9 from "../../assets/img/blondes/blond4-1.webp";
+import blondeImage10 from "../../assets/img/blondes/blond4-2.webp";
+import blondeImage11 from "../../assets/img/blondes/blond4-3.webp";
+import blondeImage12 from "../../assets/img/blondes/blond4-5.webp";
+import blondeImage13 from "../../assets/img/blondes/blond5-1.webp";
+import blondeImage14 from "../../assets/img/blondes/blond6-1.webp";
+import blondeImage15 from "../../assets/img/blondes/blond6-2.webp";
+import blondeImage16 from "../../assets/img/blondes/blond6-3.webp";
+
+import brunetImage1 from "../../assets/img/brunnetes/brunet1-1.webp";
+import brunetImage2 from "../../assets/img/brunnetes/brunet1-3.webp";
 
 export const models = [
   {
     params: { id: 1 },
     props: {
       name: "Аннет",
-      price: "50.000",
+      price: "80.000",
       age: "23",
       height: "172",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage1, blondeImage2, blondeImage3],
       about: "люблю спорт",
     },
   },
@@ -21,7 +40,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage4, blondeImage5, blondeImage6],
       about: "люблю спорт",
     },
   },
@@ -33,7 +52,7 @@ export const models = [
       age: "18",
       height: "165",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage7, blondeImage8],
       about: "люблю спорт",
     },
   },
@@ -45,7 +64,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage9, blondeImage10, blondeImage11, blondeImage12],
       about: "люблю спорт",
     },
   },
@@ -57,7 +76,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage13],
       about: "люблю спорт",
     },
   },
@@ -69,19 +88,19 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [blondeImage14, blondeImage15, blondeImage16],
       about: "люблю спорт",
     },
   },
   {
     params: { id: 7 },
     props: {
-      name: "Ольга",
+      name: "Миа",
       price: "70.000",
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [brunetImage1, brunetImage2],
       about: "люблю спорт",
     },
   },
@@ -93,7 +112,7 @@ export const models = [
       age: "19",
       weight: 55,
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -105,7 +124,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -117,7 +136,7 @@ export const models = [
       age: "19",
       weight: 55,
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -129,7 +148,7 @@ export const models = [
       age: "19",
       weight: 55,
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -141,7 +160,7 @@ export const models = [
       age: "19",
       weight: 55,
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -153,7 +172,7 @@ export const models = [
       age: "19",
       weight: 55,
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -165,7 +184,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -177,7 +196,7 @@ export const models = [
       price: "70.000",
       age: "19",
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -189,7 +208,7 @@ export const models = [
       weight: 55,
       age: "19",
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -201,7 +220,7 @@ export const models = [
       age: "19",
       height: "168",
       weight: 55,
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },
@@ -213,7 +232,7 @@ export const models = [
       weight: 55,
       age: "19",
       height: "168",
-      img: aboutImg,
+      images: [aboutImg],
       about: "люблю спорт",
     },
   },

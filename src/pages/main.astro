@@ -1,6 +1,9 @@
 ---
 import ModelCard from "../components/ModelCard.astro";
 import ChatUs from "../components/ChatUs.astro";
+import modelImage1 from "../assets/img/blondes/blond4-1.webp";
+import modelImage2 from "../assets/img/blondes/blond3-1.webp";
+import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
 ---
 
 <div class="hero-section">
@@ -35,9 +38,33 @@ import ChatUs from "../components/ChatUs.astro";
     </div>
     <div class="products-list-wrapper w-dyn-list">
       <div role="list" class="products-list w-dyn-items">
-        <ModelCard name="Аннет" age="22" price="50000" />
-        <ModelCard name="Аннет" age="22" price="50000" />
-        <ModelCard name="Аннет" age="22" price="50000" />
+        <a href="/models/3">
+          <ModelCard
+            name="Нэни"
+            age="25"
+            price="90000"
+            images={[modelImage2]}
+            id={3}
+          />
+        </a>
+        <a href="/models/4">
+          <ModelCard
+            name="Челси"
+            age="22"
+            price="80000"
+            images={[modelImage1]}
+            id={4}
+          />
+        </a>
+        <a href="/models/7">
+          <ModelCard
+            name="Миа"
+            age="23"
+            price="80000"
+            images={[modelImage3]}
+            id={7}
+          />
+        </a>
       </div>
     </div>
     <div class="shop-more">
@@ -278,7 +305,6 @@ import ChatUs from "../components/ChatUs.astro";
             <div class="btn dark w-button">Связаться с менеджером</div>
           </div>
         </ChatUs>
-      
       </div>
       <div class="support-column">
         <div class="support-square">

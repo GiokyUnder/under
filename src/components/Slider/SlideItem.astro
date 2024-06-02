@@ -1,11 +1,13 @@
 ---
 import Image from "astro/components/Image.astro";
 import aboutImg from "../../assets/img/about-red.jpg";
+
+const { img } = Astro.props;
 ---
 
 <div class="embla__slide">
   <div class="embla__slide__number">
-    <Image class="image" src={aboutImg} alt={""} />
+    <Image class="image" src={img} alt={""} />
   </div>
 </div>
 
@@ -21,7 +23,7 @@ import aboutImg from "../../assets/img/about-red.jpg";
     display: flex;
     align-items: center;
     justify-content: center;
-    height: var(--slide-height);
+    height: 500px;
   }
 
   .image {

@@ -3,18 +3,18 @@ import "./css/base.css";
 import "./css/embla.css";
 import SlideItem from "./SlideItem.astro";
 
-const { price, height, about, weight } = Astro.props;
+const { price, height, about, weight, images } = Astro.props;
 ---
 
 <div lang="en" class="theme-light">
   <section class="embla">
     <div class="embla__viewport">
       <div class="embla__container">
-        <SlideItem />
-        <SlideItem />
-        <SlideItem />
-        <SlideItem />
-        <SlideItem />
+        {
+          images.map((img) => {
+            return <SlideItem img={img} />;
+          })
+        }
       </div>
     </div>
     <div class="info">
@@ -57,10 +57,10 @@ const { price, height, about, weight } = Astro.props;
     const OPTIONS = {};
 
     const emblaNode = document.querySelector(".embla");
-    const viewportNode = emblaNode.querySelector(".embla__viewport");
-    const prevBtnNode = emblaNode.querySelector(".embla__button--prev");
-    const nextBtnNode = emblaNode.querySelector(".embla__button--next");
-    const dotsNode = emblaNode.querySelector(".embla__dots");
+    const viewportNode = emblaNode?.querySelector(".embla__viewport");
+    const prevBtnNode = emblaNode?.querySelector(".embla__button--prev");
+    const nextBtnNode = emblaNode?.querySelector(".embla__button--next");
+    const dotsNode = emblaNode?.querySelector(".embla__dots");
 
     const emblaApi = EmblaCarousel(viewportNode, OPTIONS);
 

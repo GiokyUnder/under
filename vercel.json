@@ -1,13 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/(.*)/$",
-      "destination": "/$1",
-      "statusCode": 301
-    },
-    {
       "source": "/index.html",
       "destination": "/",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)/$",
+      "destination": "/$1",
       "statusCode": 301
     }
   ]

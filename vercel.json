@@ -6,8 +6,8 @@
       "statusCode": 301
     },
     {
-      "source": "/(.*)/$",
-      "destination": "/$1",
+      "source": "/:path+/",
+      "destination": "/:path",
       "statusCode": 301
     }
   ]

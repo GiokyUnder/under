@@ -21,7 +21,7 @@ import brunetImage2 from "../../assets/img/brunnetes/brunet1-3.webp";
 
 export const models = [
   {
-    params: { id: 1 },
+    params: { id: "annet" },
     props: {
       name: "Аннет",
       price: "80.000",
@@ -33,7 +33,7 @@ export const models = [
     },
   },
   {
-    params: { id: 2 },
+    params: { id: "maria" },
     props: {
       name: "Мария",
       price: "70.000",
@@ -45,7 +45,7 @@ export const models = [
     },
   },
   {
-    params: { id: 3 },
+    params: { id: "neni" },
     props: {
       name: "Нени",
       price: "90.000",
@@ -57,7 +57,7 @@ export const models = [
     },
   },
   {
-    params: { id: 4 },
+    params: { id: 'chealse' },
     props: {
       name: "Челси",
       price: "50.000",
@@ -69,7 +69,7 @@ export const models = [
     },
   },
   {
-    params: { id: 5 },
+    params: { id: 'anna' },
     props: {
       name: "Аня",
       price: "60.000",
@@ -81,7 +81,7 @@ export const models = [
     },
   },
   {
-    params: { id: 6 },
+    params: { id: 'agnes' },
     props: {
       name: "Агнес",
       price: "65.000",
@@ -93,7 +93,7 @@ export const models = [
     },
   },
   {
-    params: { id: 7 },
+    params: { id: 'mia' },
     props: {
       name: "Миа",
       price: "70.000",
@@ -105,7 +105,7 @@ export const models = [
     },
   },
   {
-    params: { id: 8 },
+    params: { id: 'jizel' },
     props: {
       name: "Жизель",
       price: "70.000",
@@ -117,7 +117,7 @@ export const models = [
     },
   },
   {
-    params: { id: 9 },
+    params: { id: 'lia' },
     props: {
       name: "Лия",
       price: "70.000",
@@ -129,7 +129,7 @@ export const models = [
     },
   },
   {
-    params: { id: 10 },
+    params: { id: 'rina'},
     props: {
       name: "Рина",
       price: "70.000",
@@ -141,7 +141,7 @@ export const models = [
     },
   },
   {
-    params: { id: 11 },
+    params: { id: 'margo' },
     props: {
       name: "Марго",
       price: "70.000",
@@ -153,7 +153,7 @@ export const models = [
     },
   },
   {
-    params: { id: 12 },
+    params: { id: 'mila' },
     props: {
       name: "Мила",
       price: "70.000",
@@ -165,9 +165,9 @@ export const models = [
     },
   },
   {
-    params: { id: 13 },
+    params: { id: 'anno' },
     props: {
-      name: "Аннет",
+      name: "Аннo",
       price: "70.000",
       age: "19",
       weight: 55,
@@ -177,7 +177,7 @@ export const models = [
     },
   },
   {
-    params: { id: 14 },
+    params: { id: 'inga' },
     props: {
       name: "Инга",
       price: "70.000",
@@ -189,7 +189,7 @@ export const models = [
     },
   },
   {
-    params: { id: 15 },
+    params: { id: 'lila' },
     props: {
       name: "Лила",
       weight: 55,
@@ -201,9 +201,9 @@ export const models = [
     },
   },
   {
-    params: { id: 16 },
+    params: { id: 'marta' },
     props: {
-      name: "Мария",
+      name: "Марта",
       price: "70.000",
       weight: 55,
       age: "19",
@@ -213,7 +213,7 @@ export const models = [
     },
   },
   {
-    params: { id: 17 },
+    params: { id: 'nesti' },
     props: {
       name: "Нести",
       price: "70.000",
@@ -225,7 +225,7 @@ export const models = [
     },
   },
   {
-    params: { id: 18 },
+    params: { id: 'janna' },
     props: {
       name: "Жанна",
       price: "70.000",

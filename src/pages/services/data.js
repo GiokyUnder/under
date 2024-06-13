@@ -1,6 +1,6 @@
 export const services = [
   {
-    params: { id: "11" },
+    params: { serviceId: "uzhin-s-escortnicei" },
     props: {
       title: "Ужин с эскортницей в Москве | Aurora Escort",
       content:
@@ -9,7 +9,7 @@ export const services = [
     },
   },
   {
-    params: { id: "1" },
+    params: { serviceId: "devushki-na-corporativ" },
     props: {
       title: "Девушки на корпоратив в Москве | Aurora Escort",
       content:
@@ -18,7 +18,7 @@ export const services = [
     },
   },
   {
-    params: { id: "2" },
+    params: { serviceId: "escort-vstrrechi-v-moskve" },
     props: {
       title: "Эскорт встречи в Москве | Aurora Escort",
       content:
@@ -27,7 +27,7 @@ export const services = [
     },
   },
   {
-    params: { id: "3" },
+    params: { serviceId: "devushki-dlya-meropriyatiya" },
     props: {
       title: "Девушки для мероприятий в Москве | Aurora Escort",
       content:
@@ -36,7 +36,7 @@ export const services = [
     },
   },
   {
-    params: { id: "4" },
+    params: { serviceId: "escort-zagranicu" },
     props: {
       title: "Эскорт сопровождение за границу в Москве | Aurora Escort",
       content:
@@ -45,7 +45,7 @@ export const services = [
     },
   },
   {
-    params: { id: "5" },
+    params: { serviceId: "escort-v-moskve" },
     props: {
       title: "Эскорт сопровождение в Москве | Aurora Escort",
       content:
@@ -54,7 +54,7 @@ export const services = [
     },
   },
   {
-    params: { id: "6" },
+    params: { serviceId: "devushki-na-vistavku" },
     props: {
       title: "Девушки на выставку в Москве | Aurora Escort",
       content:
@@ -63,7 +63,7 @@ export const services = [
     },
   },
   {
-    params: { id: "7" },
+    params: { serviceId: "devushki-dlya-vecherinok" },
     props: {
       title: "Девушки для вечеринок в Москве | Aurora Escort",
       content:
@@ -72,7 +72,7 @@ export const services = [
     },
   },
   {
-    params: { id: "8" },
+    params: { serviceId: "devushki-hostes" },
     props: {
       title: "Девушки-хостес на мероприятие в Москве | Aurora Escort",
       content:
@@ -81,7 +81,7 @@ export const services = [
     },
   },
   {
-    params: { id: "9" },
+    params: { serviceId: "devushki-dlya-filmov" },
     props: {
       title: "Девушки модели для съемок в Москве | Aurora Escort",
       content:
@@ -90,7 +90,7 @@ export const services = [
     },
   },
   {
-    params: { id: "10" },
+    params: { serviceId: "escort-transfer" },
     props: {
       title: "Эскорт трансфер в Москве | Aurora Escort",
       content:
@@ -99,7 +99,7 @@ export const services = [
     },
   },
   {
-    params: { id: "11" },
+    params: { serviceId: "uzhin-s-escortnicei" },
     props: {
       title: "Ужин с эскортницей в Москве | Aurora Escort",
       content:
@@ -108,7 +108,7 @@ export const services = [
     },
   },
   {
-    params: { id: "12" },
+    params: { serviceId: "devushki-na-malchishnik" },
     props: {
       title: "Девушки на мальчишник в Москве | Aurora Escort",
       content:
@@ -117,7 +117,7 @@ export const services = [
     },
   },
   {
-    params: { id: "13" },
+    params: { serviceId: "escort-bez-intima" },
     props: {
       title: "Эскорт без интима в Москве | Aurora Escort",
       content:
@@ -126,7 +126,7 @@ export const services = [
     },
   },
   {
-    params: { id: "14" },
+    params: { serviceId: "escort-poezdki" },
     props: {
       title: "Эскорт поездки в Москве | Aurora Escort",
       content:
@@ -135,7 +135,7 @@ export const services = [
     },
   },
   {
-    params: { id: "15" },
+    params: { serviceId: "escort-dlya-par" },
     props: {
       title: "Эскорт для пары в Москве | Aurora Escort",
       content:

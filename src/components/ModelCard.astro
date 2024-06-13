@@ -6,7 +6,7 @@ const { name, price, age, height, id, images } = Astro.props;
 
 <div role="listitem" class="w-dyn-item">
   <div class="shop-item-wrapper">
-    <a href=`/models/${id}` class="shop-item-link-wrapper w-inline-block">
+    <a href=`/${id}` class="shop-item-link-wrapper w-inline-block">
       <Image src={images[0]} alt={""} class="image" />
     </a>
     <div class="shop-details-wrapper">
@@ -26,7 +26,7 @@ const { name, price, age, height, id, images } = Astro.props;
     </div>
 
     <div class="shop-button-wrapper">
-      <a href=`/models/${id}` class="btn w-button">Подробнее</a>
+      <a href=`/${id}` class="btn w-button">Подробнее</a>
     </div>
   </div>
 </div>
@@ -56,6 +56,7 @@ const { name, price, age, height, id, images } = Astro.props;
     border-radius: 5px;
     height: 500px;
     object-fit: cover;
+    object-position: center top;
   }
 
   .shop-details-wrapper {

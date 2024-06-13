@@ -5,12 +5,18 @@ import { services } from "./data";
 ---
 
 <Layout>
+  <meta
+    slot="description"
+    name="description"
+    content="Список услуг эскорт агенства Aurora Escort."
+  />
+  <title slot="title">Услуги - Aurora Escort</title>
   <h1 class="title">Услуги</h1>
 
   {
-    services.map(({ params: { id }, props: { h1 } }, index) => (
+    services.map(({ params: { serviceId }, props: { h1 } }) => (
       <div class="service-card">
-        <ServiceCard text={h1} id={id} />
+        <ServiceCard text={h1} id={serviceId} />
       </div>
     ))
   }

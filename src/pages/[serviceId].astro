@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { services } from "./services/data";
+import PageTitle from "../components/PageTitle.astro";
+import GirlsCorporateParty from "./services/contents/girlsCorporateParty.astro";
+import DinnerGirls from "./services/contents/dinnerGirls.astro";
+import Hangovers from "./services/contents/hangovers.astro";
+import WithoutIntimacy from "./services/contents/withoutIntimacy.astro";
+import Trips from "./services/contents/trips.astro";
+import AbroadTrips from "./services/contents/adroadTrips.astro";
+import Exhibition from "./services/contents/exhibition.astro";
+import Promo from "./services/contents/promo.astro";
+import Party from "./services/contents/party.astro";
+import Hostes from "./services/contents/hostes.astro";
+import Filming from "./services/contents/filming.astro";
+import Transfer from "./services/contents/transfer.astro";
+import Pair from "./services/contents/pair.astro";
+
+export async function getStaticPaths() {
+  return services;
+}
+
+const { h1, title, content } = Astro.props;
+const { serviceId } = Astro.params;
+
+const contentMap = {
+  "devushki-na-corporativ": GirlsCorporateParty,
+  "escort-vstrrechi-v-moskve": Exhibition,
+  "devushki-dlya-meropriyatiya": Exhibition,
+  "escort-zagranicu": AbroadTrips,
+  "escort-v-moskve": Exhibition,
+  "devushki-na-vistavku": Promo,
+  "devushki-dlya-vecherinok": Party,
+  "devushki-hostes": Hostes,
+  "devushki-dlya-filmov": Filming,
+  "escort-transfer": Transfer,
+  "uzhin-s-escortnicei": DinnerGirls,
+  "devushki-na-malchishnik": Hangovers,
+  "escort-bez-intima": WithoutIntimacy,
+  "escort-poezdki": Trips,
+  "escort-dlya-par": Pair,
+};
+
+const CurentContent = contentMap[serviceId] || null;
+---
+
+<Layout>
+  <meta slot="description" name="description" content={content} />
+  <title slot="title">{title}</title>
+
+  <PageTitle>{h1} </PageTitle>
+  <div class="container-content">
+    <CurentContent />
+  </div>
+</Layout>
+
+<style>
+  .container-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+</style>

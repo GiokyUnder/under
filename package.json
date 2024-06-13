@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "astro": "^4.4.0",
-    "embla-carousel": "^8.0.4"
+    "astro-purgecss": "^4.1.1",
+    "embla-carousel": "^8.0.4",
+    "purgecss": "^6.0.0"
   }
 }

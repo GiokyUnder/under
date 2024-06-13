@@ -15,6 +15,8 @@ import Hostes from "./services/contents/hostes.astro";
 import Filming from "./services/contents/filming.astro";
 import Transfer from "./services/contents/transfer.astro";
 import Pair from "./services/contents/pair.astro";
+import Events from "./services/contents/events.astro";
+import EscortMeets from "./services/contents/escortMeets.astro";
 
 export async function getStaticPaths() {
   return services;
@@ -25,8 +27,8 @@ const { serviceId } = Astro.params;
 
 const contentMap = {
   "devushki-na-corporativ": GirlsCorporateParty,
-  "escort-vstrrechi-v-moskve": Exhibition,
-  "devushki-dlya-meropriyatiya": Exhibition,
+  "escort-vstrrechi-v-moskve": EscortMeets,
+  "devushki-dlya-meropriyatiya": Events,
   "escort-zagranicu": AbroadTrips,
   "escort-v-moskve": Exhibition,
   "devushki-na-vistavku": Promo,

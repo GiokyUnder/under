@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Slider from "../components/Slider/index.astro";
-import PageTitle from "../components/PageTitle.astro";
-import ChatUs from "../components/ChatUs.astro";
 
 import { models } from "../pages/models/data";
+import Carousel from "../components/Carousel.astro";
 
 export async function getStaticPaths() {
   return models;
@@ -34,18 +32,75 @@ const modelAge = `${age} ${forms[pluralForm]}`;
   <title slot="title">
     {`Эскортница ${name} | Эскорт услуги ${name} - AuroraEscort`}
   </title>
-  <PageTitle>{`Эскортница ${name}, ${modelAge}`}</PageTitle>
 
-  <Slider price={price} height={height} weight={weight} images={images} />
+  <section class="py-36 bg-white dark:bg-gray-900 antialiased">
+    <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
+        <div class="">
+          <Carousel />
+        </div>
 
-  <div class="container">
-    <ChatUs>
-      <div class="chat-button-content">Организовать встречу</div>
-    </ChatUs>
-    <a href="pages/1" class="btn w-button model-btn models-catalog"
-      >Перейти в каталог моделей</a
-    >
-  </div>
+        <div class="mt-6 sm:mt-8 lg:mt-0">
+          <h1
+            class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white"
+          >
+            {`Эскортница ${name}, ${modelAge}`}
+          </h1>
+          <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
+            <p
+              class="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white"
+            >
+              $1,200
+            </p>
+          </div>
+
+          <div class="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
+            <a
+              href="#"
+              title=""
+              class="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              role="button"
+            >
+              <svg
+                class="w-5 h-5 -ms-2 me-2 text-red-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                ></path>
+              </svg>
+              Организовать встречу
+            </a>
+          </div>
+
+          <hr class="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
+
+          <p class="mb-6 text-gray-500 dark:text-gray-400">
+            Привет, меня зовут Миа. Я выросла в небольшом городке, но всегда
+            мечтала о большом городе и яркой жизни. Сейчас я работаю моделью в
+            мегаполисе, встречая интересных людей и посещая удивительные места.
+            В свободное время увлекаюсь йогой и искусством, чтобы поддерживать
+            внутренний баланс.
+          </p>
+
+          <p class="text-gray-500 dark:text-gray-400">
+            Эта работа позволяет мне путешествовать и открывать новые горизонты.
+            Я верю, что каждый заслуживает немного счастья и внимания, и рада,
+            что могу дарить это своим клиентам.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>

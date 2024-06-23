@@ -1,366 +1,710 @@
 ---
 import ModelCard from "../components/ModelCard.astro";
-import ChatUs from "../components/ChatUs.astro";
+
 import modelImage1 from "../assets/img/blondes/blond4-1.webp";
 import modelImage2 from "../assets/img/blondes/blond3-1.webp";
 import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
 ---
 
 <div class="hero-section">
-  <div class="container">
-    <div class="hero-wrapper">
-      <h1 class="hero-heading">VIP эскорт агентство Aurora Escort в Москве</h1>
-
-      <div class="hero-button-wrapper">
-        <a href="/models/pages/1" class="btn light outline w-button"
-          >Каталог моделей</a
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
+    </div>
+    <div class="pt-56 mx-auto max-w-2xl sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1
+          class="opacity-70 text-4xl font-bold tracking-tight text-white sm:text-6xl"
         >
+          VIP эскорт агентство Aurora Escort в Москве
+        </h1>
+
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="/models"
+            class="animate-bounce no-underline rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >Каталог моделей <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#fca5a5] to-[#ef4444] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
       </div>
     </div>
   </div>
 </div>
+
 <div class="products-section">
-  <div class="container">
-    <div class="shop-top-wrapper">
-      <div class="support-top-left">
-        <h2 class="support-top-heading">Самые очаровательные девушки</h2>
-        <div class="description">
-          Поиск спутницы порой занимает всю человеческую жизнь. Но если речь
-          идет о презентации, поездке, вечеринке, выставке или просто приятном
-          вечере вдвоем, целесообразнее всего обратиться в наше агентство,
-          обеспечивающее лучший эскорт.
-        </div>
-        <div class="support-top-details-text">
-          В целях сохранения конфидициальности показаны просто типажи
-        </div>
-      </div>
-      <div class="support-top-right"></div>
-    </div>
-    <div class="products-list-wrapper w-dyn-list">
-      <div role="list" class="products-list w-dyn-items">
+  <div class="bg-white">
+    <div
+      class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+    >
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Самые очаровательные девушки
+      </h2>
+      <p class="mt-4 text-gray-500">
+        Поиск спутницы порой занимает всю человеческую жизнь. Но если речь идет
+        о презентации, поездке, вечеринке, выставке или просто приятном вечере
+        вдвоем, целесообразнее всего обратиться в наше агентство, обеспечивающее
+        лучший эскорт.
+      </p>
+      <p class="pt-2 text-sm font-semibold leading-6 text-indigo-600">
+        В ЦЕЛЯХ СОХРАНЕНИЯ КОНФИДИЦИАЛЬНОСТИ ПОКАЗАНЫ ПРОСТО ТИПАЖИ
+      </p>
+
+      <div
+        class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+      >
         <ModelCard
           name="Нэни"
-          age="25"
           price="90000"
-          images={[modelImage2]}
+          img={modelImage2}
+          alt="фото модели Нени"
           id="neni"
         />
         <ModelCard
           name="Челси"
-          age="22"
           price="80000"
-          images={[modelImage1]}
+          img={modelImage1}
+          alt="фото модели Челси"
           id="chealse"
         />
         <ModelCard
           name="Миа"
-          age="23"
           price="80000"
-          images={[modelImage3]}
+          img={modelImage3}
+          alt="фото модели Миа"
+          id="mia"
+        />
+
+        <ModelCard
+          name="Нэни"
+          price="90000"
+          img={modelImage2}
+          alt="фото модели Нени"
+          id="neni"
+        />
+        <ModelCard
+          name="Челси"
+          price="80000"
+          img={modelImage1}
+          alt="фото модели Челси"
+          id="chealse"
+        />
+        <ModelCard
+          name="Миа"
+          price="80000"
+          img={modelImage3}
+          alt="фото модели Миа"
+          id="mia"
+        />
+
+        <ModelCard
+          name="Нэни"
+          price="90000"
+          img={modelImage2}
+          alt="фото модели Нени"
+          id="neni"
+        />
+        <ModelCard
+          name="Челси"
+          price="80000"
+          img={modelImage1}
+          alt="фото модели Челси"
+          id="chealse"
+        />
+        <ModelCard
+          name="Миа"
+          price="80000"
+          img={modelImage3}
+          alt="фото модели Миа"
+          id="mia"
+        />
+        <ModelCard
+          name="Нэни"
+          price="90000"
+          img={modelImage2}
+          alt="фото модели Нени"
+          id="neni"
+        />
+        <ModelCard
+          name="Челси"
+          price="80000"
+          img={modelImage1}
+          alt="фото модели Челси"
+          id="chealse"
+        />
+        <ModelCard
+          name="Миа"
+          price="80000"
+          img={modelImage3}
+          alt="фото модели Миа"
           id="mia"
         />
       </div>
     </div>
-    <div class="shop-more">
-      <a href="/models/pages/1" class="btn dark w-button"
-        >Показать всех моделей</a
-      >
-    </div>
-    <hr class="line" />
-    <h2 class="support-top-heading models-header">
-      Какими качествами обладают наши девушки?
-    </h2>
-
-    <ul class="advantages">
-      <li>
-        <span class="circle"></span><span class="item"
-          >Презентабельность и ухоженность.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Сексуальность и красивое тело.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Гибкость и воспитанность.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Умение проявлять уважение.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Страстность по отношению к спутнику.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Вкус и умение поддержать беседу.</span
-        >
-      </li>
-      <li>
-        <span class="circle"></span><span class="item"
-          >Легкость мышления, хорошая речь.</span
-        >
-      </li>
-    </ul>
-    <p>
-      Общение с ними способно скрасить досуг и деловое мероприятие. К тому же,
-      эскортницы прекрасные собеседницы, ведь профессия обязывает их разбираться
-      во многих вещах.
-    </p>
   </div>
 </div>
 
-<div class="safe-section">
-  <div class="container">
-    <div class="safe-wrapper">
-      <h2 class="safe-heading">Мы гарантируем полную конфидициальность</h2>
-      <p class="safe-paragraph">
+<div class="pb-1 bg-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+    >
+      <div class="p-8 sm:p-10 lg:flex-auto">
+        <h3 class="text-2xl font-bold tracking-tight text-gray-900">
+          Какими качествами обладают наши девушки?
+        </h3>
+        <p class="mt-6 text-base leading-7 text-gray-600">
+          Общение с ними способно скрасить досуг и деловое мероприятие. К тому
+          же, эскортницы прекрасные собеседницы, ведь профессия обязывает их
+          разбираться во многих вещах.
+        </p>
+
+        <div class="mt-10 flex items-center gap-x-4">
+          <div class="h-px flex-auto bg-gray-100"></div>
+        </div>
+        <ul
+          role="list"
+          class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+        >
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Презентабельность и ухоженность
+          </li>
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Сексуальность и красивое тело
+          </li>
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Гибкость и воспитанность
+          </li>
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Умение проявлять уважение
+          </li>
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Страстность по отношению к спутнику
+          </li>
+          <li class="flex gap-x-3">
+            <svg
+              class="h-6 w-5 flex-none text-emerald-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Вкус и умение поддержать беседу
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+>
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <svg
+      class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+      aria-hidden="true"
+    >
+      <defs>
+        <pattern
+          id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+          width="200"
+          height="200"
+          x="50%"
+          y="-1"
+          patternUnits="userSpaceOnUse"
+        >
+          <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+        </pattern>
+      </defs>
+      <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+        <path
+          d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+          stroke-width="0"></path>
+      </svg>
+      <rect
+        width="100%"
+        height="100%"
+        stroke-width="0"
+        fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+    </svg>
+  </div>
+  <div
+    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
+  >
+    <div
+      class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+    >
+      <div class="lg:pr-4">
+        <div class="lg:max-w-lg">
+          <h2
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Какие у нас представлены девушки?
+          </h2>
+          <p class="mt-6 text-xl leading-8 text-gray-700">
+            Красавицы, общество которых можно заказать у нас, являются
+            профессиональными моделями, поэтому с их участием можно снять
+            чудесное фото или фильм для души. Вы часто можете увидеть этих
+            девушек на страницах модных журналов или показах мод.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+    >
+      <h3 class="flex gap-x-3">
+        <svg
+          class="mt-1 h-5 w-5 flex-none text-emerald-600"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Мы гарантируем полную конфидициальность
+      </h3>
+
+      <p class="mt-6 text-xl leading-8 text-gray-700 pb-5">
         Все модели обладают обаянием и изюминкой. Одеты в дорогих бутиках и со
         вкусом. Не проявляют публично склонности к дурным привычкам. Как
         правило, это свободные девушки, не отягощенные семейными обязанностями.
       </p>
-      <ChatUs>
-        <div class="safe-button-wrapper">
-          <div class="btn light hero safe w-button">Организовать встречу</div>
+      <a
+        href="https://api.whatsapp.com/send?phone=447480686013"
+        target="_blank"
+        class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Организовать встречу</a
+      >
+    </div>
+    <div
+      class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+    >
+      <div class="lg:pr-4">
+        <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+          <p>
+            Это не обязательно высокие худые женщины, ведь дамой премиум-класса
+            могут быть и пышные девушки, блондинки, брюнетки, шатенки.
+            Специально для наших клиентов мы выделяем девочек различной полноты
+            и длины ног.
+          </p>
         </div>
-      </ChatUs>
+      </div>
     </div>
   </div>
 </div>
-<div class="support-section">
-  <div class="container">
-    <div class="support-top-wrapper">
-      <h2 class="support-top-heading models-header">
-        Какие у нас представлены девушки?
+
+<div class="bg-white py-24 sm:py-10">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p
+        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        Услуги нашего агенства
+      </p>
+      <h2 class="text-base font-semibold leading-7 text-indigo-600 pt-2">
+        НАШЕ АГЕНТСТВО НЕ ПРЕДОСТАВЛЯЕТ ИНТИМНЫЕ УСЛУГИ.
       </h2>
-      <p>
-        Красавицы, общество которых можно заказать у нас, являются
-        профессиональными моделями, поэтому с их участием можно снять чудесное
-        фото или фильм для души. Вы часто можете увидеть этих девушек на
-        страницах модных журналов или показах мод.
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        Наш вип эскорт — динамичное и развивающееся агентство, с помощью
+        которого пользуются очень многие уважаемые мужчины. Чтобы не оказаться в
+        неловкой ситуации из-за отсутствия партнерши, клиенты часто заказывают
+        нижеперечисленные услуги.
       </p>
-      <p>
-        Это не обязательно высокие худые женщины, ведь дамой премиум-класса
-        могут быть и пышные девушки, блондинки, брюнетки, шатенки. Специально
-        для наших клиентов мы выделяем девочек различной полноты и длины ног.
-      </p>
-      <hr class="line" />
-      <div class="support-top-left">
-        <h2 class="support-top-heading agency">Услуги нашего агенства.</h2>
-      </div>
-      <div class="support-top-details-text">
-        Наше агентство не предоставляет интимные услуги.
-      </div>
-      <div class="support-top-right">
-        <p>
-          Наш вип эскорт — динамичное и развивающееся агентство, помощью
-          которого пользуются очень многие уважаемые мужчины. Чтобы не оказаться
-          в неловкой ситуации из-за отсутствия партнерши, клиенты часто
-          заказывают нижеперечисленные услуги.
-        </p>
-      </div>
     </div>
-    <div class="support-wrapper">
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-number">1</div>
-          <div class="support-square-text">
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl
+        class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+      >
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div
+              class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-red-300"
+            >
+              <svg
+                class="text-white w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
+                ></path>
+              </svg>
+            </div>
             Девушки для мероприятий в Москве
-          </div><img
-            src="/images/5e7ff57a5836db2a07bab0e3_Circle.svg"
-            alt="Circle Decoration in Shop Products Block"
-            class="support-square-image"
-          />
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-600">
+            Сопровождение на мероприятиях. Особенность элитного эскорта в Москве
+            — высокая потребность присутствия очаровательной компании на
+            корпоративных мероприятиях, а порой даже семейных. Стильные
+            образованные партнерши не ударят лицом в грязь ни в какой
+            обстановке.
+          </dd>
         </div>
-        <p>
-          Сопровождение на мероприятиях. Особенность элитного эскорта в Москве —
-          высокая потребность присутствия очаровательной компании на
-          корпоративных мероприятиях, а порой даже семейных. Стильные
-          образованные партнерши не ударят лицом в грязь ни в какой обстановке.
-        </p>
-      </div>
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-number">2</div>
-          <div class="support-square-text">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div
+              class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-red-300"
+            >
+              <svg
+                class="text-white w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
+                ></path>
+              </svg>
+            </div>
             Эскорт сопровождение за границу в Москве
-          </div><img
-            src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-            alt="Triangle Decoration in Donate Block"
-            class="support-square-image triangle"
-          />
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-600">
+            Компания для отдыха или путешествия. Женщины, как правило, лучше
+            разбираются в бытовых вопросах, ориентируются в незнакомых городах и
+            странах. Vip эскорт предполагает сопровождение, которое может
+            скрасить отпуск или командировку.
+          </dd>
         </div>
-        <p>
-          Компания для отдыха или путешествия. Женщины, как правило, лучше
-          разбираются в бытовых вопросах, ориентируются в незнакомых городах и
-          странах. Vip эскорт предполагает сопровождение, которое может скрасить
-          отпуск или командировку.
-        </p>
-      </div>
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-number">3</div>
-          <div class="support-square-text">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div
+              class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-red-300"
+            >
+              <svg
+                class="text-white w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
+                ></path>
+              </svg>
+            </div>
+            Девушки для съемок в Москве
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-600">
+            Специально обученные сотрудницы могут участвовать в любительских
+            съемках, которые пригодятся вам в дальнейшем для создания имиджа.
+          </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div
+              class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-red-300"
+            >
+              <svg
+                class="text-white w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
+                ></path>
+              </svg>
+            </div>
             Эскорт сопровождение в Москве
-          </div><img
-            src="/images/5e7ff57afea9a31a44d66db0_Rectangle.svg"
-            alt="Rectangle Decoration in Buy Gift Cards Block"
-            class="support-square-image rectangle"
-          />
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-600">
+            Также возможно заказать у нас водителя вместе с девушками.
+          </dd>
         </div>
-        <p>Также возможно заказать у нас водителя вместе с девушками.</p>
-      </div>
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-number">4</div>
-          <div class="support-square-text">Девушки для съемок в Москве</div><img
-            src="/images/5e7ff57afea9a31a44d66db0_Rectangle.svg"
-            alt="Rectangle Decoration in Buy Gift Cards Block"
-            class="support-square-image rectangle"
-          />
-        </div>
-        <p>
-          Специально обученные сотрудницы могут участвовать в любительских
-          съемках, которые пригодятся вам в дальнейшем для создания имиджа.
-        </p>
-      </div>
+      </dl>
     </div>
-    <hr />
+    <div class="flex items-center justify-center h-40">
+      <a
+        href="/services"
+        class="center text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Посмотреть все услуги</a
+      >
+    </div>
   </div>
 </div>
 
-<div class="support-section">
-  <div class="container">
-    <div class="support-wrapper">
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-text">
-            Как работает эскорт в Москве?
-          </div><img
-            src="/images/5e7ff57a5836db2a07bab0e3_Circle.svg"
-            alt="Circle Decoration in Shop Products Block"
-            class="support-square-image"
-          />
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+    >
+      <div class="flex max-w-xl flex-col items-start justify-between">
+        <div class="group relative">
+          <h3
+            class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+          >
+            КАК РАБОТАЕТ ЭСКОРТ В МОСКВЕ?
+          </h3>
+          <p class="mt-5 text-sm leading-6 text-gray-600 pb-2">
+            Услуги эскорта в Москве могут быть организованы, как
+            эскорт-агентством, так и частными лицами. Но намного разумнее
+            обратиться в такое агенство, как наше, так как мы предоставляем:
+          </p>
+          <ul
+            class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400"
+          >
+            <li class="flex items-center">
+              <svg
+                class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                ></path>
+              </svg>
+              Гарантии конфиденциальности
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                ></path>
+              </svg>
+              Профессиональный подбор участниц
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                ></path>
+              </svg>
+              Качественное обслуживание
+            </li>
+          </ul>
+          <p class="mt-5 text-sm leading-6 text-gray-600">
+            Общение с частными эскортницами или поиск их на онлайн-платформах не
+            дает никаких гарантий качества обслуживания. Наши же девушки прошли
+            собеседование, продемонстрировав свой интеллектуальный уровень,
+            проверена их личная информация и профессионализм.
+          </p>
         </div>
-        <p>
-          Услуги эскорта в Москве могут быть организованы, как
-          эскорт-агентством, так и частными лицами. Но намного разумнее
-          обратиться в такое агенство, как наше, так как мы предоставляем:
-        </p>
-
-        <ul class="advantages">
-          <li>
-            <span class="circle"></span><span class="item"
-              >Гарантии конфиденциальности.</span
-            >
-          </li>
-          <li>
-            <span class="circle"></span><span class="item"
-              >Профессиональный подбор участниц.</span
-            >
-          </li>
-          <li>
-            <span class="circle"></span><span class="item"
-              >Качественное обслуживание.</span
-            >
-          </li>
-        </ul>
-        <p>
-          Общение с частными эскортницами или поиск их на онлайн-платформах не
-          дает никаких гарантий качества обслуживания. Наши же девушки прошли
-          собеседование, продемонстрировав свой интеллектуальный уровень,
-          проверена их личная информация и профессионализм.
-        </p>
-        <div class="shop-more link-section">
-          <a href="/about" class="btn dark w-button">Узнать больше о нас</a>
+        <div class="relative mt-8 flex items-center gap-x-4">
+          <a
+            href="/about"
+            class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >Узнать больше о нас<a></a>
+          </a>
         </div>
-      </div>
-
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-text">Как работает наш сайт?</div><img
-            src="/images/5e7ff57adc54453434efb9ee_Triangle.svg"
-            alt="Triangle Decoration in Donate Block"
-            class="support-square-image triangle"
-          />
-        </div>
-        <p>
-          Заказать услуги эскорта в Москве можно, связавшись с нашими
-          менеджерами.
-        </p>
-        <ChatUs>
-          <div class="shop-more link-section">
-            <div class="btn dark w-button">Связаться с менеджером</div>
+        <div class="flex max-w-xl flex-col items-start">
+          <div class="group relative">
+            <h3
+              class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+            >
+              СКОЛЬКО СТОИТ ЗАКАЗАТЬ ЭСКОРТ В МОСКВЕ?
+            </h3>
+            <p class="mt-5 text-sm leading-6 text-gray-600">
+              Стоимость услуги варьируется в зависимости от сложности запроса. К
+              примеру, для вечеринки может понадобиться красавица с навыками
+              караоке, для путешествия — знающая языки. Вы можете также заказать
+              женщину-хостес или для ужина. В столице снять девушку конечно
+              намного дороже, чем в других городах.
+            </p>
           </div>
-        </ChatUs>
-      </div>
-      <div class="support-column">
-        <div class="support-square">
-          <div class="support-square-text">
-            Сколько стоит заказать эскорт в Москве?
-          </div><img
-            src="/images/5e7ff57afea9a31a44d66db0_Rectangle.svg"
-            alt="Rectangle Decoration in Buy Gift Cards Block"
-            class="support-square-image rectangle"
-          />
-        </div>
-        <p>
-          Стоимость услуги варьируется в зависимости от сложности запроса. К
-          примеру, для вечеринки может понадобиться красавица с навыками
-          караоке, для путешествия — знающая языки. Вы можете также заказать
-          женщину-хостес или для ужина. В столице снять девушку конечно намного
-          дороже, чем в других городах.
-          <div class="shop-more link-section">
-            <a href="/models/pages/1" class="btn dark w-button"
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <a
+              href="/models"
+              type="button"
+              class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >Перейти в каталог моделей</a
             >
           </div>
-        </p>
-        <hr />
+        </div>
+        <div class="flex max-w-xl flex-col items-start">
+          <div class="group relative">
+            <h3
+              class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+            >
+              КАК РАБОТАЕТ НАШ САЙТ?
+            </h3>
+            <p class="mt-5 text-sm leading-6 text-gray-600">
+              Заказать услуги эскорта в Москве можно, связавшись с нашими
+              менеджерами.
+            </p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <a
+              href="https://api.whatsapp.com/send?phone=447480686013"
+              target="_blank"
+              class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >Написать менеджеру</a
+            >
+          </div>
+        </div>
+
+        <!-- More posts... -->
       </div>
     </div>
-    <h2 class="support-top-heading models-header">
-      Зачем существуют эскорт-агентства?
-    </h2>
-    <p>
-      Для состоятельных мужчин и просто закоренелых холостяков часто бывает
-      затруднительно найти спутницу, с которой можно блеснуть в обществе и
-      получить при этом действительно колоссальное удовольствие.
-    </p>
-    <p>
-      Мы много лет обеспечиваем эскорт в Москве и украшаем досуг наших клиентов.
-      Вы можете осуществить заказ на дом понравившейся вам модели из нашего
-      списка. Девушку можно вызвать, как на час, так и на время всего
-      интересующего вас мероприятия. Стоимость по вызову будет колебаться в
-      зависимости от планов заказчика.
-    </p>
-    <p>
-      Эскорт агентство обеспечивает, как встречу в Москве, так и присутствие
-      девочек на выставках, в поездках, мальчишниках и прочее. Также можно
-      заказать трансфер с водителем и сопровождение для супружеских пар.
-    </p>
-    <p>
-      Наше эскорт-агентство с исключительным вниманием относится к
-      индивидуальным потребностям клиента и гарантирует быстрое воплощение в
-      жизнь его мечты о прекрасной даме.
-    </p>
   </div>
-</div>
 
-<div class="shop-local-section">
-  <div class="container shop-local-container">
-    <div class="shop-local-wrapper">
-      <div class="shop-local-left"></div>
-      <div class="shop-local-right">
-        <div class="shop-local-content-wrapper">
-          <h2 class="shop-local-heading">Эскорт</h2>
-          <p>
+  <section
+    class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+  >
+    <div
+      class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.red.100),white)] opacity-20"
+    >
+    </div>
+    <div
+      class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-red-600/10 ring-1 ring-red-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+    >
+    </div>
+    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+      <h2
+        class="font-mono text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        Эскорт
+      </h2>
+      <figure class="mt-10">
+        <blockquote
+          class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+        >
+          <p class="text-base leading-7 text-gray-500">
             Понятие эскорт услуги происходит от английского глагола escort, что
             означает сопровождение. Эффектные спутницы могут появиться с нашими
             клиентами на деловой встрече, благотворительном балу, во время
@@ -370,904 +714,37 @@ import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
             тренированными, умели вести разговоры о серьезных вещах, петь и
             танцевать. С девушками, которых можно найти на нашем сайте по
             умеренной цене, никогда не стыдно появиться в обществе, а проводить
-            время с ними хочется и в дальнейшем
+            время с ними хочется и в дальнейшем Эскорт агентство обеспечивает,
+            как встречу в Москве, так и присутствие девочек на выставках, в
+            поездках, мальчишниках и прочее. Также можно заказать трансфер с
+            водителем и сопровождение для супружеских пар.
           </p>
-          <p>
-            Эскорт агентство обеспечивает, как встречу в Москве, так и
-            присутствие девочек на выставках, в поездках, мальчишниках и прочее.
-            Также можно заказать трансфер с водителем и сопровождение для
-            супружеских пар.
-          </p>
-          <p>-------</p>
-          <!--           <strong> Ваш Aurora Escort</strong>
- -->
-        </div>
-      </div>
+        </blockquote>
+      </figure>
     </div>
-  </div>
+  </section>
+
+  <style>
+    .hero-section {
+      min-height: 550px;
+      background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          from(#222),
+          to(rgba(34, 34, 34, 0))
+        ),
+        url(/src/assets/img/main.webp);
+      background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
+        url(/src/assets/img/main.webp);
+      background-position:
+        0 0,
+        50% 50%;
+      background-size: auto, cover;
+    }
+
+    a {
+      text-decoration: none !important;
+    }
+  </style>
 </div>
-
-<style>
-  .w-button {
-    display: inline-block;
-    padding: 9px 15px;
-    background-color: #3898ec;
-    color: #fff;
-    border: 0;
-    line-height: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0;
-  }
-
-  button {
-    border: 0;
-    cursor: pointer;
-    -webkit-appearance: button;
-  }
-
-  .w-dyn-bind-empty {
-    display: none !important;
-  }
-  .w-condition-invisible {
-    display: none !important;
-  }
-
-  .btn {
-    padding: 5px 25px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #eb5757;
-    border-radius: 5px;
-    background-color: #eb5757;
-    -webkit-transition:
-      border-color 0.3s ease,
-      background-color 0.3s ease;
-    transition:
-      border-color 0.3s ease,
-      background-color 0.3s ease;
-    font-weight: 700;
-  }
-  .btn:hover {
-    border-color: #222;
-    background-color: #222;
-  }
-  .btn.dark {
-    border-color: #222;
-    background-color: #222;
-  }
-  .btn.dark:hover {
-    border-color: #eb5757;
-    background-color: #eb5757;
-  }
-  .btn.dark.outline {
-    border-color: #222;
-    color: #222;
-  }
-  .btn.dark.outline:hover {
-    border-color: #222;
-    background-color: #222;
-  }
-  .btn.light {
-    border-color: #f9f9f9;
-    background-color: #f9f9f9;
-    color: #222;
-  }
-  .btn.light:hover {
-    border-color: #eb5757;
-    background-color: #eb5757;
-    color: #f9f9f9;
-  }
-  .btn.light.outline {
-    color: #f9f9f9;
-  }
-  .btn.light.outline:hover {
-    border-color: #f9f9f9;
-    background-color: #f9f9f9;
-    color: #222;
-  }
-  .btn.light.hero {
-    margin-right: 10px;
-  }
-  .btn.outline {
-    background-color: transparent;
-    color: #eb5757;
-  }
-  .btn.outline:hover {
-    border-color: #eb5757;
-    background-color: #eb5757;
-    color: #f9f9f9;
-  }
-  .btn.outline:focus {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #eb5757;
-    box-shadow: 0 0 2px 0 #eb5757;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .pill {
-    margin-right: 10px;
-    padding: 5px 20px;
-    border-radius: 20px;
-    background-color: #1976d2;
-    color: #f9f9f9;
-  }
-  .pill.badge {
-    border-radius: 0;
-  }
-  .pill.primary {
-    background-color: #eb5757;
-    font-size: 16px;
-  }
-  .hero-section {
-    min-height: 550px;
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        from(#222),
-        to(rgba(34, 34, 34, 0))
-      ),
-      url(/src/assets/img/main.webp);
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-      url(/src/assets/img/main.webp);
-    background-position:
-      0 0,
-      50% 50%;
-    background-size: auto, cover;
-  }
-
-  .hero-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 550px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-  .hero-heading {
-    width: 35%;
-    color: #f9f9f9;
-    font-size: 62px;
-    line-height: 1.2;
-  }
-  .hero-paragraph {
-    width: 35%;
-    margin-bottom: 25px;
-    color: #f9f9f9;
-    font-size: 18px;
-  }
-  .support-section {
-    padding-top: 65px;
-  }
-  .support-top-wrapper {
-    margin-bottom: 40px;
-  }
-  .support-top-left {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .support-top-details-text {
-    text-transform: uppercase;
-  }
-  .support-top-heading {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-    line-height: 1.2;
-    padding-bottom: 10px;
-  }
-  .support-top-right {
-    width: 45%;
-  }
-  .support-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-  .support-column {
-    width: 30%;
-    min-height: 200px;
-  }
-  .support-square {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    min-height: 350px;
-    margin-bottom: 45px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #222;
-  }
-  .support-square-number {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    right: auto;
-    bottom: auto;
-    color: #f9f9f9;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  .support-square-text {
-    color: #f9f9f9;
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .support-square-image {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: -25%;
-    bottom: -25%;
-  }
-  .support-square-image.triangle {
-    right: -11%;
-    bottom: -17%;
-  }
-  .support-square-image.rectangle {
-    right: -14%;
-    bottom: -31%;
-  }
-  .safe-section {
-    min-height: 550px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(34, 34, 34, 0.17)),
-        to(#222)
-      ),
-      url(/src/assets/img/pair.webp);
-    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222),
-      url(/src/assets/img/pair.webp);
-    background-position:
-      0 0,
-      50% 50%;
-    background-size: auto, cover;
-  }
-  .safe-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 550px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-  }
-  .safe-heading {
-    width: 45%;
-    color: #f9f9f9;
-    font-size: 45px;
-    line-height: 1.2;
-    text-align: right;
-  }
-  .safe-paragraph {
-    width: 35%;
-    margin-bottom: 25px;
-    color: #f9f9f9;
-    font-size: 18px;
-    text-align: right;
-  }
-  .products-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  .shop-top-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 40px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .shop-item-wrapper {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .shop-image {
-    min-height: 500px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-  }
-  .shop-image.tumbler-1 {
-    position: relative;
-    margin-bottom: 15px;
-  }
-
-  .shop-details-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-  .shop-details-left {
-    width: 100%;
-  }
-  .shop-item-name {
-    color: #222;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-  }
-  .shop-item-price {
-    margin-right: 10px;
-    color: #222;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: left;
-  }
-  .shop-item-price.compare {
-    color: #eb5757;
-    text-decoration: line-through;
-  }
-  .shop-local-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  .shop-local-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 500px;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-  .shop-local-left {
-    /*     position: absolute;
-    left: 0;
-    top: 6%;
-    right: auto;
-    bottom: 0;
-    width: 30%;
-    height: 0;
-    min-height: 440px;
-    border-radius: 5px;
-    background-image: url(/images/feeling-girl.jpg);
-    background-size: cover; */
-  }
-  .shop-local-right {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    padding: 45px;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    border-radius: 5px;
-    background-color: #222;
-    color: #f9f9f9;
-  }
-  .shop-local-content-wrapper {
-    width: 80%;
-    padding-right: 145px;
-    padding-left: 145px;
-  }
-  .shop-local-heading {
-    margin-top: 0;
-    font-size: 45px;
-    line-height: 1.2;
-  }
-  .content-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  .about-column {
-    width: 22%;
-  }
-  .image {
-    display: block;
-  }
-  .heading {
-    margin-top: 55px;
-  }
-  .products-list {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-  }
-  .price-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-bottom: 1px none rgba(34, 34, 34, 0.08);
-  }
-  .pill-2 {
-    margin-right: 10px;
-    padding: 5px 20px;
-    border-radius: 20px;
-    background-color: #1976d2;
-    color: #f9f9f9;
-  }
-  .pill-2.badge {
-    border-radius: 0;
-  }
-  .pill-2.badge.primary.sale {
-    position: absolute;
-    left: auto;
-    top: 4%;
-    right: 2%;
-    bottom: auto;
-    border-radius: 5px;
-    background-color: #eb5757;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  .shop-button-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .shop-item-link-wrapper {
-    width: 100%;
-    text-decoration: none;
-  }
-  .shop-list {
-    width: 80%;
-  }
-  .empty {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 200px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: transparent;
-  }
-  .shop-more {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .donate-heading-1 {
-    margin-bottom: -5px;
-    font-size: 38px;
-    font-weight: 800;
-    text-align: center;
-  }
-  .donate-heading-2 {
-    margin-bottom: 15px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .donate-paragraph {
-    width: 65%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-  .donate-wrapper {
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 30px 30px 10px;
-    border: 2px solid #222;
-    border-radius: 5px;
-  }
-  .donate-link-block {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #eb5757;
-    -webkit-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-    color: #f9f9f9;
-    text-align: center;
-    text-decoration: none;
-  }
-  .donate-link-block:hover {
-    background-color: #222;
-  }
-  .text-block {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    color: #f9f9f9;
-    font-size: 24px;
-    font-weight: 800;
-  }
-  .block-content {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .alert-empty {
-    display: none;
-    background-color: transparent;
-  }
-  @media screen and (max-width: 991px) {
-    .container {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    .hero-heading {
-      width: 60%;
-    }
-    .hero-paragraph {
-      width: 55%;
-    }
-    .support-square {
-      min-height: 330px;
-    }
-    .support-square-text {
-      font-size: 30px;
-    }
-    .support-square-image.rectangle {
-      bottom: -35%;
-    }
-    .safe-heading {
-      width: 60%;
-    }
-    .safe-paragraph {
-      width: 55%;
-    }
-    .shop-image.tumbler-1 {
-      min-height: 350px;
-    }
-    .shop-image.tumbler-1 {
-      min-height: 350px;
-    }
-    .shop-details-wrapper {
-      font-size: 14px;
-    }
-    .shop-details-left {
-      margin-right: 25px;
-    }
-    .shop-local-left {
-      top: 8%;
-    }
-    .shop-local-content-wrapper {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .shop-local-heading {
-      margin-top: 0;
-    }
-    .products-list {
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-    }
-    .shop-list {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .container.shop-local-container {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .support-top-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: start;
-      -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-    }
-    .support-top-left {
-      margin-bottom: 15px;
-    }
-    .support-top-right {
-      width: 100%;
-    }
-    .support-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .support-column {
-      width: 100%;
-      margin-bottom: 40px;
-    }
-    .support-square-text {
-      font-size: 40px;
-    }
-    .support-square-image {
-      right: -18%;
-    }
-    .safe-wrapper {
-      padding-bottom: 25px;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-    }
-    .shop-top-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: start;
-      -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-    }
-    .shop-item-wrapper {
-      width: 100%;
-      margin-bottom: 50px;
-    }
-    .shop-local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .shop-local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0;
-    }
-    .shop-local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0;
-    }
-    .about-column {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      margin-bottom: 45px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      text-align: center;
-    }
-    .products-list {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-    }
-    .pill-2.badge.primary.sale {
-      right: 2%;
-    }
-    .shop-list {
-      width: 100%;
-    }
-    .donate-wrapper {
-      width: 90%;
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .btn.light.hero.safe {
-      margin-right: 0;
-    }
-    .hero-wrapper {
-      padding-bottom: 45px;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-    }
-    .hero-heading {
-      font-size: 30px;
-    }
-    .hero-paragraph {
-      width: 70%;
-      font-size: 13px;
-    }
-    .safe-heading {
-      width: 100%;
-      font-size: 30px;
-    }
-    .safe-paragraph {
-      width: 70%;
-      font-size: 13px;
-    }
-    .shop-details-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-    .shop-details-left {
-      margin-right: 0;
-    }
-    .shop-item-name {
-      text-align: center;
-    }
-    .shop-item-price {
-      margin-right: 5px;
-      margin-left: 5px;
-    }
-    .shop-local-section {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-    .shop-local-right {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .about-column {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .price-wrapper {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
-    .pill-2.badge.primary.sale {
-      position: absolute;
-      left: auto;
-      top: 3%;
-      right: 0;
-      bottom: auto;
-      border-radius: 5px;
-      font-size: 14px;
-      text-transform: uppercase;
-    }
-  }
-
-  .link-section {
-    margin-bottom: 35px;
-    justify-content: flex-start;
-  }
-
-  .description {
-    padding-bottom: 10px;
-  }
-
-  .models-header {
-    margin-top: 30px;
-  }
-
-  .line {
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  .advantages {
-    list-style: none;
-    padding: 0;
-  }
-  .advantages li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .advantages .circle {
-    width: 10px;
-    height: 10px;
-    background-color: #000;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .agency {
-    margin-top: 30px;
-  }
-</style>

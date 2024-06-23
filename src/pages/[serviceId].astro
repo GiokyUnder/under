@@ -50,10 +50,7 @@ const CurentContent = contentMap[serviceId] || null;
   <meta slot="description" name="description" content={content} />
   <title slot="title">{title}</title>
 
-  <PageTitle>{h1} </PageTitle>
-  <div class="container-content">
-    <CurentContent />
-  </div>
+  <CurentContent />
 </Layout>
 
 <style>

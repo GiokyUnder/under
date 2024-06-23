@@ -1,11 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Image from "astro/components/Image.astro";
-
-import IconTelegram from "../assets/img/telegram.svg";
-import IconViber from "../assets/img/viber.svg";
-import IconWhatsapp from "../assets/img/whatsapp.svg";
-import ChatIcon from "../assets/img/chat-alt.svg";
 ---
 
 <Layout>
@@ -15,520 +9,165 @@ import ChatIcon from "../assets/img/chat-alt.svg";
     content="Страница контактов для связи с эскорт-агентством Aurora Escort в Москве. Телефон, мессенджеры телеграм, ватсап."
   />
   <title slot="title">Контакты - Aurora Escort</title>
-  <div class="contact-hero-section">
-    <div class="contact-hero-bg-wrapper">
-      <div class="container contact">
-        <h1 class="heading">Контакты</h1>
-        <div class="contact-block-wrapper">
-          <div class="contact-block">
-            <Image src={ChatIcon} alt="напишите нам" class="contact-icon" />
 
-            <h2>Связаться с нами</h2>
-            <p>Мы будем рады услышать вас. Мы вас любим!</p>
-
-            <div class="icon-container">
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Контакты
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Мы будем рады услышать вас. Мы вас любим!
+        </p>
+      </div>
+      <div
+        class="justify-center mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+      >
+        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div
+            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+          >
+            <div class="mx-auto max-w-xs px-8">
+              <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-gray-900"
+                  >Telegram</span
+                >
+              </p>
               <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=447480686013"
-                class="btn w-button"
-              >
-                <Image src={IconWhatsapp} alt="написать в whatsapp" />
-                Whatsapp
-              </a>
-
-              <a
-                target="_blank"
                 href="https://t.me/aurora_escort"
-                class="btn w-button"
-              >
-                <Image src={IconTelegram} alt="написать в telegram" />
-                Telegram
-              </a>
-
-              <!--  <a
                 target="_blank"
-                href="https://viber.click/447480686013"
-                class="btn w-button"
+                class="bg-opacity-70 mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Написать</a
               >
-                <Image
-                  class="viber-icon"
-                  src={IconViber}
-                  alt="написать в viber"
-                />
-                Viber</a
-              > -->
+              <p class="mt-6 text-xs leading-5 text-gray-600">
+                Опишите подробно свои пожелания менеджеру и мы их исполним
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div
+            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+          >
+            <div class="mx-auto max-w-xs px-8">
+              <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-gray-900"
+                  >WhatsApp</span
+                >
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=447480686013"
+                target="_blank"
+                class="bg-opacity-70 mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Написать</a
+              >
+              <p class="mt-6 text-xs leading-5 text-gray-600">
+                Опишите подробно свои пожелания менеджеру и мы их исполним
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="contact-image-div"></div>
     </div>
   </div>
-  <div id="contact" class="content-section">
-    <div class="container">
-      <div class="contact-wrapper">
-        <!--    <div class="contact-left">
-          <h2>Contact Us</h2>
-          <div class="w-richtext">
-            <p>
-              Acme Outdoors<br />123 Rainy Street<br />Oklahoma City, OK 73129
-            </p>
-            <p>
-              ‍<br /><strong>General Inquiries:</strong>�&nbsp;(405) 555-5555<br
-              /><strong>Customer Support:</strong>�&nbsp;(405) 555-5556
-            </p>
+
+  <div class="isolate bg-white px-6 pb-20 lg:px-8">
+    <div
+      class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#fc8994] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Форма обратной связи
+      </h2>
+    </div>
+    <form action="" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div>
+          <label
+            for="first-name"
+            class="block text-sm font-semibold leading-6 text-gray-900"
+            >Имя</label
+          >
+          <div class="mt-2.5">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="given-name"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
           </div>
-        </div> -->
-        <div class="contact-right">
-          <h2>Обратная связь</h2>
-          <p>Отправьте нам сообщение, если у вас остались вопросы!</p>
-          <div class="w-form">
-            <form
-              id="email-form"
-              name="email-form"
-              data-name="Email Form"
-              method="get"
-              data-wf-page-id="5e84fa102a9eae9dcc4627da"
-              data-wf-element-id="fe567e25-f54e-e832-b312-e1ed2dc1cad8"
-            >
-              <label for="name">Имя</label><input
-                class="input w-input"
-                maxlength="256"
-                name="name"
-                data-name="Name"
-                placeholder="Введите имя"
-                type="text"
-                id="name"
-              /><label for="email">Почта</label><input
-                class="input w-input"
-                maxlength="256"
-                name="email"
-                data-name="Email"
-                placeholder="Введите адрес электронной почты"
-                type="email"
-                id="email"
-                required=""
-              /><label for="Message">Ваше сообщение</label><textarea
-                placeholder="Введите сообщение"
-                maxlength="5000"
-                id="Message"
-                name="Message"
-                data-name="Message"
-                class="input w-input"></textarea>
-              <input
-                type="submit"
-                data-wait="Please wait..."
-                class="btn w-button"
-                value="Отправить"
-              />
-            </form>
+        </div>
+        <div>
+          <label
+            for="last-name"
+            class="block text-sm font-semibold leading-6 text-gray-900"
+            >Фамилия</label
+          >
+          <div class="mt-2.5">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              autocomplete="family-name"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <label
+            for="email"
+            class="block text-sm font-semibold leading-6 text-gray-900"
+            >Почта</label
+          >
+          <div class="mt-2.5">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <label
+            for="message"
+            class="block text-sm font-semibold leading-6 text-gray-900"
+            >Сообщение</label
+          >
+          <div class="mt-2.5">
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            ></textarea>
           </div>
         </div>
       </div>
-    </div>
+      <div class="mt-10">
+        <button
+          type="submit"
+          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >Давайте пообщаемся
+        </button>
+      </div>
+    </form>
   </div>
 </Layout>
 
 <style>
-  .w-button {
-    display: inline-block;
-    padding: 9px 15px;
-    background-color: #3898ec;
-    color: #fff;
-    border: 0;
-    line-height: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0;
-  }
-  input.w-button {
-    -webkit-appearance: button;
-  }
-
-  .w-form {
-    margin: 0 0 15px;
-  }
-  .w-form-done {
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #ddd;
-  }
-  .w-form-fail {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ffdede;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 700;
-  }
-  .w-input {
-    display: block;
-    width: 100%;
-    height: 38px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ccc;
-  }
-  .w-input:-moz-placeholder {
-    color: #999;
-  }
-  .w-input::-moz-placeholder {
-    color: #999;
-    opacity: 1;
-  }
-  .w-input:-ms-input-placeholder {
-    color: #999;
-  }
-  .w-input::-webkit-input-placeholder {
-    color: #999;
-  }
-  .w-input:focus {
-    border-color: #3898ec;
-    outline: 0;
-  }
-  .w-input[disabled],
-  .w-input[readonly] {
-    cursor: not-allowed;
-    background-color: #eee;
-  }
-  textarea.w-input {
-    height: auto;
-  }
-  .w-form-label {
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-
-  .w-richtext:after,
-  .w-richtext:before {
-    content: " ";
-    display: table;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-  }
-  .w-richtext:after {
-    clear: both;
-  }
-  .w-richtext[contenteditable="true"]:after,
-  .w-richtext[contenteditable="true"]:before {
-    white-space: initial;
-  }
-
-  body {
-    font-family: "PT Sans Caption", sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 700;
-  }
-  a {
-    color: #eb5757;
-    text-decoration: underline;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 400;
-  }
-  .btn {
-    padding: 5px 25px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #eb5757;
-    border-radius: 5px;
-    background-color: #eb5757;
-    -webkit-transition:
-      border-color 0.3s ease,
-      background-color 0.3s ease;
-    transition:
-      border-color 0.3s ease,
-      background-color 0.3s ease;
-    font-weight: 700;
-  }
-  .btn:hover {
-    border-color: #222;
-    background-color: #222;
-  }
-  .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .container.contact {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .input {
-    border: 1px solid #222;
-    border-radius: 5px;
-  }
-  .input:hover {
-    border-color: #eb5757;
-  }
-  .input:active {
-    border-color: #eb5757;
-  }
-  .input:focus {
-    border-color: #eb5757;
-  }
-  .input::-webkit-input-placeholder {
-    color: #525252;
-  }
-  .input:-ms-input-placeholder {
-    color: #525252;
-  }
-  .input::-ms-input-placeholder {
-    color: #525252;
-  }
-  .input::placeholder {
-    color: #525252;
-  }
-  .hero-section {
-    min-height: 550px;
-  }
-
-  .content-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  .image {
-    display: block;
-  }
-  .contact-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-  .contact-left {
-    width: 30%;
-  }
-  .contact-right {
-    width: 70%;
-    padding-left: 20px;
-  }
-
-  @media screen and (min-width: 992px) {
-    .contact-right {
-      margin-top: 140px;
-    }
-  }
-
-  .contact-hero-section {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #222;
-    color: #f9f9f9;
-  }
-  .contact-hero-bg-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-  .contact-image-div {
-    width: 45%;
-    height: 550px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(#222),
-        color-stop(76%, rgba(34, 34, 34, 0.18))
-      ),
-      url(/src/assets/img/contacts.jpg);
-    background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%),
-      url(/src/assets/img/contacts.jpg);
-    background-position:
-      0 0,
-      50% 50%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
-  .contact-block-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .contact-icon {
-    margin-bottom: 30px;
-  }
-  .heading {
-    margin-top: 55px;
-  }
-  .success {
-    min-height: 280px;
-    padding-top: 125px;
-    border-radius: 5px;
-    background-color: #20c788;
-    color: #f9f9f9;
-  }
-  .error {
-    border-radius: 5px;
-    background-color: #e53935;
-    color: #f9f9f9;
-  }
-
-  @media screen and (max-width: 991px) {
-    .container {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    .container.contact {
-      position: static;
-      padding-bottom: 35px;
-    }
-    .hero-heading {
-      width: 60%;
-    }
-    .contact-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
-    .contact-left {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .contact-right {
-      width: 100%;
-      padding-left: 0;
-    }
-    .contact-hero-bg-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: column-reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-    }
-    .contact-image-div {
-      width: 100%;
-      height: 350px;
-      background-image: -webkit-gradient(
-          linear,
-          left bottom,
-          left top,
-          from(#222),
-          color-stop(76%, rgba(34, 34, 34, 0.18))
-        ),
-        url(/src/assets/img/contacts.jpg);
-      background-image: linear-gradient(0deg, #222, rgba(34, 34, 34, 0.18) 76%),
-        url(/src/assets/img/contacts.jpg);
-      background-position:
-        0 0,
-        50% 35%;
-      background-size: auto, cover;
-      background-repeat: repeat, no-repeat;
-    }
-    .contact-block {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      width: 30%;
-      min-height: 350px;
-      margin-top: 25px;
-      margin-right: 20px;
-      padding: 40px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-      color: #222;
-      text-align: center;
-    }
-    .contact-block-wrapper {
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-    }
-    .contact-block {
-      width: 48%;
-      margin-right: 0;
-      background-color: #f5f2f2;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .contact-block-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
-    .contact-block {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .hero-section.contact-hero {
-      background-position:
-        0 0,
-        80% 50%;
-    }
-
-    .contact-image-div {
-      background-position:
-        0 0,
-        50% 50%;
-    }
-  }
-
-  .icon-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .viber-icon {
-    max-width: 30%;
+  .height-custom {
+    height: 120%;
   }
 </style>

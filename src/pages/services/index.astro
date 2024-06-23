@@ -11,18 +11,50 @@ import { services } from "./data";
     content="Список услуг эскорт агенства Aurora Escort."
   />
   <title slot="title">Услуги - Aurora Escort</title>
-  <h1 class="title">Услуги</h1>
 
-  {
-    services.map(({ params: { serviceId }, props: { h1 } }) => (
-      <div class="service-card">
-        <ServiceCard text={h1} id={serviceId} />
+  <div class="pt-10 bg-gray-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-5 sm:py-10 lg:max-w-none lg:py-10">
+        <h1 class="text-2xl font-bold text-gray-900 title">Услуги</h1>
+
+        <div
+          class="mt-6 grid gap-y-12 lg:grid-cols-3 lg:gap-x-6 animate-fade-in"
+        >
+          {
+            services.map(
+              ({ params: { serviceId }, props: { h1, imgFileName } }) => (
+                <div class="service-card transform transition duration-500 hover:scale-105">
+                  <ServiceCard
+                    text={h1}
+                    id={serviceId}
+                    imgFileName={imgFileName}
+                  />
+                </div>
+              )
+            )
+          }
+        </div>
       </div>
-    ))
-  }
+    </div>
+  </div>
 </Layout>
 
 <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
   .title {
     margin-left: 10px;
     margin-bottom: 17px;
@@ -30,5 +62,18 @@ import { services } from "./data";
 
   .service-card {
     margin: 15px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    transform: translateY(0); /* Ensure transform is set initially */
+  }
+
+  .service-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .service-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .service-card:nth-child(3) {
+    animation-delay: 0.3s;
   }
 </style>

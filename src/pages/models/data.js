@@ -1,4 +1,3 @@
-import aboutImg from "../../assets/img/about-red.jpg";
 import blondeImage1 from "../../assets/img/blondes/blonde1-1.webp";
 import blondeImage2 from "../../assets/img/blondes/blonde1-2.webp";
 import blondeImage3 from "../../assets/img/blondes/blonde1-3.webp";
@@ -57,7 +56,7 @@ export const models = [
     },
   },
   {
-    params: { id: 'chealse' },
+    params: { id: "chealse" },
     props: {
       name: "Челси",
       price: "50.000",
@@ -69,7 +68,7 @@ export const models = [
     },
   },
   {
-    params: { id: 'anna' },
+    params: { id: "anna" },
     props: {
       name: "Аня",
       price: "60.000",
@@ -81,7 +80,7 @@ export const models = [
     },
   },
   {
-    params: { id: 'agnes' },
+    params: { id: "agnes" },
     props: {
       name: "Агнес",
       price: "65.000",
@@ -93,7 +92,7 @@ export const models = [
     },
   },
   {
-    params: { id: 'mia' },
+    params: { id: "mia" },
     props: {
       name: "Миа",
       price: "70.000",
@@ -105,134 +104,134 @@ export const models = [
     },
   },
   {
-    params: { id: 'jizel' },
+    params: { id: "jizel" },
     props: {
       name: "Жизель",
       price: "70.000",
       age: "19",
       weight: 55,
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'lia' },
+    params: { id: "lia" },
     props: {
       name: "Лия",
       price: "70.000",
       age: "19",
       height: "168",
       weight: 55,
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'rina'},
+    params: { id: "rina" },
     props: {
       name: "Рина",
       price: "70.000",
       age: "19",
       weight: 55,
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'margo' },
+    params: { id: "margo" },
     props: {
       name: "Марго",
       price: "70.000",
       age: "19",
       weight: 55,
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'mila' },
+    params: { id: "mila" },
     props: {
       name: "Мила",
       price: "70.000",
       age: "19",
       weight: 55,
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'anno' },
+    params: { id: "anno" },
     props: {
       name: "Аннo",
       price: "70.000",
       age: "19",
       weight: 55,
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'inga' },
+    params: { id: "inga" },
     props: {
       name: "Инга",
       price: "70.000",
       age: "19",
       height: "168",
       weight: 55,
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'lila' },
+    params: { id: "lila" },
     props: {
       name: "Лила",
       weight: 55,
       price: "70.000",
       age: "19",
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'marta' },
+    params: { id: "marta" },
     props: {
       name: "Марта",
       price: "70.000",
       weight: 55,
       age: "19",
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'nesti' },
+    params: { id: "nesti" },
     props: {
       name: "Нести",
       price: "70.000",
       age: "19",
       height: "168",
       weight: 55,
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },
   {
-    params: { id: 'janna' },
+    params: { id: "janna" },
     props: {
       name: "Жанна",
       price: "70.000",
       weight: 55,
       age: "19",
       height: "168",
-      images: [aboutImg],
+      images: [],
       about: "люблю спорт",
     },
   },

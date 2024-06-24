@@ -90,9 +90,9 @@ const { page, pageTitle, descriptionMetaTag, titleMetaTag } = Astro.props;
         <div class="products-list-wrapper w-dyn-list">
           <div role="list" class="products-list w-dyn-items">
             {
-              page.data.map(({ props, params }) => (
-                <ModelCard {...props} {...params} />
-              ))
+              page.data.map(({ props, params }) => ({
+                /* <ModelCard {...props} {...params} /> */
+              }))
             }
           </div>
         </div>

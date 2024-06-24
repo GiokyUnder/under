@@ -22,13 +22,9 @@ import { services } from "./data";
         >
           {
             services.map(
-              ({ params: { serviceId }, props: { h1, imgFileName } }) => (
+              ({ params: { serviceId }, props: { h1, imgName } }) => (
                 <div class="service-card transform transition duration-500 hover:scale-105">
-                  <ServiceCard
-                    text={h1}
-                    id={serviceId}
-                    imgFileName={imgFileName}
-                  />
+                  <ServiceCard text={h1} id={serviceId} imgName={imgName} />
                 </div>
               )
             )

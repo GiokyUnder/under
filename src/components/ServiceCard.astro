@@ -1,8 +1,40 @@
 ---
-import Image from "astro/components/Image.astro";
-import ArrowImg from "../assets/img/arrow.svg";
+import { Image } from "astro:assets";
+import dinnerEscort from "../assets/img/services/dinner-escort.webp";
+import corporate from "../assets/img/services/corporate.webp";
+import escortMeet from "../assets/img/services/escort-meet.webp";
+import events from "../assets/img/services/events.webp";
+import abroad from "../assets/img/services/abroad.webp";
+import escortMoscow from "../assets/img/services/escort-moscow.webp";
+import vistavka from "../assets/img/services/vistavka.webp";
+import party from "../assets/img/services/party.webp";
+import hostes from "../assets/img/services/hostes.webp";
+import film from "../assets/img/services/film.webp";
+import transfer1 from "../assets/img/services/transfer1.webp";
+import hangovers from "../assets/img/services/hangovers.webp";
+import intimicy from "../assets/img/services/intimicy.webp";
+import escortTrip from "../assets/img/services/escort-trip.webp";
+import pairs from "../assets/img/services/pairs.webp";
 
-const { text, id, imgFileName, h1 } = Astro.props;
+const { text, id, imgName, h1 } = Astro.props;
+
+const imageMap = {
+  dinnerEscort: dinnerEscort,
+  corporate: corporate,
+  escortMeet: escortMeet,
+  events: events,
+  abroad: abroad,
+  escortMoscow: escortMoscow,
+  vistavka: vistavka,
+  party: party,
+  hostes: hostes,
+  film: film,
+  transfer1: transfer1,
+  hangovers: hangovers,
+  intimicy: intimicy,
+  escortTrip: escortTrip,
+  pairs: pairs,
+};
 ---
 
 <div class="group relative">
@@ -10,8 +42,8 @@ const { text, id, imgFileName, h1 } = Astro.props;
     <div
       class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64"
     >
-      <img
-        src=`/src/assets/img/services/${imgFileName}`
+      <Image
+        src={imageMap[imgName]}
         alt={text}
         class="h-full w-full object-cover object-center"
       />

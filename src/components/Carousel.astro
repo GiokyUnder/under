@@ -1,10 +1,15 @@
+---
+import blondImg from "../assets/img/blondes/blond4-1.webp";
+import brunetImg from "../assets/img/brunnetes/brunet1-1.webp";
+---
+
 <div id="controls-carousel" class="relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
   <div class="relative h-[23rem] overflow-hidden rounded-lg md:h-[45rem]">
     <!-- Item 1 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img
-        src="/src/assets/img/blondes/blond4-1.webp"
+        src={blondImg.src}
         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />
@@ -15,7 +20,7 @@
       data-carousel-item="active"
     >
       <img
-        src="/src/assets/img/brunnetes/brunet1-1.webp"
+        src={brunetImg.src}
         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         alt="..."
       />

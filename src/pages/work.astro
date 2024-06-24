@@ -1,5 +1,15 @@
 ---
+import { Image } from "astro:assets";
+
 import Layout from "../layouts/Layout.astro";
+
+import work1Img from "../assets/img/work1.webp";
+import work2Img from "../assets/img/work2.webp";
+import work3Img from "../assets/img/work3.webp";
+import work4Img from "../assets/img/work4.webp";
+import work5Img from "../assets/img/work5.webp";
+import work6Img from "../assets/img/work6.webp";
+import work7Img from "../assets/img/work7.webp";
 ---
 
 <Layout>
@@ -121,40 +131,15 @@ import Layout from "../layouts/Layout.astro";
                         <div
                           class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
                         >
-                          <img
-                            src="/src/assets/img/work1.webp"
+                          <Image
+                            src={work1Img}
                             alt="фото для страницы карьеры"
                             class="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="/src/assets/img/work3.webp"
-                            alt="фото для страницы карьеры"
-                            class="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
-                      >
-                        <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="/src/assets/img/work2.webp"
-                            alt="фото для страницы карьеры"
-                            class="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="/src/assets/img/work4.webp"
-                            alt="фото для страницы карьеры"
-                            class="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="/src/assets/img/work5.webp"
+                          <Image
+                            src={work3Img}
                             alt="фото для страницы карьеры"
                             class="h-full w-full object-cover object-center"
                           />
@@ -164,16 +149,41 @@ import Layout from "../layouts/Layout.astro";
                         class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
                       >
                         <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="/src/assets/img/work6.webp"
+                          <Image
+                            src={work2Img}
                             alt="фото для страницы карьеры"
                             class="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
+                          <Image
+                            src={work4Img}
                             alt="фото для страницы карьеры"
-                            src="/src/assets/img/work7.webp"
+                            class="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src={work5Img}
+                            alt="фото для страницы карьеры"
+                            class="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                      >
+                        <div class="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src={work6Img}
+                            alt="фото для страницы карьеры"
+                            class="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src={work7Img}
+                            alt="фото для страницы карьеры"
                             class="h-full w-full object-cover object-center"
                           />
                         </div>

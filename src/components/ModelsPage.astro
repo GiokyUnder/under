@@ -9,7 +9,6 @@ const { page, pageTitle, descriptionMetaTag, titleMetaTag } = Astro.props;
 
 <Layout>
   <meta slot="description" name="description" content={descriptionMetaTag} />
-  <meta slot="meta-noindex" name="robots" content="noindex, follow" />
   <title slot="title">
     {titleMetaTag}
   </title>

@@ -25,9 +25,9 @@ export const asianModels = [
     params: { id: "erika" },
     props: {
       name: "Эрика",
-      price: "80.000",
+      price: "70.000",
       age: "23",
-      height: "172",
+      height: "168",
       weight: 55,
       images: [erikaImage1, erikaImage2, erikaImage3],
       about:

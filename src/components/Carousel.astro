@@ -1,30 +1,22 @@
 ---
-import blondImg from "../assets/img/blondes/blond4-1.webp";
-import brunetImg from "../assets/img/brunnetes/brunet1-1.webp";
+import { Image } from "astro:assets";
+const { images, name } = Astro.props;
 ---
 
 <div id="controls-carousel" class="relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
   <div class="relative h-[23rem] overflow-hidden rounded-lg md:h-[45rem]">
-    <!-- Item 1 -->
-    <div class="hidden duration-700 ease-in-out  z-0" data-carousel-item>
-      <img
-        src={blondImg.src}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    <!-- Item 2 -->
-    <div
-      class="hidden duration-700 ease-in-out z-0"
-      data-carousel-item="active"
-    >
-      <img
-        src={brunetImg.src}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
+    {
+      images.map((image) => (
+        <div class="hidden duration-700 ease-in-out z-0" data-carousel-item>
+          <Image
+            src={image}
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt={`фото эскортницы ${name}`}
+          />
+        </div>
+      ))
+    }
   </div>
   <!-- Slider controls -->
   <button

@@ -1,33 +1,24 @@
 ---
 import Image from "astro/components/Image.astro";
 
-const { img, alt, name, price, id } = Astro.props;
+const { img, name, price, id } = Astro.props;
 ---
 
-<div class="group relative">
-  <a href={id}>
-    <div
-      class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"
-    >
-      <Image
-        src={img}
-        alt={alt}
-        class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-      />
-    </div>
-    <div class="mt-4 flex justify-between">
-      <div>
-        <h3 class="text-sm text-gray-700">
-          <span aria-hidden="true" class="absolute inset-0"></span>
-          {name}
-        </h3>
-      </div>
-      <p class="text-sm font-medium text-gray-900">
-        {`Бюджет от: ${price} RUB`}
-      </p>
-    </div>
-  </a>
-</div>
+<a href={id} class="group">
+  <div
+    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
+  >
+    <Image
+      src={img}
+      alt=`фото эскорт модели ${name}`
+      class="h-full w-full object-cover object-center group-hover:opacity-75"
+    />
+  </div>
+  <h3 class="mt-4 text-sm text-gray-700">{`Бюджет: от ${price} RUB`}</h3>
+  <p class="mt-1 text-lg font-medium text-gray-900">
+    {name}
+  </p>
+</a>
 
 <style>
   a {

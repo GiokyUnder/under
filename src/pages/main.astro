@@ -1,9 +1,6 @@
 ---
 import ModelCard from "../components/ModelCard.astro";
-
-import modelImage1 from "../assets/img/blondes/blond4-1.webp";
-import modelImage2 from "../assets/img/blondes/blond3-1.webp";
-import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
+import { mainPageModels } from "./models/data/data";
 ---
 
 <div class="hero-section">
@@ -69,92 +66,13 @@ import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
       <div
         class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
       >
-        <ModelCard
-          name="Нэни"
-          price="90000"
-          img={modelImage2}
-          alt="фото модели Нени"
-          id="neni"
-        />
-        <ModelCard
-          name="Челси"
-          price="80000"
-          img={modelImage1}
-          alt="фото модели Челси"
-          id="chealse"
-        />
-        <ModelCard
-          name="Миа"
-          price="80000"
-          img={modelImage3}
-          alt="фото модели Миа"
-          id="mia"
-        />
-
-        <ModelCard
-          name="Нэни"
-          price="90000"
-          img={modelImage2}
-          alt="фото модели Нени"
-          id="neni"
-        />
-        <ModelCard
-          name="Челси"
-          price="80000"
-          img={modelImage1}
-          alt="фото модели Челси"
-          id="chealse"
-        />
-        <ModelCard
-          name="Миа"
-          price="80000"
-          img={modelImage3}
-          alt="фото модели Миа"
-          id="mia"
-        />
-
-        <ModelCard
-          name="Нэни"
-          price="90000"
-          img={modelImage2}
-          alt="фото модели Нени"
-          id="neni"
-        />
-        <ModelCard
-          name="Челси"
-          price="80000"
-          img={modelImage1}
-          alt="фото модели Челси"
-          id="chealse"
-        />
-        <ModelCard
-          name="Миа"
-          price="80000"
-          img={modelImage3}
-          alt="фото модели Миа"
-          id="mia"
-        />
-        <ModelCard
-          name="Нэни"
-          price="90000"
-          img={modelImage2}
-          alt="фото модели Нени"
-          id="neni"
-        />
-        <ModelCard
-          name="Челси"
-          price="80000"
-          img={modelImage1}
-          alt="фото модели Челси"
-          id="chealse"
-        />
-        <ModelCard
-          name="Миа"
-          price="80000"
-          img={modelImage3}
-          alt="фото модели Миа"
-          id="mia"
-        />
+        {
+          mainPageModels.map(
+            ({ props: { name, price, images }, params: { id } }) => (
+              <ModelCard id={id} name={name} price={price} img={images[0]} />
+            )
+          )
+        }
       </div>
     </div>
   </div>
@@ -725,28 +643,28 @@ import modelImage3 from "../assets/img/brunnetes/brunet1-1.webp";
       </figure>
     </div>
   </section>
-
-  <style>
-    .hero-section {
-      min-height: 550px;
-      background-image: -webkit-gradient(
-          linear,
-          left bottom,
-          left top,
-          from(#222),
-          to(rgba(34, 34, 34, 0))
-        ),
-        url(/src/assets/img/main.webp);
-      background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-        url(/src/assets/img/main.webp);
-      background-position:
-        0 0,
-        50% 50%;
-      background-size: auto, cover;
-    }
-
-    a {
-      text-decoration: none !important;
-    }
-  </style>
 </div>
+
+<style>
+  .hero-section {
+    min-height: 550px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#222),
+        to(rgba(34, 34, 34, 0))
+      ),
+      url(/src/assets/img/main.webp);
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
+      url(/src/assets/img/main.webp);
+    background-position:
+      0 0,
+      50% 50%;
+    background-size: auto, cover;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+</style>

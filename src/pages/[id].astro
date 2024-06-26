@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-import { models } from "../pages/models/data";
+import { models } from "./models/data/data";
 import Carousel from "../components/Carousel.astro";
 
 export async function getStaticPaths() {
@@ -37,7 +37,7 @@ const modelAge = `${age} ${forms[pluralForm]}`;
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
         <div class="">
-          <Carousel />
+          <Carousel images={images} name={name} />
         </div>
 
         <div class="mt-6 sm:mt-8 lg:mt-0">
@@ -50,14 +50,14 @@ const modelAge = `${age} ${forms[pluralForm]}`;
             <p
               class="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white"
             >
-              $1,200
+              {`от ${price} RUB`}
             </p>
           </div>
 
           <div class="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
             <a
-              href="#"
-              title=""
+              href="https://t.me/aurora_escort"
+              target="_blank"
               class="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               role="button"
             >
@@ -85,17 +85,7 @@ const modelAge = `${age} ${forms[pluralForm]}`;
           <hr class="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
 
           <p class="mb-6 text-gray-500 dark:text-gray-400">
-            Привет, меня зовут Миа. Я выросла в небольшом городке, но всегда
-            мечтала о большом городе и яркой жизни. Сейчас я работаю моделью в
-            мегаполисе, встречая интересных людей и посещая удивительные места.
-            В свободное время увлекаюсь йогой и искусством, чтобы поддерживать
-            внутренний баланс.
-          </p>
-
-          <p class="text-gray-500 dark:text-gray-400">
-            Эта работа позволяет мне путешествовать и открывать новые горизонты.
-            Я верю, что каждый заслуживает немного счастья и внимания, и рада,
-            что могу дарить это своим клиентам.
+            {about}
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import ModelCard from "../../components/ModelCard.astro";
-import { models } from "./data/data";
+import Layout from "../layouts/Layout.astro";
+import ModelCard from "../components/ModelCard.astro";
+import { asianModels } from "./models/data/asian";
 ---
 
 <Layout>
@@ -48,12 +48,7 @@ import { models } from "./data/data";
           class="text-gray-900 border border-gray-200 bg-white ring-4 ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 focus:ring-gray-500"
           >Худые</a
         >
-        <a
-          href="/asian"
-          type="button"
-          class="text-gray-900 border border-gray-200 bg-white ring-4 ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 focus:ring-gray-500"
-          >Азиатки</a
-        >
+
         <a
           href="/mulattos"
           type="button"
@@ -67,9 +62,11 @@ import { models } from "./data/data";
         class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
       >
         {
-          models.map(({ props: { name, price, images }, params: { id } }) => (
-            <ModelCard id={id} name={name} price={price} img={images[0]} />
-          ))
+          asianModels.map(
+            ({ props: { name, price, images }, params: { id } }) => (
+              <ModelCard id={id} name={name} price={price} img={images[0]} />
+            )
+          )
         }
       </div>
     </div>

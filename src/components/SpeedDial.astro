@@ -1,4 +1,4 @@
-<div data-dial-init class="fixed end-6 bottom-6 group">
+<div id="dialParent" data-dial-init class="fixed end-6 bottom-6 group">
   <div
     id="speed-dial-menu-text-outside-button"
     class="flex flex-col items-center hidden mb-4 space-y-2"
@@ -92,6 +92,7 @@
     </a>
   </div>
   <button
+    id="dialButton"
     type="button"
     data-dial-toggle="speed-dial-menu-text-outside-button"
     aria-controls="speed-dial-menu-text-outside-button"
@@ -113,3 +114,19 @@
     <span class="sr-only">Open actions menu</span>
   </button>
 </div>
+
+<script>
+  import { Dial } from "flowbite";
+
+  const $parentEl = document.getElementById("dialParent");
+  const $triggerEl = document.getElementById("dialButton");
+  const $targetEl = document.getElementById(
+    "speed-dial-menu-text-outside-button"
+  );
+
+  const dial = new Dial($parentEl, $triggerEl, $targetEl);
+
+  $triggerEl?.addEventListener("click", () => {
+    dial.toggle();
+  });
+</script>

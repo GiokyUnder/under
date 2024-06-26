@@ -1,0 +1,58 @@
+<div
+  id="scrollToTopBtn"
+  data-dial-init
+  class="hidden fixed end-6 bottom-32 group"
+>
+  <button
+    type="button"
+    data-dial-toggle="speed-dial-menu-default"
+    aria-controls="speed-dial-menu-default"
+    aria-expanded="false"
+    class="bg-opacity-80 flex items-center justify-center text-white bg-indigo-700 rounded-full w-14 h-14 hover:bg-indigo-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="w-5 h-5 transition-transform group-hover:-translate-y-1"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z"
+        clip-rule="evenodd"></path>
+    </svg>
+
+    <span class="sr-only">Open actions menu</span>
+  </button>
+</div>
+
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 1800 ||
+      document.documentElement.scrollTop > 1800
+    ) {
+      scrollToTopBtn?.classList.remove("hidden");
+    } else {
+      scrollToTopBtn?.classList.add("hidden");
+    }
+  }
+
+  scrollToTopBtn?.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    scrollToTopBtn?.classList.add("hidden");
+    scrollFunction(); // Проверить текущую прокрутку страницы
+  });
+</script>

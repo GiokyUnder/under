@@ -22,9 +22,9 @@ export const mulattoModels = [
     props: {
       name: "Алвин",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "161",
+      weight: 48,
       images: [alvinImage1, alvinImage2, alvinImage3, alvinImage4, alvinImage5],
       about:
         "Алвин — стильный и харизматичный модель, который обожает мир музыки и танцев. Он участвует в музыкальных проектах и фотосессиях, делая успешную карьеру в индустрии развлечений.",
@@ -35,9 +35,9 @@ export const mulattoModels = [
     props: {
       name: "Глория",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "26",
+      height: "161",
+      weight: 58,
       images: [gloriaImage2, gloriaImage3],
       about:
         "Глория — изысканная и утонченная модель, увлекающаяся высокой модой и роскошными вечеринками. Она часто посещает мировые столицы моды, где представляет новые коллекции и дизайнерские образы.",
@@ -48,9 +48,9 @@ export const mulattoModels = [
     props: {
       name: "Джези",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "170",
+      weight: 58,
       images: [jeziImage1, jeziImage2],
       about:
         "Джези — вдохновенная и творческая модель, увлекающаяся искусством и фотографией. Она часто создает уникальные образы и участвует в креативных проектах и выставках.",
@@ -61,9 +61,9 @@ export const mulattoModels = [
     props: {
       name: "Миа",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "158",
+      weight: 54,
       images: [miaImage1, miaImage2],
       about:
         "Миа — стильная и энергичная модель, увлекающаяся спортом и активным образом жизни. Она любит путешествовать и открывать для себя новые горизонты.",
@@ -75,8 +75,8 @@ export const mulattoModels = [
       name: "Рона",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "154",
+      weight: 53,
       images: [ronaImage1, ronaImage2],
       about:
         "Рона — чувственная и загадочная модель, увлекающаяся астрологией и духовной практикой. Она часто изучает звезды и тайны Вселенной, стремясь понять глубинные законы жизни.",

@@ -56,9 +56,9 @@ export const skinnyModels = [
     props: {
       name: "Аделина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "162",
+      weight: 41,
       images: [adelinaImage1, adelinaImage2, adelinaImage3],
       about:
         "Аделина — элегантная модель, увлекающаяся йогой и здоровым образом жизни. Она находит гармонию через медитацию и практики йоги, что помогает ей оставаться в отличной форме.",
@@ -69,9 +69,9 @@ export const skinnyModels = [
     props: {
       name: "Алена",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "163",
+      weight: 45,
       images: [alenaImage1, alenaImage2, alenaImage3, alenaImage4],
       about:
         "Алена — обаятельная и утонченная модель, увлекающаяся музыкой и танцами. Она любит посещать концерты и танцевальные студии, где черпает вдохновение для новых проектов.",
@@ -82,9 +82,9 @@ export const skinnyModels = [
     props: {
       name: "Алиса",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "155",
+      weight: 42,
       images: [alisaImage1, alisaImage2, alisaImage3],
       about:
         "Алиса — стильная модель, увлекающаяся модой и дизайном. Она постоянно следит за новыми трендами и сама создает уникальные образы для фотосессий.",
@@ -95,9 +95,9 @@ export const skinnyModels = [
     props: {
       name: "Ася",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "26",
+      height: "161",
+      weight: 45,
       images: [asyaImage1, asyaImage2, asyaImage3],
       about:
         "Ася — жизнерадостная модель, увлекающаяся спортом и активным отдыхом. Она любит проводить время на свежем воздухе и всегда готова к новым приключениям.",
@@ -109,8 +109,8 @@ export const skinnyModels = [
       name: "Лана",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "162",
+      weight: 46,
       images: [lanaImage1, lanaImage2, larisaImage3],
       about:
         "Лана — нежная и романтичная модель, увлекающаяся литературой и искусством. Она часто посещает книжные клубы и художественные галереи, чтобы вдохновляться на новые достижения.",
@@ -121,9 +121,9 @@ export const skinnyModels = [
     props: {
       name: "Лариса",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "161",
+      weight: 41,
       images: [larisaImage1, larisaImage2],
       about:
         "Лариса — энергичная и позитивная модель, увлекающаяся фитнесом и здоровым питанием. Она любит проводить время в спортзале и готовить полезные блюда.",
@@ -134,9 +134,9 @@ export const skinnyModels = [
     props: {
       name: "Лорен",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "158",
+      weight: 42,
       images: [lorenImage1, lorenImage2, lorenImage3],
       about:
         "Лорен — стильная и креативная модель, увлекающаяся фотографией и модой. Она создает уникальные образы и участвует в различных креативных проектах.",
@@ -147,9 +147,9 @@ export const skinnyModels = [
     props: {
       name: "Наталия",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "158",
+      weight: 45,
       images: [nataliaImage1, nataliaImage2, nataliaImage3],
       about:
         "Наталия — утонченная и интеллигентная модель, увлекающаяся наукой и образованием. Она часто посещает научные конференции и семинары, стремясь расширить свои знания.",
@@ -160,9 +160,9 @@ export const skinnyModels = [
     props: {
       name: "Окси",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "169",
+      weight: 51,
       images: [oksiImage1, oksiImage2, oksiImage3],
       about:
         "Окси — яркая и харизматичная модель, увлекающаяся кино и театром. Она часто посещает премьеры и театральные постановки, наслаждаясь высоким искусством.",
@@ -173,9 +173,9 @@ export const skinnyModels = [
     props: {
       name: "Рита",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "165",
+      weight: 44,
       images: [ritaImage1, ritaImage2, ritaImage3, ritaImage4],
       about:
         "Рита — стильная и уверенная в себе модель, увлекающаяся фитнесом и активным образом жизни. Она часто проводит время в спортзале и на свежем воздухе, поддерживая отличную форму.",
@@ -187,8 +187,8 @@ export const skinnyModels = [
       name: "Теона",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "161",
+      weight: 47,
       images: [teonaImage1, teonaImage2, teonaImage3],
       about:
         "Теона — изящная и талантливая модель, увлекающаяся живописью и музыкой. Она часто создает свои произведения искусства и участвует в выставках и музыкальных мероприятиях.",
@@ -200,8 +200,8 @@ export const skinnyModels = [
       name: "Вера",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "165",
+      weight: 46,
       images: [veraImage1, veraImage2],
       about:
         "Вера — нежная и заботливая модель, увлекающаяся благотворительностью и помощью другим. Она активно участвует в различных благотворительных проектах и акциях.",
@@ -213,8 +213,8 @@ export const skinnyModels = [
       name: "Вероника",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "161",
+      weight: 42,
       images: [veronikaImage1, veronikaImage2, veronikaImage3],
       about:
         "Вероника — стильная и целеустремленная модель, увлекающаяся модой и дизайном. Она часто участвует в модных показах и создает уникальные образы для фотосессий.",

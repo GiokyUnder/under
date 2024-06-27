@@ -47,8 +47,8 @@ export const youthModels = [
     props: {
       name: "Ангелина",
       price: "80.000",
-      age: "23",
-      height: "172",
+      age: "22",
+      height: "166",
       weight: 55,
       images: [angelinaImage1, angelinaImage2, angelinaImage3],
       about:
@@ -60,9 +60,9 @@ export const youthModels = [
     props: {
       name: "Инна",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "152",
+      weight: 56,
       images: [innaImage1, innaImage2, innaImage3, innaImage4],
       about:
         "Инна — жизнерадостная модель, увлекающаяся танцами и музыкой. Она любит создавать новые танцевальные композиции и делиться своими эмоциями через движение.",
@@ -73,9 +73,9 @@ export const youthModels = [
     props: {
       name: "Лилия",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "20",
+      height: "166",
+      weight: 53,
       images: [liliaImage1, liliaImage2, liliaImage3],
       about:
         "Лилия — элегантная и стильная модель, увлекающаяся модой и дизайном. Она часто создает уникальные образы и вдохновляется мировыми трендами.",
@@ -86,9 +86,9 @@ export const youthModels = [
     props: {
       name: "Майя",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "157",
+      weight: 45,
       images: [mayaImage1, mayaImage2, mayaImage3],
       about:
         "Майя — яркая и энергичная модель, увлекающаяся спортом и активным отдыхом. Она любит бегать по утрам и участвовать в различных спортивных мероприятиях.",
@@ -99,7 +99,7 @@ export const youthModels = [
     props: {
       name: "Милана",
       price: "80.000",
-      age: "23",
+      age: "20",
       height: "172",
       weight: 55,
       images: [milanaImage1, milanaImage2, milanaImage3],
@@ -112,9 +112,9 @@ export const youthModels = [
     props: {
       name: "Нина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "170",
+      weight: 57,
       images: [ninaImage1, ninaImage2, ninaImage3],
       about:
         "Нина — стильная и уверенная в себе модель, увлекающаяся фитнесом и здоровым образом жизни. Она постоянно совершенствует себя, посещая спортзал и соблюдая диету.",
@@ -125,9 +125,9 @@ export const youthModels = [
     props: {
       name: "Сарина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "152",
+      weight: 46,
       images: [sarinaImage1, sarinaImage2, sarinaImage3],
       about:
         "Сарина — харизматичная и творческая модель, увлекающаяся музыкой и живописью. Она часто пишет картины и играет на музыкальных инструментах, выражая свои чувства.",
@@ -138,8 +138,8 @@ export const youthModels = [
     props: {
       name: "Светлана",
       price: "80.000",
-      age: "23",
-      height: "172",
+      age: "21",
+      height: "162",
       weight: 55,
       images: [svetlanaImage1, svetlanaImage2, svetlanaImage3],
       about:
@@ -151,9 +151,9 @@ export const youthModels = [
     props: {
       name: "Татиани",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "20",
+      height: "155",
+      weight: 45,
       images: [tatiniImage1, tatiniImage2, tatiniImage3, tatiniImage4],
       about:
         "Татиани — жизнерадостная и энергичная модель, увлекающаяся путешествиями и кулинарией. Она любит открывать новые культуры и пробовать экзотические блюда.",
@@ -164,9 +164,9 @@ export const youthModels = [
     props: {
       name: "Ярослава",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "162",
+      weight: 45,
       images: [
         yaroslavaImage1,
         yaroslavaImage2,

@@ -27,9 +27,9 @@ export const redheadModels = [
     props: {
       name: "Элеонора",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "171",
+      weight: 57,
       images: [eleanoraImage1, eleanoraImage2, eleanoraImage3, eleanoraImage4],
       about:
         "Элеонора — изящная и стильная модель, увлекающаяся историей и культурой. Она часто посещает музеи и исторические места, изучая прошлое и современность.",
@@ -53,9 +53,9 @@ export const redheadModels = [
     props: {
       name: "Эльвира",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "173",
+      weight: 58,
       images: [elviraImage1, elviraImage2, elviraImage3],
       about:
         "Эльвира — стильная и изысканная модель, увлекающаяся модными тенденциями и роскошными вечеринками. Она часто посещает модные показы и представляет новые коллекции дизайнеров.",
@@ -67,8 +67,8 @@ export const redheadModels = [
       name: "Рената",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "168",
+      weight: 53,
       images: [renataImage1, renataImage2, renataImage3, renataImage4],
       about:
         "Рената — чувственная и загадочная модель, увлекающаяся танцами и музыкой. Она часто посещает танцевальные студии и участвует в творческих проектах.",
@@ -79,9 +79,9 @@ export const redheadModels = [
     props: {
       name: "Рошана",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "163",
+      weight: 59,
       images: [roshanaImage1],
       about:
         "Рошана — интеллигентная и образованная модель, увлекающаяся философией и психологией. Она часто читает научные статьи и книги, стремясь понять глубинные вопросы человеческой сущности.",
@@ -92,9 +92,9 @@ export const redheadModels = [
     props: {
       name: "Симона",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "163",
+      weight: 49,
       images: [simonaImage1, simonaImage2],
       about:
         "Симона — стильная и утонченная модель, увлекающаяся искусством и культурой. Она часто посещает выставки и галереи, наслаждаясь красотой и разнообразием художественных произведений.",

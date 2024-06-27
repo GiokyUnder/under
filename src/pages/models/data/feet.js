@@ -37,18 +37,15 @@ import yanaImage2 from "../../../assets/img/models/feet/yana2.webp";
 import yanaImage3 from "../../../assets/img/models/feet/yana3.webp";
 import yanaImage4 from "../../../assets/img/models/feet/yana4.webp";
 
-import yuliaImage1 from "../../../assets/img/models/feet/yulia.webp";
-import yuliaImage2 from "../../../assets/img/models/feet/yulia2.webp";
-
 export const feetModels = [
   {
     params: { id: "clara" },
     props: {
       name: "Клара",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "180",
+      weight: 59,
       images: [claraImage1, claraImage2, claraImage3, claraImage4],
       about:
         "Клара — стильная и утонченная модель, увлекающаяся искусством и дизайном. Она создает уникальные образы и любит экспериментировать с модой.",
@@ -59,9 +56,9 @@ export const feetModels = [
     props: {
       name: "Данна",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "182",
+      weight: 45,
       images: [dannaImage1, dannaImage2, dannaImage3, emmaImage4],
       about:
         "Данна — обаятельная и грациозная модель, увлекающаяся театром и кинематографом. Она часто посещает премьеры и театральные постановки, наслаждаясь высоким искусством.",
@@ -72,9 +69,9 @@ export const feetModels = [
     props: {
       name: "Эмма",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "21",
+      height: "178",
+      weight: 61,
       images: [emmaImage1, emmaImage2, emmaImage3],
       about:
         "Эмма — элегантная модель, увлекающаяся путешествиями и культурой. Она часто посещает различные страны и изучает их историю и традиции.",
@@ -85,9 +82,9 @@ export const feetModels = [
     props: {
       name: "Эвелина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "26",
+      height: "179",
+      weight: 65,
       images: [eveleinaImage1, eveleinaImage2, eveleinaImage3],
       about:
         "Эвелина — жизнерадостная и оптимистичная модель, увлекающаяся фотографией и путешествиями. Она любит делиться своими впечатлениями с подписчиками в социальных сетях.",
@@ -98,9 +95,9 @@ export const feetModels = [
     props: {
       name: "Карина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "181",
+      weight: 57,
       images: [karinaImage1, karinaImage2],
       about:
         "Карина — стильная модель с изысканным вкусом. Она увлекается модными тенденциями и всегда выглядит безупречно в любой обстановке.",
@@ -112,8 +109,8 @@ export const feetModels = [
       name: "Лиза",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "178",
+      weight: 59,
       images: [lisaImage1, lisaImage2, lisaImage3, lisaImage4],
       about:
         "Лиза — энергичная и жизнерадостная модель, увлекающаяся активным образом жизни. Она часто участвует в спортивных мероприятиях и здоровых соревнованиях.",
@@ -137,9 +134,9 @@ export const feetModels = [
     props: {
       name: "Марина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "182",
+      weight: 58,
       images: [marinaImage1, marinaImage2, marinaImage3, marinaImage4],
       about:
         "Марина — талантливая модель, увлекающаяся музыкой и игрой на музыкальных инструментах. В свободное время она занимается композицией и создает свою музыку.",
@@ -150,25 +147,12 @@ export const feetModels = [
     props: {
       name: "Яна",
       price: "80.000",
-      age: "23",
+      age: "22",
       height: "172",
-      weight: 55,
+      weight: 61,
       images: [yanaImage1, yanaImage2, yanaImage3, yanaImage4],
       about:
         "Яна — образованная и интеллигентная модель, увлекающаяся наукой и технологиями. Она часто посещает конференции и семинары, чтобы быть в курсе последних научных достижений.",
-    },
-  },
-  {
-    params: { id: "yulia" },
-    props: {
-      name: "Юлия",
-      price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
-      images: [yuliaImage1, yuliaImage2],
-      about:
-        "Юлия — стильная и изысканная модель, увлекающаяся модной индустрией. Она часто участвует в модных показах и является источником вдохновения для многих дизайнеров.",
     },
   },
 ];

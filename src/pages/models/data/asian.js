@@ -27,8 +27,8 @@ export const asianModels = [
       name: "Эрика",
       price: "70.000",
       age: "23",
-      height: "168",
-      weight: 55,
+      height: "171",
+      weight: 56,
       images: [erikaImage1, erikaImage2, erikaImage3],
       about:
         "Эрика — стильная и обаятельная модель, увлекающаяся искусством и архитектурой. Она любит гулять по историческим центрам городов и фотографировать интересные места.",
@@ -39,9 +39,9 @@ export const asianModels = [
     props: {
       name: "Ланса",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "167",
+      weight: 61,
       images: [lansaImage1, lansaImage2],
       about:
         "Ланса — яркая и стильная модель, которая обожает модные показы и журналы. Она часто участвует в фотосессиях и модельных проектах, делая успешную карьеру в индустрии моды.",
@@ -52,7 +52,7 @@ export const asianModels = [
     props: {
       name: "Мила",
       price: "80.000",
-      age: "23",
+      age: "26",
       height: "172",
       weight: 55,
       images: [milaImage1, milaImage2],
@@ -79,8 +79,8 @@ export const asianModels = [
       name: "Тами",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "170",
+      weight: 57,
       images: [tamiImage1, tamiImage2, tamiImage3],
       about:
         "Тами — талантливая модель с любовью к музыке и танцам. В свободное время она посещает концерты и танцевальные мероприятия, где демонстрирует свои артистические способности.",
@@ -92,8 +92,8 @@ export const asianModels = [
       name: "Уна",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "174",
+      weight: 60,
       images: [unaImage1, unaImage2, unaImage3],
       about:
         "Уна — утонченная и изящная модель, увлекающаяся живописью и фотографией. Она часто посещает выставки и галереи, чтобы насладиться красотой искусства.",

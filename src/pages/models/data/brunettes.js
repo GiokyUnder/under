@@ -56,9 +56,9 @@ export const brunnetes = [
     props: {
       name: "Айна",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "25",
+      height: "159",
+      weight: 52,
       images: [ainaImage1, ainaImage2, ainaImage3],
       about:
         "Айна — очаровательная эскорт модель, увлекающаяся модой и путешествиями. Ей нравится исследовать новые города и знакомиться с интересными людьми.",
@@ -69,9 +69,9 @@ export const brunnetes = [
     props: {
       name: "Анастасия",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "26",
+      height: "168",
+      weight: 52,
       images: [anastasiaImage1, anastasiaImage2],
       about:
         "Анастасия — утонченная модель, любящая изысканную кухню и роскошные впечатления. Ее элегантность и грация делают её идеальной спутницей для любого мероприятия.",
@@ -82,9 +82,9 @@ export const brunnetes = [
     props: {
       name: "Бела",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "162",
+      weight: 45,
       images: [belaImage1, belaImage2, belaImage3, belaImage4],
       about:
         "Бела — яркая и энергичная эскорт модель, увлекающаяся спортом и активным отдыхом. Она всегда готова к новым приключениям и интересным встречам.",
@@ -96,8 +96,8 @@ export const brunnetes = [
       name: "Ева",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "155",
+      weight: 45,
       images: [evaImage1, evaImage2, evaImage3],
       about:
         "Ева — изысканная модель, которая сочетает в себе страсть к моде и любовь к путешествиям. В свободное время она занимается йогой и изучает иностранные языки.",
@@ -108,9 +108,9 @@ export const brunnetes = [
     props: {
       name: "Ирина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "162",
+      weight: 51,
       images: [irinaImage1, irinaImage2, irinaImage3],
       about:
         "Ирина — утонченная и элегантная модель, любящая искусство и литературу. В свободное время она посещает музеи и театры, чтобы вдохновляться новыми идеями.",
@@ -121,9 +121,9 @@ export const brunnetes = [
     props: {
       name: "Жанна",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "173",
+      weight: 46,
       images: [jannaImage1, jannaImage2, jannaImage3],
       about:
         "Жанна — энергичная и жизнерадостная модель, увлекающаяся танцами и музыкой. Она обожает встречать новых людей и делиться с ними своим позитивом.",
@@ -134,9 +134,9 @@ export const brunnetes = [
     props: {
       name: "Николь",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "162",
+      weight: 51,
       images: [nicolImage1, nicolImage2, nicolImage3],
       about:
         "Николь — стильная и модная модель, которая всегда в курсе последних тенденций. В свободное время она занимается дизайном одежды и посещает модные показы.",
@@ -147,9 +147,9 @@ export const brunnetes = [
     props: {
       name: "Полина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "155",
+      weight: 45,
       images: [polinaImage1, polinaImage2, polinaImage3],
       about:
         "Полина — утонченная и интеллигентная модель, любящая читать и путешествовать. Ей нравится открывать для себя новые культуры и знакомиться с людьми со всего мира.",
@@ -161,8 +161,8 @@ export const brunnetes = [
       name: "Римми",
       price: "80.000",
       age: "23",
-      height: "172",
-      weight: 55,
+      height: "167",
+      weight: 54,
       images: [rimmiImage1, rimmiImage2],
       about:
         "Римми — яркая и харизматичная модель, увлекающаяся спортом и здоровым образом жизни. В свободное время она любит бегать в парке и готовить здоровую еду.",
@@ -173,9 +173,9 @@ export const brunnetes = [
     props: {
       name: "Сабина",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "22",
+      height: "168",
+      weight: 61,
       images: [sabinaImage1, sabinaImage2, sabinaImage3],
       about:
         "Сабина — стильная и обаятельная модель, которая всегда знает, как создать настроение. Она обожает проводить время в компаниях и создавать атмосферу праздника.",
@@ -186,9 +186,9 @@ export const brunnetes = [
     props: {
       name: "София",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "25",
+      height: "154",
+      weight: 45,
       images: [sofiaImage1, sofiaImage2],
       about:
         "София — элегантная и утонченная модель, увлекающаяся искусством и модой. В свободное время она любит рисовать и посещать художественные галереи.",
@@ -199,9 +199,9 @@ export const brunnetes = [
     props: {
       name: "Татьяна",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "24",
+      height: "169",
+      weight: 52,
       images: [tatianaImage1, tatianaImage2, tatianaImage3],
       about:
         "Татьяна — интеллигентная и образованная модель, любящая науку и технологии. В свободное время она занимается программированием и участвует в научных конференциях.",
@@ -212,9 +212,9 @@ export const brunnetes = [
     props: {
       name: "Зоя",
       price: "80.000",
-      age: "23",
-      height: "172",
-      weight: 55,
+      age: "25",
+      height: "162",
+      weight: 50,
       images: [zoyaImage1, zoyaImage2, zoyaImage3, zoyaImage4, zoyaImage5],
       about:
         "Зоя — веселая и жизнерадостная модель, увлекающаяся спортом и активным отдыхом. Она любит проводить время на свежем воздухе и кататься на велосипеде.",

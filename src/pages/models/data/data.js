@@ -36,3 +36,14 @@ export const mainPageModels = shuffle([
   ...skinnyModels.slice(0, 2),
   ...youthModels.slice(0, 2),
 ]);
+
+export const servicePageModels = shuffle([
+  ...asianModels.slice(3, 4),
+  ...blondModels.slice(3, 4),
+  ...brunnetes.slice(3, 4),
+  ...feetModels.slice(3, 4),
+  ...mulattoModels.slice(3, 4),
+  ...redheadModels.slice(3, 4),
+  ...skinnyModels.slice(3, 4),
+  ...youthModels.slice(3, 4),
+]);

@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { services } from "./services/data";
-import PageTitle from "../components/PageTitle.astro";
+
 import GirlsCorporateParty from "./services/contents/girlsCorporateParty.astro";
 import DinnerGirls from "./services/contents/dinnerGirls.astro";
 import Hangovers from "./services/contents/hangovers.astro";
@@ -17,6 +17,9 @@ import Transfer from "./services/contents/transfer.astro";
 import Pair from "./services/contents/pair.astro";
 import Events from "./services/contents/events.astro";
 import EscortMeets from "./services/contents/escortMeets.astro";
+import ModelCard from "../components/ModelCard.astro";
+
+import { servicePageModels } from "../pages/models/data/data";
 
 export async function getStaticPaths() {
   return services;
@@ -49,7 +52,35 @@ const CurentContent = contentMap[serviceId] || null;
 <Layout>
   <meta slot="description" name="description" content={content} />
   <title slot="title">{title}</title>
-
+  <div class="bg-white">
+    <div
+      class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+    >
+      <h1
+        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        {h1}
+      </h1>
+      <div
+        class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+      >
+        {
+          servicePageModels.map(
+            ({ props: { name, price, images }, params: { id } }) => (
+              <ModelCard id={id} name={name} price={price} img={images[0]} />
+            )
+          )
+        }
+      </div>
+    </div>
+    <div class="flex items-center justify-center mb-10">
+      <a
+        href="/models"
+        class="center text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Посмотреть еще моделей</a
+      >
+    </div>
+  </div>
   <CurentContent />
 </Layout>
 

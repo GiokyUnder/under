@@ -46,7 +46,7 @@ export const youthModels = [
     params: { id: "angelina" },
     props: {
       name: "Ангелина",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "166",
       weight: 55,
@@ -59,7 +59,7 @@ export const youthModels = [
     params: { id: "inna" },
     props: {
       name: "Инна",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "152",
       weight: 56,
@@ -72,7 +72,7 @@ export const youthModels = [
     params: { id: "lilia" },
     props: {
       name: "Лилия",
-      price: "80.000",
+      price: "70.000",
       age: "20",
       height: "166",
       weight: 53,
@@ -85,7 +85,7 @@ export const youthModels = [
     params: { id: "maya" },
     props: {
       name: "Майя",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "157",
       weight: 45,
@@ -98,7 +98,7 @@ export const youthModels = [
     params: { id: "milana" },
     props: {
       name: "Милана",
-      price: "80.000",
+      price: "70.000",
       age: "20",
       height: "172",
       weight: 55,
@@ -111,7 +111,7 @@ export const youthModels = [
     params: { id: "nina" },
     props: {
       name: "Нина",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "170",
       weight: 57,
@@ -124,7 +124,7 @@ export const youthModels = [
     params: { id: "sarina" },
     props: {
       name: "Сарина",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "152",
       weight: 46,
@@ -137,7 +137,7 @@ export const youthModels = [
     params: { id: "svetlana" },
     props: {
       name: "Светлана",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "162",
       weight: 55,
@@ -150,7 +150,7 @@ export const youthModels = [
     params: { id: "tatini" },
     props: {
       name: "Татиани",
-      price: "80.000",
+      price: "70.000",
       age: "20",
       height: "155",
       weight: 45,
@@ -163,7 +163,7 @@ export const youthModels = [
     params: { id: "yaroslava" },
     props: {
       name: "Ярослава",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "162",
       weight: 45,

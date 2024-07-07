@@ -55,7 +55,7 @@ export const skinnyModels = [
     params: { id: "adelina" },
     props: {
       name: "Аделина",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "162",
       weight: 41,
@@ -68,7 +68,7 @@ export const skinnyModels = [
     params: { id: "alena" },
     props: {
       name: "Алена",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "163",
       weight: 45,
@@ -81,7 +81,7 @@ export const skinnyModels = [
     params: { id: "alisa" },
     props: {
       name: "Алиса",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "155",
       weight: 42,
@@ -94,7 +94,7 @@ export const skinnyModels = [
     params: { id: "asya" },
     props: {
       name: "Ася",
-      price: "80.000",
+      price: "70.000",
       age: "26",
       height: "161",
       weight: 45,
@@ -107,7 +107,7 @@ export const skinnyModels = [
     params: { id: "lana" },
     props: {
       name: "Лана",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "162",
       weight: 46,
@@ -120,7 +120,7 @@ export const skinnyModels = [
     params: { id: "larisa" },
     props: {
       name: "Лариса",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "161",
       weight: 41,
@@ -133,7 +133,7 @@ export const skinnyModels = [
     params: { id: "loren" },
     props: {
       name: "Лорен",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "158",
       weight: 42,
@@ -146,7 +146,7 @@ export const skinnyModels = [
     params: { id: "natalia" },
     props: {
       name: "Наталия",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "158",
       weight: 45,
@@ -159,7 +159,7 @@ export const skinnyModels = [
     params: { id: "oksi" },
     props: {
       name: "Окси",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "169",
       weight: 51,
@@ -172,7 +172,7 @@ export const skinnyModels = [
     params: { id: "rita" },
     props: {
       name: "Рита",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "165",
       weight: 44,
@@ -185,7 +185,7 @@ export const skinnyModels = [
     params: { id: "teona" },
     props: {
       name: "Теона",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "161",
       weight: 47,
@@ -198,7 +198,7 @@ export const skinnyModels = [
     params: { id: "vera" },
     props: {
       name: "Вера",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "165",
       weight: 46,
@@ -211,7 +211,7 @@ export const skinnyModels = [
     params: { id: "veronika" },
     props: {
       name: "Вероника",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "161",
       weight: 42,

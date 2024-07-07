@@ -21,7 +21,7 @@ export const mulattoModels = [
     params: { id: "alvin" },
     props: {
       name: "Алвин",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "161",
       weight: 48,
@@ -34,7 +34,7 @@ export const mulattoModels = [
     params: { id: "gloria" },
     props: {
       name: "Глория",
-      price: "80.000",
+      price: "70.000",
       age: "26",
       height: "161",
       weight: 58,
@@ -47,7 +47,7 @@ export const mulattoModels = [
     params: { id: "jezi" },
     props: {
       name: "Джези",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "170",
       weight: 58,
@@ -60,7 +60,7 @@ export const mulattoModels = [
     params: { id: "mia" },
     props: {
       name: "Миа",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "158",
       weight: 54,
@@ -73,7 +73,7 @@ export const mulattoModels = [
     params: { id: "rona" },
     props: {
       name: "Рона",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "154",
       weight: 53,

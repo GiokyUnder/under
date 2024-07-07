@@ -38,7 +38,7 @@ export const asianModels = [
     params: { id: "lansa" },
     props: {
       name: "Ланса",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "167",
       weight: 61,
@@ -51,7 +51,7 @@ export const asianModels = [
     params: { id: "mila" },
     props: {
       name: "Мила",
-      price: "80.000",
+      price: "70.000",
       age: "26",
       height: "172",
       weight: 55,
@@ -64,7 +64,7 @@ export const asianModels = [
     params: { id: "shena" },
     props: {
       name: "Шена",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "172",
       weight: 55,
@@ -77,7 +77,7 @@ export const asianModels = [
     params: { id: "tami" },
     props: {
       name: "Тами",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "170",
       weight: 57,
@@ -90,7 +90,7 @@ export const asianModels = [
     params: { id: "una" },
     props: {
       name: "Уна",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "174",
       weight: 60,

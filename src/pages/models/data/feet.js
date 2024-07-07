@@ -42,9 +42,9 @@ export const feetModels = [
     params: { id: "clara" },
     props: {
       name: "Клара",
-      price: "80.000",
+      price: "70.000",
       age: "22",
-      height: "180",
+      height: "170",
       weight: 59,
       images: [claraImage1, claraImage2, claraImage3, claraImage4],
       about:
@@ -55,7 +55,7 @@ export const feetModels = [
     params: { id: "danna" },
     props: {
       name: "Данна",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "182",
       weight: 45,
@@ -68,7 +68,7 @@ export const feetModels = [
     params: { id: "emma" },
     props: {
       name: "Эмма",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "178",
       weight: 61,
@@ -81,7 +81,7 @@ export const feetModels = [
     params: { id: "eveleina" },
     props: {
       name: "Эвелина",
-      price: "80.000",
+      price: "70.000",
       age: "26",
       height: "179",
       weight: 65,
@@ -94,7 +94,7 @@ export const feetModels = [
     params: { id: "karina" },
     props: {
       name: "Карина",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "181",
       weight: 57,
@@ -107,7 +107,7 @@ export const feetModels = [
     params: { id: "lisa" },
     props: {
       name: "Лиза",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "178",
       weight: 59,
@@ -120,7 +120,7 @@ export const feetModels = [
     params: { id: "lubov" },
     props: {
       name: "Любовь",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "172",
       weight: 55,
@@ -133,7 +133,7 @@ export const feetModels = [
     params: { id: "marina" },
     props: {
       name: "Марина",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "182",
       weight: 58,
@@ -146,7 +146,7 @@ export const feetModels = [
     params: { id: "yana" },
     props: {
       name: "Яна",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "172",
       weight: 61,

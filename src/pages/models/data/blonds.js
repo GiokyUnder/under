@@ -40,7 +40,7 @@ export const blondModels = [
     params: { id: "alekasandra" },
     props: {
       name: "Александра",
-      price: "80.000",
+      price: "70.000",
       age: "27",
       height: "173",
       weight: 65,
@@ -58,7 +58,7 @@ export const blondModels = [
     params: { id: "alina" },
     props: {
       name: "Алина",
-      price: "80.000",
+      price: "70.000",
       age: "28",
       height: "169",
       weight: 60,
@@ -71,7 +71,7 @@ export const blondModels = [
     params: { id: "diana" },
     props: {
       name: "Диана",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "164",
       weight: 53,
@@ -84,7 +84,7 @@ export const blondModels = [
     params: { id: "ekaterina" },
     props: {
       name: "Екатерина",
-      price: "80.000",
+      price: "70.000",
       age: "27",
       height: "172",
       weight: 58,
@@ -97,7 +97,7 @@ export const blondModels = [
     params: { id: "kamilla" },
     props: {
       name: "Камилла",
-      price: "80.000",
+      price: "70.000",
       age: "25",
       height: "155",
       weight: 49,
@@ -110,7 +110,7 @@ export const blondModels = [
     params: { id: "kristina" },
     props: {
       name: "Кристина",
-      price: "80.000",
+      price: "70.000",
       age: "27",
       height: "177",
       weight: 57,
@@ -123,7 +123,7 @@ export const blondModels = [
     params: { id: "maria" },
     props: {
       name: "Мария",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "178",
       weight: 61,
@@ -136,7 +136,7 @@ export const blondModels = [
     params: { id: "olga" },
     props: {
       name: "Ольга",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "160",
       weight: 48,
@@ -149,7 +149,7 @@ export const blondModels = [
     params: { id: "valeria" },
     props: {
       name: "Валерия",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "164",
       weight: 50,
@@ -162,7 +162,7 @@ export const blondModels = [
     params: { id: "viktoria" },
     props: {
       name: "Виктория",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "158",
       weight: 47,

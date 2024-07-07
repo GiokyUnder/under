@@ -26,7 +26,7 @@ export const redheadModels = [
     params: { id: "eleanora" },
     props: {
       name: "Элеонора",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "171",
       weight: 57,
@@ -39,7 +39,7 @@ export const redheadModels = [
     params: { id: "elina" },
     props: {
       name: "Элина",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "172",
       weight: 55,
@@ -52,7 +52,7 @@ export const redheadModels = [
     params: { id: "elvira" },
     props: {
       name: "Эльвира",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "173",
       weight: 58,
@@ -65,7 +65,7 @@ export const redheadModels = [
     params: { id: "renata" },
     props: {
       name: "Рената",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "168",
       weight: 53,
@@ -78,7 +78,7 @@ export const redheadModels = [
     params: { id: "roshana" },
     props: {
       name: "Рошана",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "163",
       weight: 59,
@@ -91,7 +91,7 @@ export const redheadModels = [
     params: { id: "simona" },
     props: {
       name: "Симона",
-      price: "80.000",
+      price: "70.000",
       age: "21",
       height: "163",
       weight: 49,

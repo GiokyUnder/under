@@ -55,7 +55,7 @@ export const brunnetes = [
     params: { id: "aina" },
     props: {
       name: "Айна",
-      price: "80.000",
+      price: "70.000",
       age: "25",
       height: "159",
       weight: 52,
@@ -68,7 +68,7 @@ export const brunnetes = [
     params: { id: "anastasia" },
     props: {
       name: "Анастасия",
-      price: "80.000",
+      price: "70.000",
       age: "26",
       height: "168",
       weight: 52,
@@ -81,7 +81,7 @@ export const brunnetes = [
     params: { id: "bela" },
     props: {
       name: "Бела",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "162",
       weight: 45,
@@ -94,7 +94,7 @@ export const brunnetes = [
     params: { id: "eva" },
     props: {
       name: "Ева",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "155",
       weight: 45,
@@ -107,7 +107,7 @@ export const brunnetes = [
     params: { id: "irina" },
     props: {
       name: "Ирина",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "162",
       weight: 51,
@@ -120,7 +120,7 @@ export const brunnetes = [
     params: { id: "janna" },
     props: {
       name: "Жанна",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "173",
       weight: 46,
@@ -133,7 +133,7 @@ export const brunnetes = [
     params: { id: "nicol" },
     props: {
       name: "Николь",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "162",
       weight: 51,
@@ -146,7 +146,7 @@ export const brunnetes = [
     params: { id: "polina" },
     props: {
       name: "Полина",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "155",
       weight: 45,
@@ -159,7 +159,7 @@ export const brunnetes = [
     params: { id: "rimmi" },
     props: {
       name: "Римми",
-      price: "80.000",
+      price: "70.000",
       age: "23",
       height: "167",
       weight: 54,
@@ -172,7 +172,7 @@ export const brunnetes = [
     params: { id: "sabina" },
     props: {
       name: "Сабина",
-      price: "80.000",
+      price: "70.000",
       age: "22",
       height: "168",
       weight: 61,
@@ -185,7 +185,7 @@ export const brunnetes = [
     params: { id: "sofia" },
     props: {
       name: "София",
-      price: "80.000",
+      price: "70.000",
       age: "25",
       height: "154",
       weight: 45,
@@ -198,7 +198,7 @@ export const brunnetes = [
     params: { id: "tatiana" },
     props: {
       name: "Татьяна",
-      price: "80.000",
+      price: "70.000",
       age: "24",
       height: "169",
       weight: 52,
@@ -211,7 +211,7 @@ export const brunnetes = [
     params: { id: "zoya" },
     props: {
       name: "Зоя",
-      price: "80.000",
+      price: "70.000",
       age: "25",
       height: "162",
       weight: 50,

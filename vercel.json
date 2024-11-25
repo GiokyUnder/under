@@ -2,11 +2,6 @@
   "regions": ["arn1"],
   "redirects": [
     {
-      "source": "/index.html",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
       "source": "/:path*", 
       "destination": "https://auroraescort.com/:path*", 
       "permanent": true

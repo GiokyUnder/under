@@ -5,11 +5,6 @@
       "source": "/:path*", 
       "destination": "https://auroraescort.com/:path*", 
       "permanent": true
-    },
-    {
-      "source": "/:path+/",
-      "destination": "/:path",
-      "statusCode": 301
     }
   ]
 }
